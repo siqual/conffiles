@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: cerr
+# key: cerr
+# --
+`(progn
+(goto-char (point-min))
+(unless
+(re-search-forward
+"^using\\s-+namespace std;"
+nil
+'no-errer)
+"std::"
+)
+)
+`cerr << $0${1:} << ${2:std::endl};

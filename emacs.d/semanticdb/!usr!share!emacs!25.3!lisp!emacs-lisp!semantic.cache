@@ -1,0 +1,506 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("rx-constituents" variable (:default-value (quote ((and rx-and 1 nil) (seq . and) (: . and) (sequence . and) (or rx-or 1 nil) (| . or) (not-newline . ".") (nonl . not-newline) (anything rx-anything 0 nil) (any rx-any 1 nil rx-check-any) (any . ".") (in . any) (char . any) (not-char rx-not-char 1 nil rx-check-any) (not rx-not 1 1 rx-check-not) (repeat rx-repeat 2 nil) (= rx-= 2 nil) (>= rx->= 2 nil) (** rx-** 2 nil) (submatch rx-submatch 1 nil) (group . submatch) (submatch-n rx-submatch-n 2 nil) (group-n . submatch-n) (zero-or-more rx-kleene 1 nil) (one-or-more rx-kleene 1 nil) (zero-or-one rx-kleene 1 nil) (\? . zero-or-one) (\?\? . zero-or-one) (* . zero-or-more) (*\? . zero-or-more) (0+ . zero-or-more) (+ . one-or-more) (+\? . one-or-more) (1+ . one-or-more) (optional . zero-or-one) (opt . zero-or-one) (minimal-match rx-greedy 1 1) (maximal-match rx-greedy 1 1) (backref rx-backref 1 1 rx-check-backref) (line-start . "^") (bol . line-start) (line-end . "$") (eol . line-end) (string-start . "\\`") (bos . string-start) (bot . string-start) (string-end . "\\'") (eos . string-end) (eot . string-end) (buffer-start . "\\`") (buffer-end . "\\'") (point . "\\=") (word-start . "\\<") (bow . word-start) (word-end . "\\>") (eow . word-end) (word-boundary . "\\b") (not-word-boundary . "\\B") (symbol-start . "\\_<") (symbol-end . "\\_>") (syntax rx-syntax 1 1) (not-syntax rx-not-syntax 1 1) (category rx-category 1 1 rx-check-category) (eval rx-eval 1 1) (regexp rx-regexp 1 1 stringp) (regex . regexp) (digit . "[[:digit:]]") (numeric . digit) (num . digit) (control . "[[:cntrl:]]") (cntrl . control) (hex-digit . "[[:xdigit:]]") (hex . hex-digit) (xdigit . hex-digit) (blank . "[[:blank:]]") (graphic . "[[:graph:]]") (graph . graphic) (printing . "[[:print:]]") (print . printing) (alphanumeric . "[[:alnum:]]") (alnum . alphanumeric) (letter . "[[:alpha:]]") (alphabetic . letter) (alpha . letter) (ascii . "[[:ascii:]]") (nonascii . "[[:nonascii:]]") (lower . "[[:lower:]]") (lower-case . lower) (punctuation . "[[:punct:]]") (punct . punctuation) (space . "[[:space:]]") (whitespace . space) (white . space) (upper . "[[:upper:]]") (upper-case . upper) (word . "[[:word:]]") (wordchar . word) (not-wordchar . "\\W")))) nil [4001 7970])
+            ("rx-syntax" variable
+               (:constant-flag t
+                :default-value (quote ((whitespace . 45) (punctuation . 46) (word . 119) (symbol . 95) (open-parenthesis . 40) (close-parenthesis . 41) (expression-prefix . 39) (string-quote . 34) (paired-delimiter . 36) (escape . 92) (character-quote . 47) (comment-start . 60) (comment-end . 62) (string-delimiter . 124) (comment-delimiter . 33))))
+                nil [7973 8640])
+            ("rx-categories" variable
+               (:constant-flag t
+                :default-value (quote ((consonant . 48) (base-vowel . 49) (upper-diacritical-mark . 50) (lower-diacritical-mark . 51) (tone-mark . 52) (symbol . 53) (digit . 54) (vowel-modifying-diacritical-mark . 55) (vowel-sign . 56) (semivowel-lower . 57) (not-at-end-of-line . 60) (not-at-beginning-of-line . 62) (alpha-numeric-two-byte . 65) (chinese-two-byte . 67) (chinse-two-byte . 67) (greek-two-byte . 71) (japanese-hiragana-two-byte . 72) (indian-two-byte . 73) (japanese-katakana-two-byte . 75) (korean-hangul-two-byte . 78) (cyrillic-two-byte . 89) (combining-diacritic . 94) (ascii . 97) (arabic . 98) (chinese . 99) (ethiopic . 101) (greek . 103) (korean . 104) (indian . 105) (japanese . 106) (japanese-katakana . 107) (latin . 108) (lao . 111) (tibetan . 113) (japanese-roman . 114) (thai . 116) (vietnamese . 118) (hebrew . 119) (cyrillic . 121) (can-break . 124))))
+                nil [8643 10016])
+            ("rx-greedy-flag" variable (:default-value t) nil [10019 10171])
+            ("rx-info" function (:arguments ("op" "head")) nil [10174 11140])
+            ("rx-check" function (:arguments ("form")) nil [11143 11914])
+            ("rx-group-if" function (:arguments ("regexp" "group")) nil [11917 12543])
+            ("rx-parent" variable nil nil [12546 12564])
+            ("rx-and" function (:arguments ("form")) nil [12607 12840])
+            ("rx-or" function (:arguments ("form")) nil [12843 13148])
+            ("rx-anything" function (:arguments ("form")) nil [13151 13312])
+            ("rx-any-delete-from-range" function (:arguments ("char" "ranges")) nil [13315 13809])
+            ("rx-any-condense-range" function (:arguments ("args")) nil [13812 14697])
+            ("rx-check-any-string" function (:arguments ("str")) nil [14700 15423])
+            ("rx-check-any" function (:arguments ("arg")) nil [15426 16075])
+            ("rx-any" function (:arguments ("form")) nil [16078 18683])
+            ("rx-check-not" function (:arguments ("arg")) nil [18686 19053])
+            ("rx-not" function (:arguments ("form")) nil [19056 19788])
+            ("rx-not-char" function (:arguments ("form")) nil [19791 19936])
+            ("rx-not-syntax" function (:arguments ("form")) nil [19939 20095])
+            ("rx-trans-forms" function (:arguments ("form" "skip")) nil [20098 20603])
+            ("rx-=" function (:arguments ("form")) nil [20606 20919])
+            ("rx->=" function (:arguments ("form")) nil [20922 21239])
+            ("rx-**" function (:arguments ("form")) nil [21242 21393])
+            ("rx-repeat" function (:arguments ("form")) nil [21396 22215])
+            ("rx-submatch" function (:arguments ("form")) nil [22218 22576])
+            ("rx-submatch-n" function (:arguments ("form")) nil [22578 22955])
+            ("rx-backref" function (:arguments ("form")) nil [22957 23093])
+            ("rx-check-backref" function (:arguments ("arg")) nil [23095 23275])
+            ("rx-kleene" function (:arguments ("form")) nil [23277 24069])
+            ("rx-atomic-p" function (:arguments ("r" "lax")) nil [24072 25451])
+            ("rx-syntax" function (:arguments ("form")) nil [25454 25970])
+            ("rx-check-category" function (:arguments ("form")) nil [25973 26173])
+            ("rx-category" function (:arguments ("form")) nil [26176 26416])
+            ("rx-eval" function (:arguments ("form")) nil [26419 26562])
+            ("rx-greedy" function (:arguments ("form")) nil [26565 26917])
+            ("rx-regexp" function (:arguments ("form")) nil [26920 27066])
+            ("rx-form" function (:arguments ("form" "rx-parent")) nil [27069 28034])
+            ("rx-to-string" function (:arguments ("form" "no-group")) nil [28052 28307])
+            ("rx" function (:arguments ("regexps")) nil [28325 37056])
+            ("rx" package nil nil [37289 37302]))          
+      :file "rx.el.gz"
+      :pointmax 37324
+      :fsize 11050
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("ring-p" function (:arguments ("x")) nil [1729 1897])
+            ("make-ring" function (:arguments ("size")) nil [1914 2029])
+            ("ring-insert-at-beginning" function (:arguments ("ring" "item")) nil [2031 2394])
+            ("ring-plus1" function (:arguments ("index" "veclen")) nil [2396 2541])
+            ("ring-minus1" function (:arguments ("index" "veclen")) nil [2543 2654])
+            ("ring-length" function (:arguments ("ring")) nil [2656 2743])
+            ("ring-index" function (:arguments ("index" "head" "ringlen" "veclen")) nil [2745 3158])
+            ("ring-empty-p" function (:arguments ("ring")) nil [3160 3255])
+            ("ring-size" function (:arguments ("ring")) nil [3257 3380])
+            ("ring-copy" function (:arguments ("ring")) nil [3382 3542])
+            ("ring-insert" function (:arguments ("ring" "item")) nil [3544 3977])
+            ("ring-remove" function (:arguments ("ring" "index")) nil [3979 4756])
+            ("ring-ref" function (:arguments ("ring" "index")) nil [4758 5187])
+            ("ring-elements" function (:arguments ("ring")) nil [5189 5453])
+            ("ring-member" function (:arguments ("ring" "item")) nil [5455 5714])
+            ("ring-next" function (:arguments ("ring" "item")) nil [5716 6014])
+            ("ring-previous" function (:arguments ("ring" "item")) nil [6016 6324])
+            ("ring-extend" function (:arguments ("ring" "x")) nil [6326 6846])
+            ("ring-insert+extend" function (:arguments ("ring" "item" "grow-p")) nil [6848 7338])
+            ("ring-remove+insert+extend" function (:arguments ("ring" "item" "grow-p")) nil [7340 7833])
+            ("ring-convert-sequence-to-ring" function (:arguments ("seq")) nil [7835 8250])
+            ("ring" package nil nil [8274 8289]))          
+      :file "ring.el.gz"
+      :pointmax 8313
+      :fsize 2824
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("defun-prompt-regexp" variable nil nil [1097 1346])
+            ("make-variable-buffer-local" code nil nil [1347 1396])
+            ("parens-require-spaces" variable (:default-value t) nil [1398 1587])
+            ("forward-sexp-function" variable nil nil [1589 2090])
+            ("forward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2092 2822])
+            ("backward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2824 3182])
+            ("mark-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "allow-extend"))
+                nil [3184 4009])
+            ("forward-list" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [4011 4477])
+            ("backward-list" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [4479 4908])
+            ("down-list" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [4910 5456])
+            ("backward-up-list" function
+               (:user-visible-flag t
+                :arguments ("arg" "escape-strings" "no-syntax-crossing"))
+                nil [5458 6199])
+            ("up-list" function
+               (:user-visible-flag t
+                :arguments ("arg" "escape-strings" "no-syntax-crossing"))
+                nil [6201 9554])
+            ("kill-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [9556 9907])
+            ("backward-kill-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [9909 10208])
+            ("kill-backward-up-list" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [10226 10724])
+            ("beginning-of-defun-function" variable nil nil [10727 11296])
+            ("beginning-of-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [11298 12624])
+            ("beginning-of-defun-raw" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [12626 15979])
+            ("end-of-defun-function" variable (:default-value (lambda nil (forward-sexp 1))) nil [15981 16349])
+            ("buffer-end" function (:arguments ("arg")) nil [16351 16582])
+            ("end-of-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [16584 18890])
+            ("mark-defun" function
+               (:user-visible-flag t
+                :arguments ("allow-extend"))
+                nil [18892 20215])
+            ("narrow-to-defun-include-comments" variable nil nil [20217 20341])
+            ("narrow-to-defun" function
+               (:user-visible-flag t
+                :arguments ("include-comments"))
+                nil [20343 22435])
+            ("insert-pair-alist" variable (:default-value (quote ((40 41) (91 93) (123 125) (60 62) (34 34) (39 39) (96 39)))) nil [22437 22982])
+            ("insert-pair" function
+               (:user-visible-flag t
+                :arguments ("arg" "open" "close"))
+                nil [22984 25253])
+            ("insert-parentheses" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [25255 25819])
+            ("delete-pair" function (:user-visible-flag t) nil [25821 26001])
+            ("raise-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [26003 26459])
+            ("move-past-close-and-reindent" function (:user-visible-flag t) nil [26461 27458])
+            ("check-parens" function (:user-visible-flag t) nil [27460 28373])
+            ("field-complete" function (:arguments ("table" "predicate")) nil [28376 28920])
+            ("lisp-complete-symbol" function (:arguments ("_predicate")) nil [28922 29909]))          
+      :file "lisp.el.gz"
+      :pointmax 29933
+      :fsize 8391
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1047 1064])
+            ("macroexp" include nil nil [1065 1084])
+            ("gv" include nil nil [1085 1098])
+            ("cl-unload-function" function nil nil [3594 3752])
+            ("dolist" code nil nil [3789 4502])
+            ("dolist" code nil nil [4504 9695])
+            ("cl--wrap-in-nil-block" function (:arguments ("fun" "args")) nil [9697 9779])
+            ("advice-add" code nil nil [9780 9832])
+            ("advice-add" code nil nil [9833 9886])
+            ("cl--pass-args-to-cl-declare" function (:arguments ("specs")) nil [9888 9976])
+            ("advice-add" code nil nil [9977 10035])
+            ("cl-closure-vars" variable nil nil [10195 10223])
+            ("cl--function-convert-cache" variable nil nil [10224 10263])
+            ("cl--function-convert" function (:arguments ("f")) nil [10265 12377])
+            ("lexical-let" function (:arguments ("bindings" "body")) nil [12379 14390])
+            ("lexical-let*" function (:arguments ("bindings" "body")) nil [14392 14922])
+            ("flet" function (:arguments ("bindings" "body")) nil [15001 16755])
+            ("labels" function (:arguments ("bindings" "body")) nil [16757 17701])
+            ("cl--gv-adapt" function (:arguments ("cl-gv" "do")) nil [17897 18787])
+            ("define-setf-expander" function (:arguments ("name" "arglist" "body")) nil [18789 19692])
+            ("defsetf" function (:arguments ("name" "arg1" "args")) nil [19694 21312])
+            ("make-obsolete" code nil nil [23226 23278])
+            ("declare-function" code nil nil [23280 23332])
+            ("define-modify-macro" function (:arguments ("name" "arglist" "func" "doc")) nil [23334 24156])
+            ("define-obsolete-function-alias" code nil nil [24258 24326])
+            ("define-obsolete-variable-alias" code nil nil [24327 24419])
+            ("define-obsolete-function-alias" code nil nil [24420 24496])
+            ("cl-not-hash-table" function (:arguments ("x" "y" "_z")) nil [24634 24783])
+            ("cl-builtin-gethash" variable (:default-value (symbol-function (quote gethash))) nil [24785 24839])
+            ("make-obsolete-variable" code nil nil [24840 24895])
+            ("cl-builtin-remhash" variable (:default-value (symbol-function (quote remhash))) nil [24896 24950])
+            ("make-obsolete-variable" code nil nil [24951 25006])
+            ("cl-builtin-clrhash" variable (:default-value (symbol-function (quote clrhash))) nil [25007 25061])
+            ("make-obsolete-variable" code nil nil [25062 25117])
+            ("cl-builtin-maphash" variable (:default-value (symbol-function (quote maphash))) nil [25118 25172])
+            ("make-obsolete-variable" code nil nil [25174 25229])
+            ("define-obsolete-function-alias" code nil nil [25230 25296])
+            ("define-obsolete-function-alias" code nil nil [25297 25361])
+            ("define-obsolete-function-alias" code nil nil [25362 25422])
+            ("define-obsolete-function-alias" code nil nil [25423 25483])
+            ("define-obsolete-function-alias" code nil nil [25484 25544])
+            ("define-obsolete-function-alias" code nil nil [25545 25605])
+            ("define-obsolete-function-alias" code nil nil [25606 25666])
+            ("define-obsolete-function-alias" code nil nil [25667 25743])
+            ("define-obsolete-function-alias" code nil nil [25744 25814])
+            ("define-obsolete-function-alias" code nil nil [25815 25893])
+            ("define-obsolete-function-alias" code nil nil [25895 25991])
+            ("define-obsolete-function-alias" code nil nil [25992 26068])
+            ("define-obsolete-function-alias" code nil nil [26069 26142])
+            ("define-obsolete-function-alias" code nil nil [26143 26209])
+            ("cl-maclisp-member" function (:arguments ("item" "list")) nil [26211 26366])
+            ("cl-struct-setf-expander" function (:arguments ("x" "name" "accessor" "pred-form" "pos")) nil [26417 27351])
+            ("cl" package nil nil [27353 27366])
+            ("run-hooks" code nil nil [27368 27393]))          
+      :file "cl.el.gz"
+      :pointmax 27415
+      :fsize 7985
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("float-pi" variable
+               (:constant-flag t
+                :default-value (* 4 (atan 1)))
+                nil [1067 1135])
+            ("pi" variable
+               (:constant-flag t
+                :default-value float-pi)
+                nil [1136 1214])
+            ("internal-make-var-non-special" code nil nil [1215 1250])
+            ("float-e" variable
+               (:constant-flag t
+                :default-value (exp 1))
+                nil [1252 1311])
+            ("degrees-to-radians" variable
+               (:constant-flag t
+                :default-value (/ float-pi 180.0))
+                nil [1313 1404])
+            ("radians-to-degrees" variable
+               (:constant-flag t
+                :default-value (/ 180.0 float-pi))
+                nil [1405 1495])
+            ("degrees-to-radians" function (:arguments ("x")) nil [1566 1671])
+            ("radians-to-degrees" function (:arguments ("x")) nil [1672 1777])
+            ("lisp-float-type" package nil nil [1779 1805]))          
+      :file "float-sup.el.gz"
+      :pointmax 1834
+      :fsize 953
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("regexp-opt" function (:arguments ("strings" "paren")) nil [3681 5726])
+            ("regexp-opt-depth" function (:arguments ("regexp")) nil [5743 6568])
+            ("regexp-opt-group" function (:arguments ("strings" "paren" "lax")) nil [6597 10233])
+            ("regexp-opt-charset" function (:arguments ("chars")) nil [10236 12171])
+            ("regexp-opt" package nil nil [12173 12194]))          
+      :file "regexp-opt.el.gz"
+      :pointmax 12224
+      :fsize 4421
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1046 1063])
+            ("cl-defstruct" code nil nil [1066 1818])
+            ("timerp" function (:arguments ("object")) nil [1820 1925])
+            ("timer--check" function (:arguments ("timer")) nil [1927 2032])
+            ("timer--time-setter" function (:arguments ("timer" "time")) nil [2034 2468])
+            ("timer--time" function (:arguments ("timer")) nil [2494 2680])
+            ("timer-set-time" function (:arguments ("timer" "time" "delta")) nil [2682 3077])
+            ("timer-set-idle-time" function (:arguments ("timer" "secs" "repeat")) nil [3079 3578])
+            ("timer-next-integral-multiple-of-time" function (:arguments ("time" "secs")) nil [3580 4585])
+            ("timer-relative-time" function (:arguments ("time" "secs" "usecs" "psecs")) nil [4587 4940])
+            ("timer--time-less-p" function (:arguments ("t1" "t2")) nil [4942 5084])
+            ("timer-inc-time" function (:arguments ("timer" "secs" "usecs" "psecs")) nil [5086 5418])
+            ("timer-set-time-with-usecs" function (:arguments ("timer" "time" "usecs" "delta")) nil [5420 6073])
+            ("timer-set-function" function (:arguments ("timer" "function" "args")) nil [6075 6305])
+            ("timer--activate" function (:arguments ("timer" "triggered-p" "reuse-cell" "idle")) nil [6308 7307])
+            ("timer-activate" function (:arguments ("timer" "triggered-p" "reuse-cell")) nil [7309 7825])
+            ("timer-activate-when-idle" function (:arguments ("timer" "dont-wait" "reuse-cell")) nil [7827 8704])
+            ("defalias" code nil nil [8706 8747])
+            ("cancel-timer" function (:arguments ("timer")) nil [8749 8953])
+            ("cancel-timer-internal" function (:arguments ("timer")) nil [8955 9377])
+            ("cancel-function-timers" function
+               (:user-visible-flag t
+                :arguments ("function"))
+                nil [9379 9917])
+            ("timer-event-last" variable nil nil [9966 10024])
+            ("timer-event-last-1" variable nil nil [10025 10093])
+            ("timer-event-last-2" variable nil nil [10094 10163])
+            ("timer-max-repeats" variable (:default-value 10) nil [10165 10542])
+            ("timer-until" function (:arguments ("timer" "time")) nil [10544 10801])
+            ("timer-event-handler" function (:arguments ("timer")) nil [10803 13751])
+            ("timeout-event-p" function (:arguments ("event")) nil [13814 13938])
+            ("declare-function" code nil nil [13942 13993])
+            ("run-at-time" function
+               (:user-visible-flag t
+                :arguments ("time" "repeat" "function" "args"))
+                nil [13995 16416])
+            ("run-with-timer" function
+               (:user-visible-flag t
+                :arguments ("secs" "repeat" "function" "args"))
+                nil [16418 16904])
+            ("add-timeout" function (:arguments ("secs" "function" "object" "repeat")) nil [16906 17285])
+            ("run-with-idle-timer" function
+               (:user-visible-flag t
+                :arguments ("secs" "repeat" "function" "args"))
+                nil [17287 18438])
+            ("with-timeout-timers" variable nil nil [18441 18544])
+            ("with-timeout" function (:arguments ("list" "body")) nil [18546 20025])
+            ("with-timeout-suspend" function nil nil [20027 20479])
+            ("with-timeout-unsuspend" function (:arguments ("timer-spec-list")) nil [20481 20813])
+            ("y-or-n-p-with-timeout" function (:arguments ("prompt" "seconds" "default-value")) nil [20815 21055])
+            ("timer-duration-words" variable
+               (:constant-flag t
+                :default-value (list (cons "microsec" 1e-06) (cons "microsecond" 1e-06) (cons "millisec" 0.001) (cons "millisecond" 0.001) (cons "sec" 1) (cons "second" 1) (cons "min" 60) (cons "minute" 60) (cons "hour" (* 60 60)) (cons "day" (* 24 60 60)) (cons "week" (* 7 24 60 60)) (cons "fortnight" (* 14 24 60 60)) (cons "month" (* 30 24 60 60)) (cons "year" (* 365.25 24 60 60))))
+                nil [21058 21574])
+            ("timer-duration" function (:arguments ("string")) nil [21576 22278])
+            ("internal-timer-start-idle" function nil nil [22280 22507])
+            ("timer" package nil nil [22510 22526]))          
+      :file "timer.el.gz"
+      :pointmax 22551
+      :fsize 7254
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 1063 . 1064) (symbol 1028 . 1045) (open-paren 1027 . 1028)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("advice--where-alist" variable (:default-value (quote ((:around "\300\301\302#\207" 5) (:before "\300\301\"\210\300\302\"\207" 4) (:after "\300\302\"\300\301\"\210\207" 5) (:override "\300\301\"\207" 4) (:after-until "\300\302\"\206 \300\301\"\207" 4) (:after-while "\300\302\"\205 \300\301\"\207" 4) (:before-until "\300\301\"\206 \300\302\"\207" 4) (:before-while "\300\301\"\205 \300\302\"\207" 4) (:filter-args "\300\302\301!\"\207" 5) (:filter-return "\301\300\302\"!\207" 5)))) nil [1628 2497])
+            ("advice--bytecodes" variable (:default-value (mapcar (function cadr) advice--where-alist)) nil [2499 2561])
+            ("advice--p" function (:arguments ("object")) nil [2563 2789])
+            ("advice--car" function (:arguments ("f")) nil [2791 2839])
+            ("advice--cdr" function (:arguments ("f")) nil [2840 2888])
+            ("advice--props" function (:arguments ("f")) nil [2889 2937])
+            ("advice--cd*r" function (:arguments ("f")) nil [2939 3020])
+            ("advice--make-docstring" function (:arguments ("function")) nil [3022 5411])
+            ("advice-eval-interactive-spec" function (:arguments ("spec")) nil [5413 6003])
+            ("advice--interactive-form" function (:arguments ("function")) nil [6005 6375])
+            ("advice--make-interactive-form" function (:arguments ("function" "main")) nil [6377 6950])
+            ("advice--make-1" function (:arguments ("byte-code" "stack-depth" "function" "main" "props")) nil [6952 7516])
+            ("advice--make" function (:arguments ("where" "function" "main" "props")) nil [7518 8334])
+            ("advice--member-p" function (:arguments ("function" "use-name" "definition")) nil [8336 8846])
+            ("advice--tweak" function (:arguments ("flist" "tweaker")) nil [8848 9356])
+            ("advice--remove-function" function (:arguments ("flist" "function")) nil [9373 9735])
+            ("advice--buffer-local-function-sample" variable nil nil [9737 10084])
+            ("advice--set-buffer-local" function (:arguments ("var" "val")) nil [10086 10265])
+            ("advice--buffer-local" function (:arguments ("var")) nil [10282 10670])
+            ("advice--normalize-place" function (:arguments ("place")) nil [10692 10952])
+            ("add-function" function (:arguments ("where" "place" "function" "props")) nil [10970 13936])
+            ("advice--add-function" function (:arguments ("where" "ref" "function" "props")) nil [13953 14441])
+            ("remove-function" function (:arguments ("place" "function")) nil [14458 14988])
+            ("advice-function-mapc" function (:arguments ("f" "function-def")) nil [14990 15371])
+            ("advice-function-member-p" function (:arguments ("advice" "function-def")) nil [15373 15630])
+            ("advice--subst-main" function (:arguments ("old" "new")) nil [15708 15834])
+            ("advice--normalize" function (:arguments ("symbol" "def")) nil [15836 16403])
+            ("advice--strip-macro" function (:arguments ("x")) nil [16405 16481])
+            ("advice--symbol-function" function (:arguments ("symbol")) nil [16483 17431])
+            ("advice--defalias-fset" function (:arguments ("fsetfun" "symbol" "newdef")) nil [17433 18200])
+            ("advice-add" function (:arguments ("symbol" "where" "function" "props")) nil [18217 19697])
+            ("advice-remove" function (:arguments ("symbol" "function")) nil [19714 20779])
+            ("define-advice" function (:arguments ("symbol" "args" "body")) nil [20796 21971])
+            ("advice-mapc" function (:arguments ("fun" "symbol")) nil [21973 22245])
+            ("advice-member-p" function (:arguments ("advice" "symbol")) nil [22262 22520])
+            ("add-hook" code nil nil [22939 23029])
+            ("advice--called-interactively-skip" function (:arguments ("origi" "frame1" "frame2")) nil [23030 24883])
+            ("nadvice" package nil nil [24886 24904]))          
+      :file "nadvice.el.gz"
+      :pointmax 24930
+      :fsize 7629
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 10952 . 10953) (symbol 10673 . 10689) (open-paren 10672 . 10673)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("unless" code nil nil [4910 4963])
+            ("re-builder" customgroup (:user-visible-flag t) nil [4996 5085])
+            ("reb-blink-delay" variable (:default-value 0.5) nil [5087 5222])
+            ("reb-mode-hook" variable nil nil [5224 5334])
+            ("reb-re-syntax" variable (:default-value (quote read)) nil [5336 5593])
+            ("reb-auto-match-limit" variable (:default-value 200) nil [5595 5836])
+            ("reb-match-0" variable
+               (:default-value (quote ((((class color) (background light)) :background "lightblue") (((class color) (background dark)) :background "steelblue4") (t :inverse-video t)))
+                :type "face")
+                nil [5839 6093])
+            ("reb-match-1" variable
+               (:default-value (quote ((((class color) (background light)) :background "aquamarine") (((class color) (background dark)) :background "blue3") (t :inverse-video t)))
+                :type "face")
+                nil [6095 6362])
+            ("reb-match-2" variable
+               (:default-value (quote ((((class color) (background light)) :background "springgreen") (((class color) (background dark)) :background "chartreuse4") (t :inverse-video t)))
+                :type "face")
+                nil [6364 6639])
+            ("reb-match-3" variable
+               (:default-value (quote ((((min-colors 88) (class color) (background light)) :background "yellow1") (((class color) (background light)) :background "yellow") (((class color) (background dark)) :background "sienna4") (t :inverse-video t)))
+                :type "face")
+                nil [6641 6990])
+            ("reb-mode" variable nil nil [7020 7080])
+            ("reb-target-buffer" variable nil nil [7082 7154])
+            ("reb-target-window" variable nil nil [7156 7228])
+            ("reb-regexp" variable nil nil [7230 7289])
+            ("reb-regexp-src" variable nil nil [7291 7432])
+            ("reb-overlays" variable nil nil [7434 7499])
+            ("reb-window-config" variable nil nil [7501 7561])
+            ("reb-subexp-mode" variable nil nil [7563 7637])
+            ("reb-subexp-displayed" variable nil nil [7639 7711])
+            ("reb-mode-string" variable nil nil [7713 7785])
+            ("reb-valid-string" variable nil nil [7787 7863])
+            ("make-variable-buffer-local" code nil nil [7865 7907])
+            ("make-variable-buffer-local" code nil nil [7908 7948])
+            ("make-variable-buffer-local" code nil nil [7949 7993])
+            ("reb-buffer" variable
+               (:constant-flag t
+                :default-value "*RE-Builder*")
+                nil [7995 8069])
+            ("reb-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) (menu-map (make-sparse-keymap))) (define-key map "" (quote reb-toggle-case)) (define-key map "" (quote reb-quit)) (define-key map "" (quote reb-copy)) (define-key map "" (quote reb-next-match)) (define-key map "" (quote reb-prev-match)) (define-key map "	" (quote reb-change-syntax)) (define-key map "" (quote reb-enter-subexp-mode)) (define-key map "" (quote reb-change-target-buffer)) (define-key map "" (quote reb-force-update)) (define-key map [menu-bar reb-mode] (cons "Re-Builder" menu-map)) (define-key menu-map [rq] (quote (menu-item "Quit" reb-quit :help "Quit the RE Builder mode"))) (define-key menu-map [rt] (quote (menu-item "Case sensitive" reb-toggle-case :button (:toggle with-current-buffer reb-target-buffer (null case-fold-search)) :help "Toggle case sensitivity of searches for RE Builder target buffer"))) (define-key menu-map [rb] (quote (menu-item "Change target buffer..." reb-change-target-buffer :help "Change the target buffer and display it in the target window"))) (define-key menu-map [rs] (quote (menu-item "Change syntax..." reb-change-syntax :help "Change the syntax used by the RE Builder"))) (define-key menu-map [re] (quote (menu-item "Enter subexpression mode" reb-enter-subexp-mode :help "Enter the subexpression mode in the RE Builder"))) (define-key menu-map [ru] (quote (menu-item "Force update" reb-force-update :help "Force an update in the RE Builder target window without a match limit"))) (define-key menu-map [rn] (quote (menu-item "Go to next match" reb-next-match :help "Go to next match in the RE Builder target window"))) (define-key menu-map [rp] (quote (menu-item "Go to previous match" reb-prev-match :help "Go to previous match in the RE Builder target window"))) (define-key menu-map [rc] (quote (menu-item "Copy current RE" reb-copy :help "Copy current RE into the kill ring for later insertion"))) map)) nil [8105 10198])
+            ("define-derived-mode" code nil nil [10200 10386])
+            ("reb-lisp-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (lookup-key reb-mode-map "")) map)) nil [10388 10619])
+            ("define-derived-mode" code nil nil [10621 10944])
+            ("reb-subexp-mode-map" variable (:default-value (let ((m (make-keymap))) (suppress-keymap m) (define-key m "" (lookup-key reb-mode-map "")) (define-key m "q" (quote reb-quit-subexp-mode)) (dotimes (digit 10) (define-key m (int-to-string digit) (quote reb-display-subexp))) m)) nil [10946 11340])
+            ("reb-mode-common" function nil nil [11342 11826])
+            ("reb-color-display-p" function nil nil [11828 12127])
+            ("reb-lisp-syntax-p" function nil nil [12129 12249])
+            ("reb-target-binding" function (:arguments ("symbol")) nil [12251 12403])
+            ("reb-initialize-buffer" function nil nil [12405 12663])
+            ("reb-mode-buffer-p" function nil nil [12665 12804])
+            ("defalias" code nil nil [12870 12908])
+            ("re-builder" function (:user-visible-flag t) nil [12925 13841])
+            ("reb-change-target-buffer" function
+               (:user-visible-flag t
+                :arguments ("buf"))
+                nil [13843 14252])
+            ("reb-force-update" function (:user-visible-flag t) nil [14254 14487])
+            ("reb-quit" function (:user-visible-flag t) nil [14489 14697])
+            ("reb-next-match" function (:user-visible-flag t) nil [14699 15049])
+            ("reb-prev-match" function (:user-visible-flag t) nil [15051 15492])
+            ("reb-toggle-case" function (:user-visible-flag t) nil [15494 15760])
+            ("reb-copy" function (:user-visible-flag t) nil [15762 16058])
+            ("reb-enter-subexp-mode" function (:user-visible-flag t) nil [16172 16436])
+            ("reb-show-subexp" function (:arguments ("subexp" "pause")) nil [16438 17070])
+            ("reb-quit-subexp-mode" function (:user-visible-flag t) nil [17072 17300])
+            ("reb-change-syntax" function
+               (:user-visible-flag t
+                :arguments ("syntax"))
+                nil [17302 17918])
+            ("reb-do-update" function (:arguments ("subexp")) nil [17956 18200])
+            ("reb-auto-update" function (:arguments ("_beg" "_end" "_lenold" "force")) nil [18202 19042])
+            ("reb-delete-overlays" function nil nil [19044 19303])
+            ("reb-assert-buffer-in-window" function nil nil [19305 19549])
+            ("reb-update-modestring" function nil nil [19551 19884])
+            ("reb-display-subexp" function
+               (:user-visible-flag t
+                :arguments ("subexp"))
+                nil [19886 20167])
+            ("reb-kill-buffer" function nil nil [20169 20327])
+            ("reb-read-regexp" function nil nil [20528 20961])
+            ("reb-empty-regexp" function nil nil [20963 21075])
+            ("reb-insert-regexp" function nil nil [21077 21484])
+            ("reb-cook-regexp" function (:arguments ("re")) nil [21486 21683])
+            ("reb-update-regexp" function nil nil [21685 22130])
+            ("reb-count-subexps" function (:arguments ("re")) nil [22177 22380])
+            ("reb-update-overlays" function (:arguments ("subexp")) nil [22382 24506])
+            ("re-builder-unload-function" function nil nil [24519 24892])
+            ("re-builder" package nil nil [24894 24915]))          
+      :file "re-builder.el.gz"
+      :pointmax 24945
+      :fsize 7596
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!25.3!lisp!emacs-lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

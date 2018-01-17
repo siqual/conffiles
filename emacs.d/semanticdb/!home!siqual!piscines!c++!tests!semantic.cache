@@ -1,0 +1,60 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [204 223])
+            ("main" function (:type "int") nil [225 251]))          
+      :file "main.cpp"
+      :pointmax 252
+      :fsize 251
+      :lastmodtime '(23134 16676 232103 404000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Test" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [231 238])
+                    ("Test" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Test" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [247 254])
+                    ("Test" function
+                       (:type "void"
+                        :destructor-flag t
+                        :prototype-flag t)
+                        (reparse-symbol classsubparts) [263 279]))                  
+                :type "class")
+                nil [1 282]))          
+      :file "test.hpp"
+      :pointmax 283
+      :fsize 282
+      :lastmodtime '(23134 17262 341486 505000)
+      :unmatched-syntax '((symbol 212 . 216) (symbol 205 . 211) (punctuation 204 . 205) (symbol 212 . 216) (symbol 205 . 211) (punctuation 204 . 205) (symbol 212 . 216) (symbol 205 . 211) (punctuation 204 . 205) (symbol 212 . 216) (symbol 205 . 211) (punctuation 204 . 205) (punctuation 302 . 303) (semantic-list 300 . 302) (symbol 212 . 216) (symbol 205 . 211) (punctuation 204 . 205) (punctuation 302 . 303) (semantic-list 300 . 302) (symbol 212 . 216) (symbol 205 . 211) (punctuation 204 . 205)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("test.hpp" include nil nil [204 223])
+            ("Test" function
+               (:constructor-flag t
+                :parent "Test"
+                :type ("Test" type (:type "class") nil nil))
+                nil [225 242])
+            ("Test" function
+               (:destructor-flag t
+                :parent "Test"
+                :type "void")
+                nil [244 262]))          
+      :file "test.cpp"
+      :pointmax 263
+      :fsize 262
+      :lastmodtime '(23134 17647 755053 586000)
+      :unmatched-syntax nil))
+  :file "!home!siqual!piscines!c++!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1775 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("prolog-mode-version" variable (:default-value "1.22") nil [481 548])
+            ("comint" include nil nil [12122 12139])
+            ("shell" include nil nil [12271 12287])
+            ("imenu" include nil nil [12247 12263])
+            ("font-lock" include nil nil [12162 12182])
+            ("easymenu" include nil nil [12293 12312])
+            ("align" include nil nil [12313 12329])
+            ("prolog" customgroup (:user-visible-flag t) nil [12332 12423])
+            ("prolog-faces" customgroup (:user-visible-flag t) nil [12425 12504])
+            ("prolog-indentation" customgroup (:user-visible-flag t) nil [12506 12599])
+            ("prolog-font-lock" customgroup (:user-visible-flag t) nil [12601 12688])
+            ("prolog-keyboard" customgroup (:user-visible-flag t) nil [12690 12769])
+            ("prolog-inferior" customgroup (:user-visible-flag t) nil [12771 12852])
+            ("prolog-other" customgroup (:user-visible-flag t) nil [12854 12929])
+            ("prolog-system" variable nil nil [13131 13974])
+            ("make-variable-buffer-local" code nil nil [13975 14018])
+            ("prolog-system-version" variable (:default-value (quote ((sicstus (3 . 6)) (swi (0 . 0)) (mercury (0 . 0)) (eclipse (3 . 7)) (gnu (0 . 0))))) nil [14198 14728])
+            ("prolog-indent-width" variable (:default-value 4) nil [14746 14879])
+            ("prolog-left-indent-regexp" variable (:default-value "\\(;\\|\\*?->\\)") nil [14881 15052])
+            ("prolog-paren-indent-p" variable nil nil [15054 15472])
+            ("prolog-paren-indent" variable (:default-value 4) nil [15474 15704])
+            ("prolog-parse-mode" variable (:default-value (quote beg-of-clause)) nil [15706 16310])
+            ("prolog-keywords" variable (:default-value (quote ((eclipse ("use_module" "begin_module" "module_interface" "dynamic" "external" "export" "dbgcomp" "nodbgcomp" "compile")) (mercury ("all" "else" "end_module" "equality" "external" "fail" "func" "if" "implementation" "import_module" "include_module" "inst" "instance" "interface" "mode" "module" "not" "pragma" "pred" "some" "then" "true" "type" "typeclass" "use_module" "where")) (sicstus ("block" "dynamic" "mode" "module" "multifile" "meta_predicate" "parallel" "public" "sequential" "volatile")) (swi ("discontiguous" "dynamic" "ensure_loaded" "export" "export_list" "import" "meta_predicate" "module" "module_transparent" "multifile" "require" "use_module" "volatile")) (gnu ("built_in" "char_conversion" "discontiguous" "dynamic" "ensure_linked" "ensure_loaded" "foreign" "include" "initialization" "multifile" "op" "public" "set_prolog_flag")) (t ("dynamic" "module"))))) nil [16329 17909])
+            ("prolog-types" variable (:default-value (quote ((mercury ("char" "float" "int" "io__state" "string" "univ")) (t nil)))) nil [17911 18198])
+            ("prolog-mode-specificators" variable (:default-value (quote ((mercury ("bound" "di" "free" "ground" "in" "mdi" "mui" "muo" "out" "ui" "uo")) (t nil)))) nil [18200 18532])
+            ("prolog-determinism-specificators" variable (:default-value (quote ((mercury ("cc_multi" "cc_nondet" "det" "erroneous" "failure" "multi" "nondet" "semidet")) (t nil)))) nil [18534 18896])
+            ("prolog-directives" variable (:default-value (quote ((mercury ("^#[0-9]+")) (t nil)))) nil [18898 19169])
+            ("prolog-hungry-delete-key-flag" variable nil nil [19185 19351])
+            ("prolog-electric-dot-flag" variable nil nil [19353 19904])
+            ("prolog-electric-dot-full-predicate-template" variable nil nil [19906 20267])
+            ("prolog-electric-underscore-flag" variable nil nil [20269 20561])
+            ("prolog-electric-if-then-else-flag" variable nil nil [20563 20766])
+            ("prolog-electric-colon-flag" variable nil nil [20768 21050])
+            ("prolog-electric-dash-flag" variable nil nil [21052 21334])
+            ("prolog-old-sicstus-keys-flag" variable nil nil [21336 21505])
+            ("prolog-program-name" variable (:default-value (\` (((getenv "EPROLOG") (eval (getenv "EPROLOG"))) (eclipse "eclipse") (mercury nil) (sicstus "sicstus") (swi (\, (if (not (executable-find "swipl")) "pl" "swipl"))) (gnu "gprolog") (t (\, (let ((names (quote ("prolog" "gprolog" "swipl" "pl")))) (while (and names (not (executable-find (car names)))) (setq names (cdr names))) (or (car names) "prolog"))))))) nil [21525 22177])
+            ("prolog-program-name" function nil nil [22178 22260])
+            ("prolog-program-switches" variable (:default-value (quote ((sicstus ("-i")) (t nil)))) nil [22262 22532])
+            ("prolog-program-switches" function nil nil [22533 22623])
+            ("prolog-consult-string" variable (:default-value (quote ((eclipse "[%f].") (mercury nil) (sicstus (eval (if (prolog-atleast-version (quote (3 . 7))) "prolog:zap_file(%m,%b,consult,%l)." "prolog:zap_file(%m,%b,consult)."))) (swi "[%f].") (gnu "[%f].") (t "reconsult(%f).")))) nil [22625 23536])
+            ("prolog-consult-string" function nil nil [23538 23624])
+            ("prolog-compile-string" variable (:default-value (quote ((eclipse "[%f].") (mercury "mmake ") (sicstus (eval (if (prolog-atleast-version (quote (3 . 7))) "prolog:zap_file(%m,%b,compile,%l)." "prolog:zap_file(%m,%b,compile)."))) (swi "[%f].") (t "compile(%f).")))) nil [23626 24683])
+            ("prolog-compile-string" function nil nil [24685 24771])
+            ("prolog-eof-string" variable (:default-value "end_of_file.
+") nil [24773 25163])
+            ("prolog-prompt-regexp" variable (:default-value (quote ((eclipse "^[a-zA-Z0-9()]* *\\?- \\|^\\[[a-zA-Z]* [0-9]*\\]:") (sicstus "| [ ?][- ] *") (swi "^\\(\\[[a-zA-Z]*\\] \\)?[1-9]?[0-9]*[ ]?\\?- \\|^| +") (gnu "^| \\?-") (t "^|? *\\?-")))) nil [25165 25626])
+            ("prolog-prompt-regexp" function nil nil [25628 25712])
+            ("prolog-debug-on-string" variable (:default-value "debug.
+") nil [26053 26197])
+            ("prolog-debug-off-string" variable (:default-value "nodebug.
+") nil [26199 26347])
+            ("prolog-trace-on-string" variable (:default-value "trace.
+") nil [26349 26490])
+            ("prolog-trace-off-string" variable (:default-value "notrace.
+") nil [26492 26637])
+            ("prolog-zip-on-string" variable (:default-value "zip.
+") nil [26639 26789])
+            ("prolog-zip-off-string" variable (:default-value "nozip.
+") nil [26791 26945])
+            ("prolog-use-standard-consult-compile-method-flag" variable (:default-value t) nil [26947 27505])
+            ("prolog-imenu-flag" variable (:default-value t) nil [27526 27679])
+            ("prolog-imenu-max-lines" variable (:default-value 3000) nil [27681 27898])
+            ("prolog-info-predicate-index" variable (:default-value "(sicstus)Predicate Index") nil [27900 28076])
+            ("prolog-underscore-wordchar-flag" variable nil nil [28078 28249])
+            ("make-obsolete-variable" code nil nil [28250 28354])
+            ("prolog-use-sicstus-sd" variable nil nil [28356 28523])
+            ("prolog-char-quote-workaround" variable nil nil [28525 28760])
+            ("make-obsolete-variable" code nil nil [28761 28826])
+            ("prolog-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 95 (if prolog-underscore-wordchar-flag "w" "_") table) (modify-syntax-entry 43 "." table) (modify-syntax-entry 45 "." table) (modify-syntax-entry 61 "." table) (modify-syntax-entry 60 "." table) (modify-syntax-entry 62 "." table) (modify-syntax-entry 124 "." table) (modify-syntax-entry 39 "\"" table) (when (and prolog-char-quote-workaround (not (fboundp (quote syntax-propertize-rules)))) (modify-syntax-entry 48 "\\" table)) (modify-syntax-entry 37 "<" table) (modify-syntax-entry 10 ">" table) (if (featurep (quote xemacs)) (progn (modify-syntax-entry 42 ". 67" table) (modify-syntax-entry 47 ". 58" table)) (modify-syntax-entry 42 ". 23b" table) (modify-syntax-entry 47 ". 14" table)) table)) nil [29070 30470])
+            ("prolog-atom-char-regexp" variable
+               (:constant-flag t
+                :default-value "[[:alnum:]_$]")
+                nil [30472 30597])
+            ("prolog-atom-regexp" variable
+               (:constant-flag t
+                :default-value (format "[[:lower:]$]%s*" prolog-atom-char-regexp))
+                nil [30598 30680])
+            ("prolog-left-paren" variable
+               (:constant-flag t
+                :default-value "[[({]")
+                nil [30682 30814])
+            ("prolog-right-paren" variable
+               (:constant-flag t
+                :default-value "[])}]")
+                nil [30815 30948])
+            ("prolog-quoted-atom-regexp" variable
+               (:constant-flag t
+                :default-value "\\(^\\|[^0-9]\\)\\('\\([^
+']\\|\\\\'\\)*'\\)")
+                nil [30950 31071])
+            ("prolog-string-regexp" variable
+               (:constant-flag t
+                :default-value "\\(\"\\([^
+\"]\\|\\\\\"\\)*\"\\)")
+                nil [31072 31171])
+            ("prolog-head-delimiter" variable
+               (:constant-flag t
+                :default-value "\\(:-\\|\\+:\\|-:\\|\\+\\?\\|-\\?\\|-->\\)")
+                nil [31172 31321])
+            ("prolog-compilation-buffer" variable (:default-value "*prolog-compilation*") nil [31323 31445])
+            ("prolog-temporary-file-name" variable nil nil [31447 31486])
+            ("prolog-keywords-i" variable nil nil [31487 31517])
+            ("prolog-types-i" variable nil nil [31518 31545])
+            ("prolog-mode-specificators-i" variable nil nil [31546 31586])
+            ("prolog-determinism-specificators-i" variable nil nil [31587 31634])
+            ("prolog-directives-i" variable nil nil [31635 31667])
+            ("prolog-eof-string-i" variable nil nil [31668 31700])
+            ("prolog-help-function-i" variable nil nil [31750 31785])
+            ("prolog-align-rules" variable (:default-value (eval-when-compile (mapcar (lambda (x) (let ((name (car x)) (sym (cdr x))) (\` ((\, (intern (format "prolog-%s" name))) (regexp \, (format "\\(\\s-*\\)%s\\(\\s-*\\)" sym)) (tab-stop) (modes quote (prolog-mode)) (group 1 2))))) (quote (("dcg" . "-->") ("rule" . ":-") ("simplification" . "<=>") ("propagation" . "==>")))))) nil [31787 32225])
+            ("smie" include nil nil [32244 32259])
+            ("prolog-operator-chars" variable
+               (:constant-flag t
+                :default-value "-\\\\#&*+./:<=>?@\\^`~")
+                nil [32261 32318])
+            ("prolog-smie-forward-token" function nil nil [32320 32847])
+            ("prolog-smie-backward-token" function nil nil [32849 33400])
+            ("prolog-smie-grammar" variable
+               (:constant-flag t
+                :default-value (quote (("." -10000 -10000) ("?-" nil -1200) (":-" -1200 -1200) ("-->" -1200 -1200) ("discontiguous" nil -1150) ("dynamic" nil -1150) ("meta_predicate" nil -1150) ("module_transparent" nil -1150) ("multifile" nil -1150) ("public" nil -1150) ("|" -1105 -1105) (";" -1100 -1100) ("*->" -1050 -1050) ("->" -1050 -1050) ("," -1000 -1000) ("\\+" nil -900) ("=" -700 -700) ("\\=" -700 -700) ("=.." -700 -700) ("==" -700 -700) ("\\==" -700 -700) ("@<" -700 -700) ("@=<" -700 -700) ("@>" -700 -700) ("@>=" -700 -700) ("is" -700 -700) ("=:=" -700 -700) ("=\\=" -700 -700) ("<" -700 -700) ("=<" -700 -700) (">" -700 -700) (">=" -700 -700) (":" -600 -600) ("+" -500 -500) ("-" -500 -500) ("/\\" -500 -500) ("\\/" -500 -500) ("*" -400 -400) ("/" -400 -400) ("//" -400 -400) ("rem" -400 -400) ("mod" -400 -400) ("<<" -400 -400) (">>" -400 -400) ("**" -200 -200) ("^" -200 -200) (:smie-closer-alist (t . ".")))))
+                nil [33402 34972])
+            ("prolog-smie-rules" function (:arguments ("kind" "token")) nil [34974 37491])
+            ("prolog-atleast-version" function (:arguments ("version")) nil [37697 38221])
+            ("define-abbrev-table" code nil nil [38223 38273])
+            ("prolog-find-value-by-system" function (:arguments ("alist")) nil [38387 39304])
+            ("prolog-syntax-propertize-function" variable
+               (:constant-flag t
+                :default-value (when (fboundp (quote syntax-propertize-rules)) (syntax-propertize-rules ("\\<0\\(''?\\)" (1 (unless (save-excursion (nth 8 (syntax-ppss (match-beginning 0)))) (string-to-syntax "_")))) ("\\<[1-9][0-9]*\\('\\)[0-9a-zA-Z]" (1 "_")) ("\\\\[x0-7][0-9a-fA-F]*\\(\\\\\\)" (1 "_")))))
+                nil [39306 40115])
+            ("prolog-mode-variables" function nil nil [40117 41562])
+            ("prolog-mode-keybindings-common" function (:arguments ("map")) nil [41564 41947])
+            ("prolog-mode-keybindings-edit" function (:arguments ("map")) nil [41949 44128])
+            ("prolog-mode-keybindings-inferior" function (:arguments ("_map")) nil [44130 44284])
+            ("prolog-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (prolog-mode-keybindings-common map) (prolog-mode-keybindings-edit map) map)) nil [44286 44435])
+            ("prolog-mode-hook" variable nil nil [44438 44536])
+            ("define-derived-mode" code nil nil [44553 45892])
+            ("mercury-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map prolog-mode-map) map)) nil [45894 46008])
+            ("define-derived-mode" code nil nil [46025 46220])
+            ("prolog-inferior-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (prolog-mode-keybindings-common map) (prolog-mode-keybindings-inferior map) (define-key map [remap self-insert-command] (quote prolog-inferior-self-insert-command)) map)) nil [46389 46643])
+            ("prolog-inferior-mode-hook" variable nil nil [46645 46761])
+            ("prolog-inferior-error-regexp-alist" variable (:default-value (quote (("^\\(?:\\?- *\\)?\\(\\(?:ERROR\\|\\(W\\)arning\\): *\\(.*?\\):\\([1-9][0-9]*\\):\\(?:\\([0-9]*\\):\\)?\\)\\(?:$\\| \\)" 3 4 5 (2) 1) gnu))) nil [46763 47166])
+            ("prolog-inferior-self-insert-command" function (:user-visible-flag t) nil [47168 48335])
+            ("declare-function" code nil nil [48337 48411])
+            ("compilation-error-regexp-alist" variable nil nil [48412 48451])
+            ("define-derived-mode" code nil nil [48453 50102])
+            ("prolog-input-filter" function (:arguments ("str")) nil [50104 50395])
+            ("define-obsolete-function-alias" code nil nil [50454 50523])
+            ("run-prolog" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [50539 51361])
+            ("prolog-inferior-guess-flavor" function (:arguments ("ignored")) nil [51363 52163])
+            ("prolog-ensure-process" function (:arguments ("wait")) nil [52165 54580])
+            ("prolog-inferior-buffer" function (:arguments ("dont-run")) nil [54582 54752])
+            ("prolog-process-insert-string" function (:arguments ("process" "string")) nil [54754 55323])
+            ("declare-function" code nil nil [55495 55552])
+            ("declare-function" code nil nil [55553 55653])
+            ("prolog-old-process-region" function (:arguments ("compilep" "start" "end")) nil [55655 56606])
+            ("prolog-old-process-predicate" function (:arguments ("compilep")) nil [56608 56842])
+            ("prolog-old-process-buffer" function (:arguments ("compilep")) nil [56844 57049])
+            ("prolog-old-process-file" function (:arguments ("compilep")) nil [57051 57524])
+            ("prolog-consult-file" function (:user-visible-flag t) nil [57808 58019])
+            ("prolog-consult-buffer" function (:user-visible-flag t) nil [58021 58222])
+            ("prolog-consult-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [58224 58472])
+            ("prolog-consult-predicate" function (:user-visible-flag t) nil [58474 58712])
+            ("prolog-compile-file" function (:user-visible-flag t) nil [58714 58921])
+            ("prolog-compile-buffer" function (:user-visible-flag t) nil [58923 59120])
+            ("prolog-compile-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [59122 59366])
+            ("prolog-compile-predicate" function (:user-visible-flag t) nil [59368 59602])
+            ("prolog-buffer-module" function nil nil [59604 60697])
+            ("prolog-build-prolog-command" function (:arguments ("compilep" "file" "buffername" "first-line")) nil [60699 62989])
+            ("prolog-process-flag" variable nil nil [63087 63209])
+            ("prolog-consult-compile-output" variable nil nil [63210 63313])
+            ("prolog-consult-compile-first-line" variable (:default-value 1) nil [63314 63449])
+            ("prolog-consult-compile-file" variable nil nil [63450 63549])
+            ("prolog-consult-compile-real-file" variable nil nil [63550 63647])
+            ("compilation-parse-errors-function" variable nil nil [63649 63691])
+            ("prolog-consult-compile" function (:arguments ("compilep" "file" "first-line")) nil [63693 66624])
+            ("compilation-error-list" variable nil nil [66626 66657])
+            ("prolog-parse-sicstus-compilation-errors" function (:arguments ("limit")) nil [66659 67930])
+            ("prolog-consult-compile-filter" function (:arguments ("process" "output")) nil [67932 72006])
+            ("prolog-consult-compile-file" function (:arguments ("compilep")) nil [72008 72364])
+            ("prolog-consult-compile-buffer" function (:arguments ("compilep")) nil [72366 72569])
+            ("prolog-consult-compile-region" function (:arguments ("compilep" "beg" "end")) nil [72571 73073])
+            ("prolog-consult-compile-predicate" function (:arguments ("compilep")) nil [73075 73318])
+            ("prolog-font-lock-object-matcher" function (:arguments ("bound")) nil [73506 74223])
+            ("prolog-face-name-p" function (:arguments ("facename")) nil [74225 74656])
+            ("prolog-font-lock-keywords" function nil nil [74679 83724])
+            ("prolog-find-unmatched-paren" function nil nil [83729 83924])
+            ("prolog-paren-balance" function nil nil [83927 84206])
+            ("prolog-electric--if-then-else" function nil nil [84208 85567])
+            ("prolog-comment-limits" function nil nil [85591 89304])
+            ("prolog-guess-fill-prefix" function nil nil [89306 90508])
+            ("prolog-fill-paragraph" function (:user-visible-flag t) nil [90510 91577])
+            ("prolog-do-auto-fill" function nil nil [91579 91813])
+            ("defalias" code nil nil [91815 92029])
+            ("prolog-help-function" variable (:default-value (quote ((mercury nil) (eclipse prolog-help-online) (sicstus prolog-find-documentation) (swi prolog-help-online) (t prolog-help-online)))) nil [92188 92471])
+            ("put" code nil nil [92472 92523])
+            ("prolog-help-on-predicate" function (:user-visible-flag t) nil [92525 93414])
+            ("Info-goto-node" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [93417 93456])
+            ("declare-function" code nil nil [93457 93524])
+            ("prolog-help-info" function (:arguments ("predicate")) nil [93526 94673])
+            ("prolog-Info-follow-nearest-node" function nil nil [94675 94815])
+            ("prolog-help-online" function (:arguments ("predicate")) nil [94817 94978])
+            ("prolog-help-apropos" function
+               (:user-visible-flag t
+                :arguments ("string"))
+                nil [94980 95403])
+            ("prolog-atom-under-point" function nil nil [95405 95858])
+            ("prolog-find-documentation" function (:user-visible-flag t) nil [96031 96230])
+            ("prolog-info-alist" variable nil nil [96232 96354])
+            ("prolog-goto-predicate-info" function
+               (:user-visible-flag t
+                :arguments ("predicate"))
+                nil [96641 97304])
+            ("prolog-read-predicate" function nil nil [97306 98037])
+            ("prolog-build-info-alist" function (:arguments ("verbose")) nil [98039 100271])
+            ("prolog-bsts" function (:arguments ("string")) nil [100579 100858])
+            ("prolog-temporary-file" function nil nil [101186 101651])
+            ("prolog-goto-prolog-process-buffer" function nil nil [101653 101828])
+            ("declare-function" code nil nil [101830 101876])
+            ("prolog-enable-sicstus-sd" function (:user-visible-flag t) nil [101878 102384])
+            ("declare-function" code nil nil [102386 102464])
+            ("prolog-disable-sicstus-sd" function (:user-visible-flag t) nil [102466 102835])
+            ("prolog-toggle-sicstus-sd" function (:user-visible-flag t) nil [102837 103092])
+            ("prolog-debug-on" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [103094 103449])
+            ("prolog-debug-off" function (:user-visible-flag t) nil [103451 103686])
+            ("prolog-trace-on" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [103688 104039])
+            ("prolog-trace-off" function (:user-visible-flag t) nil [104041 104274])
+            ("prolog-zip-on" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [104276 104797])
+            ("prolog-zip-off" function (:user-visible-flag t) nil [104799 105054])
+            ("prolog-get-predspec" function nil nil [106272 106790])
+            ("or" code nil nil [106846 107474])
+            ("prolog-pred-start" function nil nil [107476 108788])
+            ("prolog-pred-end" function nil nil [108790 110574])
+            ("prolog-clause-start" function (:arguments ("not-allow-methods")) nil [110576 113075])
+            ("prolog-clause-end" function (:arguments ("not-allow-methods")) nil [113077 114069])
+            ("prolog-clause-info" function nil nil [114071 115207])
+            ("prolog-in-object" function nil nil [115209 115820])
+            ("prolog-beginning-of-clause" function (:user-visible-flag t) nil [115822 116267])
+            ("prolog-end-of-clause" function (:user-visible-flag t) nil [116436 116835])
+            ("prolog-beginning-of-predicate" function (:user-visible-flag t) nil [117049 117718])
+            ("prolog-end-of-predicate" function (:user-visible-flag t) nil [117720 118010])
+            ("prolog-insert-predspec" function (:user-visible-flag t) nil [118012 118262])
+            ("prolog-view-predspec" function (:user-visible-flag t) nil [118264 118504])
+            ("prolog-insert-predicate-template" function (:user-visible-flag t) nil [118506 119037])
+            ("prolog-insert-next-clause" function (:user-visible-flag t) nil [119039 119199])
+            ("prolog-insert-module-modeline" function (:user-visible-flag t) nil [119201 119474])
+            ("defalias" code nil nil [119476 119696])
+            ("prolog-indent-predicate" function (:user-visible-flag t) nil [119698 119842])
+            ("prolog-indent-buffer" function (:user-visible-flag t) nil [119844 119967])
+            ("prolog-mark-clause" function (:user-visible-flag t) nil [119969 120272])
+            ("prolog-mark-predicate" function (:user-visible-flag t) nil [120274 120577])
+            ("prolog-electric--colon" function nil nil [120579 121248])
+            ("prolog-electric--dash" function nil nil [121250 121914])
+            ("prolog-electric--dot" function nil nil [121916 123645])
+            ("prolog-electric--underscore" function nil nil [123647 124284])
+            ("prolog-post-self-insert" function nil nil [124286 124548])
+            ("prolog-find-term" function (:arguments ("functor" "arity" "prefix")) nil [124550 125663])
+            ("prolog-variables-to-anonymous" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [125665 126033])
+            ("unless" code nil nil [127499 127672])
+            ("easy-menu-define" code nil nil [127776 128338])
+            ("easy-menu-define" code nil nil [128340 131009])
+            ("easy-menu-define" code nil nil [131011 132339])
+            ("prolog-menu" function nil nil [132341 133061])
+            ("easy-menu-define" code nil nil [133063 134657])
+            ("prolog-inferior-menu" function nil nil [134660 134923])
+            ("prolog-mode-version" function (:user-visible-flag t) nil [134925 135097])
+            ("prolog" package nil nil [135099 135116]))          
+      :file "prolog.el.gz"
+      :pointmax 135142
+      :fsize 33067
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 12290 . 12291) (symbol 12142 . 12159) (open-paren 12141 . 12142)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("compile" include nil nil [1059 1077])
+            ("grep" customgroup (:user-visible-flag t) nil [1080 1175])
+            ("grep-host-defaults-alist" variable nil nil [1177 1483])
+            ("grep-apply-setting" function (:arguments ("symbol" "value")) nil [1485 2133])
+            ("grep-window-height" variable nil nil [2150 2353])
+            ("grep-highlight-matches" variable (:default-value (quote auto-detect)) nil [2355 3886])
+            ("grep-scroll-output" variable nil nil [3888 4197])
+            ("grep-command" variable nil nil [4214 4752])
+            ("grep-template" variable nil nil [4754 5406])
+            ("grep-use-null-device" variable (:default-value (quote auto-detect)) nil [5408 6084])
+            ("grep-find-command" variable nil nil [6101 6459])
+            ("grep-find-template" variable nil nil [6461 7137])
+            ("grep-files-aliases" variable (:default-value (quote (("all" . "* .[!.]* ..?*") ("el" . "*.el") ("ch" . "*.[ch]") ("c" . "*.c") ("cc" . "*.cc *.cxx *.cpp *.C *.CC *.c++") ("cchh" . "*.cc *.[ch]xx *.[ch]pp *.[CHh] *.CC *.HH *.[ch]++") ("hh" . "*.hxx *.hpp *.[Hh] *.HH *.h++") ("h" . "*.h") ("l" . "[Cc]hange[Ll]og*") ("m" . "[Mm]akefile*") ("tex" . "*.tex") ("texi" . "*.texi") ("asm" . "*.[sS]")))) nil [7139 7733])
+            ("grep-find-ignored-directories" variable (:default-value vc-directory-exclusion-list) nil [7735 8128])
+            ("grep-find-ignored-files" variable (:default-value (cons ".#*" (delq nil (mapcar (lambda (s) (unless (string-match-p "/\\'" s) (concat "*" s))) completion-ignored-extensions)))) nil [8130 8604])
+            ("grep-error-screen-columns" variable nil nil [8606 8839])
+            ("grep-setup-hook" variable nil nil [8856 8990])
+            ("grep-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map compilation-minor-mode-map) (define-key map " " (quote scroll-up-command)) (define-key map [33554464] (quote scroll-down-command)) (define-key map "" (quote scroll-down-command)) (define-key map "" (quote next-error-follow-minor-mode)) (define-key map "" (quote compile-goto-error)) (define-key map "n" (quote next-error-no-select)) (define-key map "p" (quote previous-error-no-select)) (define-key map "{" (quote compilation-previous-file)) (define-key map "}" (quote compilation-next-file)) (define-key map "	" (quote compilation-next-error)) (define-key map [backtab] (quote compilation-previous-error)) (define-key map [menu-bar grep] (cons "Grep" (make-sparse-keymap "Grep"))) (define-key map [menu-bar grep compilation-kill-compilation] (quote (menu-item "Kill Grep" kill-compilation :help "Kill the currently running grep process"))) (define-key map [menu-bar grep compilation-separator2] (quote ("----"))) (define-key map [menu-bar grep compilation-compile] (quote (menu-item "Compile..." compile :help "Compile the program including the current buffer.  Default: run `make'"))) (define-key map [menu-bar grep compilation-rgrep] (quote (menu-item "Recursive grep..." rgrep :help "User-friendly recursive grep in directory tree"))) (define-key map [menu-bar grep compilation-lgrep] (quote (menu-item "Local grep..." lgrep :help "User-friendly grep in a directory"))) (define-key map [menu-bar grep compilation-grep-find] (quote (menu-item "Grep via Find..." grep-find :help "Run grep via find, with user-specified args"))) (define-key map [menu-bar grep compilation-grep] (quote (menu-item "Another grep..." grep :help "Run grep, with user-specified args, and collect output in a buffer."))) (define-key map [menu-bar grep compilation-recompile] (quote (menu-item "Repeat grep" recompile :help "Run grep again"))) (define-key map [menu-bar grep compilation-separator2] (quote ("----"))) (define-key map [menu-bar grep compilation-first-error] (quote (menu-item "First Match" first-error :help "Restart at the first match, visit corresponding location"))) (define-key map [menu-bar grep compilation-previous-error] (quote (menu-item "Previous Match" previous-error :help "Visit the previous match and corresponding location"))) (define-key map [menu-bar grep compilation-next-error] (quote (menu-item "Next Match" next-error :help "Visit the next match and corresponding location"))) map)) nil [8992 11641])
+            ("grep-mode-tool-bar-map" variable (:default-value (when (keymapp (butlast tool-bar-map)) (let ((map (butlast (copy-keymap tool-bar-map))) (help (last tool-bar-map))) (tool-bar-local-item "left-arrow" (quote previous-error-no-select) (quote previous-error-no-select) map :rtl "right-arrow" :help "Goto previous match") (tool-bar-local-item "right-arrow" (quote next-error-no-select) (quote next-error-no-select) map :rtl "left-arrow" :help "Goto next match") (tool-bar-local-item "cancel" (quote kill-compilation) (quote kill-compilation) map :enable (quote (let ((buffer (compilation-find-buffer))) (get-buffer-process buffer))) :help "Stop grep") (tool-bar-local-item "refresh" (quote recompile) (quote recompile) map :help "Restart grep") (append map help)))) nil [11643 12570])
+            ("defalias" code nil nil [12572 12611])
+            ("grep-last-buffer" variable nil nil [13111 13366])
+            ("grep-regexp-alist" variable
+               (:constant-flag t
+                :default-value (quote (("^\\(.*?[^/
+]\\):[ 	]*\\([1-9][0-9]*\\)[ 	]*:" 1 2 ((lambda nil (when grep-highlight-matches (let* ((beg (match-end 0)) (end (save-excursion (goto-char beg) (line-end-position))) (mbeg (text-property-any beg end (quote font-lock-face) grep-match-face))) (when mbeg (- mbeg beg))))) lambda nil (when grep-highlight-matches (let* ((beg (match-end 0)) (end (save-excursion (goto-char beg) (line-end-position))) (mbeg (text-property-any beg end (quote font-lock-face) grep-match-face)) (mend (and mbeg (next-single-property-change mbeg (quote font-lock-face) nil end)))) (when mend (- mend beg)))))) ("^Binary file \\(.+\\) matches$" 1 nil nil 0 1))))
+                nil [13383 14471])
+            ("grep-first-column" variable nil nil [14473 14579])
+            ("grep-error" variable (:default-value "grep hit") nil [14581 14659])
+            ("grep-hit-face" variable (:default-value compilation-info-face) nil [14800 14880])
+            ("grep-error-face" variable (:default-value (quote compilation-error)) nil [14882 14971])
+            ("grep-match-face" variable (:default-value (quote match)) nil [14973 15043])
+            ("grep-context-face" variable (:default-value (quote shadow)) nil [15045 15124])
+            ("grep-mode-font-lock-keywords" variable (:default-value (quote ((": \\(.+\\): \\(?:Permission denied\\|No such \\(?:file or directory\\|device or address\\)\\)$" 1 grep-error-face) ("^Grep[/a-zA-z]* started.*" (0 (quote (face nil compilation-message nil help-echo nil mouse-face nil)) t)) ("^Grep[/a-zA-z]* finished \\(?:(\\(matches found\\))\\|with \\(no matches found\\)\\).*" (0 (quote (face nil compilation-message nil help-echo nil mouse-face nil)) t) (1 compilation-info-face nil t) (2 compilation-warning-face nil t)) ("^Grep[/a-zA-z]* \\(exited abnormally\\|interrupt\\|killed\\|terminated\\)\\(?:.*with code \\([0-9]+\\)\\)?.*" (0 (quote (face nil compilation-message nil help-echo nil mouse-face nil)) t) (1 grep-error-face) (2 grep-error-face nil t)) ("^.+?[-=][0-9]+[-=].*
+" (0 grep-context-face))))) nil [15126 16321])
+            ("grep-program" variable (:default-value (purecopy "grep")) nil [16338 16525])
+            ("find-program" variable (:default-value (purecopy "find")) nil [16542 16687])
+            ("xargs-program" variable (:default-value (purecopy "xargs")) nil [16704 16902])
+            ("grep-find-use-xargs" variable nil nil [16919 17233])
+            ("grep-history" variable nil nil [17279 17329])
+            ("grep-find-history" variable nil nil [17345 17405])
+            ("grep-regexp-history" variable nil nil [17460 17492])
+            ("grep-files-history" variable nil nil [17493 17524])
+            ("grep-process-setup" function nil nil [17541 19023])
+            ("grep-filter" function nil nil [19025 20025])
+            ("grep-probe" function (:arguments ("command" "args" "func" "result")) nil [20027 20240])
+            ("grep-compute-defaults" function nil nil [20257 25842])
+            ("grep-tag-default" function nil nil [25844 26120])
+            ("grep-default-command" function nil nil [26122 27617])
+            ("define-compilation-mode" code nil nil [27635 28491])
+            ("grep" function
+               (:user-visible-flag t
+                :arguments ("command-args"))
+                nil [28509 30013])
+            ("grep-find" function
+               (:user-visible-flag t
+                :arguments ("command-args"))
+                nil [30031 30812])
+            ("defalias" code nil nil [30829 30861])
+            ("grep-expand-keywords" variable
+               (:constant-flag t
+                :default-value (quote (("<C>" mapconcat (function identity) opts " ") ("<D>" or dir ".") ("<F>" . files) ("<N>" . null-device) ("<X>" . excl) ("<R>" shell-quote-argument (or regexp "")))))
+                nil [30899 31304])
+            ("grep-expand-template" function (:arguments ("template" "regexp" "files" "dir" "excl")) nil [31306 32412])
+            ("grep-read-regexp" function nil nil [32414 32571])
+            ("grep-read-files" function (:arguments ("regexp")) nil [32573 33883])
+            ("lgrep" function
+               (:user-visible-flag t
+                :arguments ("regexp" "files" "dir" "confirm"))
+                nil [33900 36580])
+            ("find-name-arg" variable nil nil [36583 36605])
+            ("rgrep" function
+               (:user-visible-flag t
+                :arguments ("regexp" "files" "dir" "confirm"))
+                nil [36669 39070])
+            ("rgrep-default-command" function (:arguments ("regexp" "files" "dir")) nil [39072 41381])
+            ("zrgrep" function
+               (:user-visible-flag t
+                :arguments ("regexp" "files" "dir" "confirm" "template"))
+                nil [41398 43061])
+            ("defalias" code nil nil [43078 43104])
+            ("grep" package nil nil [43106 43121]))          
+      :file "grep.el.gz"
+      :pointmax 43145
+      :fsize 11454
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("comint" include nil nil [1297 1314])
+            ("newcomment" include nil nil [1338 1359])
+            ("unless" code nil nil [1546 2055])
+            ("unless" code nil nil [1447 1543])
+            ("unless" code nil nil [1380 1444])
+            ("unless" code nil nil [2078 2269])
+            ("octave" customgroup (:user-visible-flag t) nil [2272 2506])
+            ("define-obsolete-function-alias" code nil nil [2508 2593])
+            ("define-abbrev-table" code nil nil [2595 2745])
+            ("octave-comment-char" variable (:default-value 35) nil [2747 2820])
+            ("octave-comment-start" variable (:default-value (char-to-string octave-comment-char)) nil [2822 2937])
+            ("octave-comment-start-skip" variable (:default-value "\\(^\\|\\S<\\)\\(?:%!\\|\\s<+\\)\\s-*") nil [2939 3067])
+            ("octave-function-header-regexp" variable (:default-value (concat "^\\s-*\\_<\\(function\\)\\_>" "\\([^=;(
+]*=[ 	]*\\|[ 	]*\\)\\(\\(?:\\w\\|\\s_\\)+\\)\\_>")) nil [3069 3354])
+            ("octave-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "\256" (quote octave-find-definition)) (define-key map "\212" (quote octave-indent-new-comment-line)) (define-key map "" (quote octave-previous-code-line)) (define-key map "" (quote octave-next-code-line)) (define-key map "" (quote octave-beginning-of-line)) (define-key map "" (quote octave-end-of-line)) (define-key map [remap down-list] (quote smie-down-list)) (define-key map "\210" (quote octave-mark-block)) (define-key map "]" (quote smie-close-block)) (define-key map "/" (quote smie-close-block)) (define-key map ";" (quote octave-update-function-file-comment)) (define-key map "d" (quote octave-help)) (define-key map "a" (quote octave-lookfor)) (define-key map "" (quote octave-source-file)) (define-key map "" (quote octave-insert-defun)) (define-key map "	l" (quote octave-send-line)) (define-key map "	b" (quote octave-send-block)) (define-key map "	f" (quote octave-send-defun)) (define-key map "	r" (quote octave-send-region)) (define-key map "	a" (quote octave-send-buffer)) (define-key map "	s" (quote octave-show-process-buffer)) (define-key map "	q" (quote octave-hide-process-buffer)) (define-key map "	k" (quote octave-kill-process)) (define-key map "	" (quote octave-send-line)) (define-key map "	" (quote octave-send-block)) (define-key map "	" (quote octave-send-defun)) (define-key map "	" (quote octave-send-region)) (define-key map "	" (quote octave-send-buffer)) (define-key map "	" (quote octave-show-process-buffer)) (define-key map "	" (quote octave-hide-process-buffer)) (define-key map "	" (quote octave-kill-process)) map)) nil [3358 5162])
+            ("easy-menu-define" code nil nil [5166 7514])
+            ("octave-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 13 " " table) (modify-syntax-entry 43 "." table) (modify-syntax-entry 45 "." table) (modify-syntax-entry 61 "." table) (modify-syntax-entry 42 "." table) (modify-syntax-entry 47 "." table) (modify-syntax-entry 62 "." table) (modify-syntax-entry 60 "." table) (modify-syntax-entry 38 "." table) (modify-syntax-entry 124 "." table) (modify-syntax-entry 33 "." table) (modify-syntax-entry 92 "." table) (modify-syntax-entry 39 "." table) (modify-syntax-entry 96 "." table) (modify-syntax-entry 46 "." table) (modify-syntax-entry 34 "\"" table) (modify-syntax-entry 95 "_" table) (modify-syntax-entry 37 "< 13" table) (modify-syntax-entry 35 "< 13" table) (modify-syntax-entry 123 "(} 2c" table) (modify-syntax-entry 125 "){ 4c" table) (modify-syntax-entry 10 ">" table) table)) nil [7516 8974])
+            ("octave-font-lock-texinfo-comment" variable (:default-value t) nil [8976 9117])
+            ("octave-blink-matching-block" variable (:default-value t) nil [9119 9355])
+            ("octave-block-offset" variable (:default-value 2) nil [9357 9479])
+            ("octave-block-comment-start" variable (:default-value (concat (make-string 2 octave-comment-char) " ")) nil [9481 9636])
+            ("octave-continuation-offset" variable (:default-value 4) nil [9638 9755])
+            ("octave-continuation-marker-regexp" variable
+               (:constant-flag t
+                :default-value "\\\\\\|\\.\\.\\.")
+                nil [9777 9840])
+            ("octave-continuation-regexp" variable (:default-value (concat "[^#%
+]*\\(" octave-continuation-marker-regexp "\\)\\s-*\\(\\s<.*\\)?$")) nil [9843 9972])
+            ("octave-continuation-string" variable
+               (:constant-flag t
+                :default-value "...")
+                nil [10036 10136])
+            ("octave-mode-imenu-generic-expression" variable (:default-value (list (list nil octave-function-header-regexp 3))) nil [10138 10325])
+            ("octave-mode-hook" variable nil nil [10327 10421])
+            ("octave-send-show-buffer" variable (:default-value t) nil [10423 10549])
+            ("octave-send-line-auto-forward" variable (:default-value t) nil [10551 10750])
+            ("octave-send-echo-input" variable (:default-value t) nil [10752 10871])
+            ("smie" include nil nil [10897 10912])
+            ("let-when-compile" code nil nil [10914 15043])
+            ("octave-smie--funcall-p" function nil nil [15209 15335])
+            ("octave-smie--end-index-p" function nil nil [15337 15483])
+            ("octave-smie--in-parens-p" function nil nil [15485 15618])
+            ("octave-smie-backward-token" function nil nil [15620 16843])
+            ("octave-smie-forward-token" function nil nil [16845 18226])
+            ("octave--block-offset-keywords" variable
+               (:constant-flag t
+                :default-value (let* ((end-prec (nth 1 (assoc "end" octave-smie-grammar))) (end-matchers (delq nil (mapcar (lambda (x) (if (eq end-prec (nth 2 x)) (car x))) octave-smie-grammar)))) (delete "switch" end-matchers)))
+                nil [18228 18720])
+            ("octave-smie-rules" function (:arguments ("kind" "token")) nil [18722 19546])
+            ("octave-indent-comment" function nil nil [19548 19951])
+            ("octave-reserved-words" variable (:default-value (delq nil (mapcar (lambda (x) (setq x (car x)) (and (stringp x) (string-match "\\`[[:alpha:]]" x) x)) octave-smie-grammar))) nil [19955 20201])
+            ("octave-font-lock-keywords" variable (:default-value (list (cons (concat "\\_<" (regexp-opt octave-reserved-words) "\\_>") (quote font-lock-keyword-face)) (list (lambda (limit) (while (re-search-forward "\\_<en\\(?:d\\|umeratio\\(n\\)\\)\\_>" limit (quote move)) (let ((beg (match-beginning 0)) (end (match-end 0))) (unless (octave-in-string-or-comment-p) (when (if (match-end 1) (octave-smie--funcall-p) (octave-smie--end-index-p)) (put-text-property beg end (quote face) nil))))) nil)) (cons octave-operator-regexp (quote font-lock-builtin-face)) (list octave-function-header-regexp (quote (1 font-lock-keyword-face)) (quote (3 font-lock-function-name-face nil t))))) nil [20203 21447])
+            ("octave-syntax-propertize-function" function (:arguments ("start" "end")) nil [21449 22033])
+            ("octave-syntax-propertize-sqs" function (:arguments ("end")) nil [22035 22706])
+            ("electric-layout-rules" variable nil nil [22708 22738])
+            ("define-derived-mode" code nil nil [22755 25771])
+            ("inferior-octave-program" variable (:default-value "octave") nil [25775 25877])
+            ("inferior-octave-buffer" variable (:default-value "*Inferior Octave*") nil [25879 26008])
+            ("inferior-octave-prompt" variable (:default-value "\\(?:^octave\\(?:.bin\\|.exe\\)?\\(?:-[.0-9]+\\)?\\(?::[0-9]+\\)?\\|^debug\\|^\\)>+ ") nil [26010 26328])
+            ("inferior-octave-prompt-read-only" variable (:default-value comint-prompt-read-only) nil [26330 26524])
+            ("inferior-octave-startup-file" variable (:default-value (let ((n (file-name-nondirectory inferior-octave-program))) (locate-user-emacs-file (format "init_%s.m" n) (format ".emacs-%s" n)))) nil [26526 26893])
+            ("inferior-octave-startup-args" variable (:default-value (quote ("-i" "--no-line-editing"))) nil [26895 27191])
+            ("inferior-octave-mode-hook" variable nil nil [27193 27305])
+            ("inferior-octave-error-regexp-alist" variable (:default-value (quote (("error:\\s-*\\(.*?\\) at line \\([0-9]+\\), column \\([0-9]+\\)" 1 2 3 2 1) ("warning:\\s-*\\([^:
+]+\\):.*at line \\([0-9]+\\), column \\([0-9]+\\)" 1 2 3 1 1)))) nil [27307 27739])
+            ("inferior-octave-compilation-font-lock-keywords" variable (:default-value (quote (("\\_<PASS\\_>" . compilation-info-face) ("\\_<FAIL\\_>" . compilation-error-face) ("\\_<\\(warning\\):" 1 compilation-warning-face) ("\\_<\\(error\\):" 1 compilation-error-face) ("^\\s-*!!!!!.*\\|^.*failed$" . compilation-error-face)))) nil [27741 28124])
+            ("inferior-octave-process" variable nil nil [28126 28162])
+            ("inferior-octave-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map comint-mode-map) (define-key map "\256" (quote octave-find-definition)) (define-key map "	" (quote completion-at-point)) (define-key map "d" (quote octave-help)) (define-key map "a" (quote octave-lookfor)) (define-key map "\277" (quote comint-dynamic-list-filename-completions)) (define-key map "" (quote inferior-octave-dynamic-list-input-ring)) (define-key map [menu-bar inout list-history] (quote ("List Input History" . inferior-octave-dynamic-list-input-ring))) map)) nil [28164 28811])
+            ("inferior-octave-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table octave-mode-syntax-table))) table)) nil [28813 28987])
+            ("inferior-octave-font-lock-keywords" variable (:default-value (list (cons inferior-octave-prompt (quote font-lock-type-face)))) nil [28989 29225])
+            ("inferior-octave-output-list" variable nil nil [29227 29267])
+            ("inferior-octave-output-string" variable nil nil [29268 29310])
+            ("inferior-octave-receive-in-progress" variable nil nil [29311 29359])
+            ("define-obsolete-variable-alias" code nil nil [29361 29459])
+            ("inferior-octave-dynamic-complete-functions" variable (:default-value (quote (inferior-octave-completion-at-point comint-filename-completion))) nil [29461 29755])
+            ("info-lookup-mode" variable nil nil [29757 29782])
+            ("compilation-error-regexp-alist" variable nil nil [29783 29822])
+            ("compilation-mode-font-lock-keywords" variable nil nil [29823 29867])
+            ("declare-function" code nil nil [29869 29926])
+            ("inferior-octave-process-live-p" function nil nil [29928 30012])
+            ("define-derived-mode" code nil nil [30014 31727])
+            ("inferior-octave" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [31744 32566])
+            ("defalias" code nil nil [32583 32622])
+            ("inferior-octave-startup" function nil nil [32624 36122])
+            ("inferior-octave-completion-table" function nil nil [36124 36412])
+            ("inferior-octave-completion-at-point" function nil nil [36414 36990])
+            ("define-obsolete-function-alias" code nil nil [36992 37080])
+            ("inferior-octave-dynamic-list-input-ring" function (:user-visible-flag t) nil [37082 38210])
+            ("inferior-octave-output-digest" function (:arguments ("_proc" "string")) nil [38212 38865])
+            ("inferior-octave-check-process" function nil nil [38867 39059])
+            ("inferior-octave-send-list-and-digest" function (:arguments ("list")) nil [39061 39857])
+            ("inferior-octave-directory-tracker-resync" variable nil nil [39859 39912])
+            ("make-variable-buffer-local" code nil nil [39913 39983])
+            ("inferior-octave-directory-tracker" function (:arguments ("string")) nil [39985 40721])
+            ("inferior-octave-resync-dirs" function
+               (:user-visible-flag t
+                :arguments ("noerror"))
+                nil [40723 41195])
+            ("inferior-octave-minimal-columns" variable (:default-value 80) nil [41197 41340])
+            ("inferior-octave-last-column-width" variable nil nil [41342 41388])
+            ("inferior-octave-track-window-width-change" function nil nil [41390 41849])
+            ("octave-in-comment-p" function nil nil [41889 42000])
+            ("octave-in-string-p" function nil nil [42002 42111])
+            ("octave-in-string-or-comment-p" function nil nil [42113 42244])
+            ("octave-looking-at-kw" function (:arguments ("regexp")) nil [42246 42396])
+            ("octave-maybe-insert-continuation-string" function nil nil [42398 42665])
+            ("octave-completing-read" function nil nil [42667 43039])
+            ("octave-goto-function-definition" function (:arguments ("fn")) nil [43041 43793])
+            ("octave-function-file-p" function nil nil [43795 44484])
+            ("octave-skip-comment-forward" function (:arguments ("limit")) nil [44540 44813])
+            ("octave-function-file-comment" function nil nil [44853 45640])
+            ("octave-sync-function-file-names" function (:user-visible-flag t) nil [45642 47229])
+            ("octave-update-function-file-comment" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [47231 48694])
+            ("octave-function-comment-block" variable
+               (:default-value (quote ((t (:inherit font-lock-doc-face))))
+                :type "face")
+                nil [48696 48825])
+            ("texinfo" include nil nil [48846 48864])
+            ("octave-font-lock-texinfo-comment" function nil nil [48867 50062])
+            ("octave-indent-new-comment-line" function
+               (:user-visible-flag t
+                :arguments ("soft"))
+                nil [50083 50399])
+            ("octave--indent-new-comment-line" function (:arguments ("orig" "args")) nil [50401 50889])
+            ("define-obsolete-function-alias" code nil nil [50891 50971])
+            ("octave-next-code-line" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [50986 51550])
+            ("octave-previous-code-line" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [51552 51887])
+            ("octave-beginning-of-line" function (:user-visible-flag t) nil [51889 52777])
+            ("octave-end-of-line" function (:user-visible-flag t) nil [52779 53698])
+            ("octave-mark-block" function (:user-visible-flag t) nil [53700 54300])
+            ("octave-beginning-of-defun" function (:arguments ("arg")) nil [54302 55058])
+            ("octave-fill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("_arg"))
+                nil [55060 58088])
+            ("octave-completion-at-point" function nil nil [58090 58649])
+            ("define-obsolete-function-alias" code nil nil [58651 58737])
+            ("octave-add-log-current-defun" function nil nil [58739 59046])
+            ("define-skeleton" code nil nil [59085 59973])
+            ("octave-kill-process" function (:user-visible-flag t) nil [60026 60626])
+            ("octave-show-process-buffer" function (:user-visible-flag t) nil [60628 60886])
+            ("octave-hide-process-buffer" function (:user-visible-flag t) nil [60888 61153])
+            ("octave-source-file" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [61155 61764])
+            ("octave-send-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [61766 63053])
+            ("octave-send-buffer" function (:user-visible-flag t) nil [63055 63203])
+            ("octave-send-block" function (:user-visible-flag t) nil [63205 63394])
+            ("octave-send-defun" function (:user-visible-flag t) nil [63396 63581])
+            ("octave-send-line" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [63583 64108])
+            ("octave-eval-print-last-sexp" function (:user-visible-flag t) nil [64110 64624])
+            ("octave-eldoc-message-style" variable (:default-value (quote auto)) nil [64629 64899])
+            ("octave-eldoc-cache" variable nil nil [64935 64966])
+            ("octave-eldoc-function-signatures" function (:arguments ("fn")) nil [64968 65520])
+            ("octave-eldoc-function" function nil nil [65522 67215])
+            ("octave-help-buffer" variable (:default-value "*Octave Help*") nil [67217 67332])
+            ("declare-function" code nil nil [67376 67434])
+            ("define-button-type" code nil nil [67436 67563])
+            ("define-button-type" code nil nil [67565 67737])
+            ("octave-help-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "\256" (quote octave-find-definition)) (define-key map "d" (quote octave-help)) (define-key map "a" (quote octave-lookfor)) map)) nil [67739 67953])
+            ("define-derived-mode" code nil nil [67955 68307])
+            ("octave-help" function
+               (:user-visible-flag t
+                :arguments ("fn"))
+                nil [68309 70687])
+            ("octave-lookfor" function
+               (:user-visible-flag t
+                :arguments ("str" "all"))
+                nil [70689 72338])
+            ("octave-source-directories" variable nil nil [72340 72545])
+            ("octave-source-directories" function nil nil [72547 72856])
+            ("octave-find-definition-filename-function" variable (:default-value (function octave-find-definition-default-filename)) nil [72858 72951])
+            ("octave-find-definition-default-filename" function (:arguments ("name")) nil [72953 73794])
+            ("find-tag-marker-ring" variable nil nil [73796 73825])
+            ("octave-find-definition" function
+               (:user-visible-flag t
+                :arguments ("fn"))
+                nil [73827 75147])
+            ("octave" package nil nil [75149 75166]))          
+      :file "octave.el.gz"
+      :pointmax 75191
+      :fsize 19396
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 48864 . 48865) (symbol 48828 . 48845) (open-paren 48827 . 48828) (close-paren 9840 . 9841) (symbol 9758 . 9774) (open-paren 9757 . 9758) (close-paren 2269 . 2270) (symbol 2058 . 2075) (open-paren 2057 . 2058) (close-paren 2055 . 2056) (symbol 1361 . 1377) (open-paren 1360 . 1361)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("comint" include nil nil [2758 2775])
+            ("lisp-mode" include nil nil [2776 2796])
+            ("inferior-lisp" customgroup (:user-visible-flag t) nil [2800 2905])
+            ("inferior-lisp-filter-regexp" variable (:default-value "\\`\\s *\\(:\\(\\w\\|\\s_\\)\\)?\\s *\\'") nil [2907 3262])
+            ("inferior-lisp-mode-map" variable (:default-value (let ((map (copy-keymap comint-mode-map))) (set-keymap-parent map lisp-mode-shared-map) (define-key map "" (quote lisp-eval-last-sexp)) (define-key map "" (quote lisp-load-file)) (define-key map "" (quote lisp-compile-file)) (define-key map "" (quote lisp-show-arglist)) (define-key map "" (quote lisp-describe-sym)) (define-key map "" (quote lisp-show-function-documentation)) (define-key map "" (quote lisp-show-variable-documentation)) map)) nil [3264 3784])
+            ("easy-menu-define" code nil nil [3786 4281])
+            ("define-key" code nil nil [4375 4429])
+            ("define-key" code nil nil [4451 4509])
+            ("define-key" code nil nil [4527 4581])
+            ("define-key" code nil nil [4582 4637])
+            ("define-key" code nil nil [4638 4700])
+            ("define-key" code nil nil [4701 4759])
+            ("define-key" code nil nil [4760 4817])
+            ("define-key" code nil nil [4818 4871])
+            ("define-key" code nil nil [4872 4925])
+            ("define-key" code nil nil [4926 4982])
+            ("define-key" code nil nil [5001 5057])
+            ("define-key" code nil nil [5058 5114])
+            ("define-key" code nil nil [5115 5186])
+            ("define-key" code nil nil [5187 5258])
+            ("inferior-lisp-install-letter-bindings" function nil nil [5888 6961])
+            ("inferior-lisp-program" variable (:default-value "lisp") nil [6963 7113])
+            ("inferior-lisp-load-command" variable (:default-value "(load \"%s\")
+") nil [7115 7645])
+            ("inferior-lisp-prompt" variable (:default-value "^[^> 
+]*>+:? *") nil [7647 8188])
+            ("inferior-lisp-buffer" variable (:user-visible-flag t) nil [8190 9903])
+            ("inferior-lisp-mode-hook" variable (:default-value (quote nil)) nil [9905 9986])
+            ("put" code nil nil [9988 10034])
+            ("define-derived-mode" code nil nil [10036 12788])
+            ("lisp-get-old-input" function nil nil [12790 12980])
+            ("lisp-input-filter" function (:arguments ("str")) nil [12982 13127])
+            ("inferior-lisp" function
+               (:user-visible-flag t
+                :arguments ("cmd"))
+                nil [13144 14038])
+            ("defalias" code nil nil [14055 14090])
+            ("lisp-eval-paragraph" function
+               (:user-visible-flag t
+                :arguments ("and-go"))
+                nil [14092 14364])
+            ("lisp-eval-region" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "and-go"))
+                nil [14366 14696])
+            ("lisp-compile-string" function (:arguments ("string")) nil [14698 14921])
+            ("lisp-eval-string" function (:arguments ("string")) nil [14923 15086])
+            ("lisp-do-defun" function (:arguments ("do-string" "do-region")) nil [15088 15860])
+            ("lisp-eval-defun" function
+               (:user-visible-flag t
+                :arguments ("and-go"))
+                nil [15862 16181])
+            ("lisp-eval-last-sexp" function
+               (:user-visible-flag t
+                :arguments ("and-go"))
+                nil [16183 16443])
+            ("lisp-eval-form-and-next" function (:user-visible-flag t) nil [16445 16679])
+            ("lisp-compile-region" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "and-go"))
+                nil [16681 16981])
+            ("lisp-compile-defun" function
+               (:user-visible-flag t
+                :arguments ("and-go"))
+                nil [16983 17314])
+            ("switch-to-lisp" function
+               (:user-visible-flag t
+                :arguments ("eob-p"))
+                nil [17316 17833])
+            ("lisp-eval-region-and-go" function
+               (:user-visible-flag t
+                :arguments ("start" "end"))
+                nil [18098 18270])
+            ("lisp-eval-defun-and-go" function (:user-visible-flag t) nil [18272 18418])
+            ("lisp-compile-region-and-go" function
+               (:user-visible-flag t
+                :arguments ("start" "end"))
+                nil [18420 18601])
+            ("lisp-compile-defun-and-go" function (:user-visible-flag t) nil [18603 18758])
+            ("lisp-prev-l/c-dir/file" variable nil nil [20272 20497])
+            ("lisp-source-modes" variable (:default-value (quote (lisp-mode))) nil [20499 20843])
+            ("lisp-load-file" function
+               (:user-visible-flag t
+                :arguments ("file-name"))
+                nil [20845 21400])
+            ("lisp-compile-file" function
+               (:user-visible-flag t
+                :arguments ("file-name"))
+                nil [21403 21961])
+            ("lisp-function-doc-command" variable (:default-value "(let ((fn '%s))
+     (format t \"Documentation for ~a:~&~a\"
+	     fn (documentation fn 'function))
+     (values))
+") nil [22174 22396])
+            ("lisp-var-doc-command" variable (:default-value "(let ((v '%s))
+     (format t \"Documentation for ~a:~&~a\"
+	     v (documentation v 'variable))
+     (values))
+") nil [22398 22612])
+            ("lisp-arglist-command" variable (:default-value "(let ((fn '%s))
+     (format t \"Arglist for ~a: ~a\" fn (arglist fn))
+     (values))
+") nil [22614 22796])
+            ("lisp-describe-sym-command" variable (:default-value "(describe '%s)
+") nil [22798 22920])
+            ("lisp-symprompt" function (:arguments ("prompt" "default")) nil [23006 23236])
+            ("lisp-fn-called-at-pt" function nil nil [23293 23693])
+            ("lisp-var-at-pt" function nil nil [23743 23940])
+            ("lisp-show-function-documentation" function
+               (:user-visible-flag t
+                :arguments ("fn"))
+                nil [24094 24419])
+            ("lisp-show-variable-documentation" function
+               (:user-visible-flag t
+                :arguments ("var"))
+                nil [24421 24725])
+            ("lisp-show-arglist" function
+               (:user-visible-flag t
+                :arguments ("fn"))
+                nil [24727 25007])
+            ("lisp-describe-sym" function
+               (:user-visible-flag t
+                :arguments ("sym"))
+                nil [25009 25296])
+            ("inferior-lisp-proc" function nil nil [25389 25635])
+            ("inferior-lisp-load-hook" variable nil nil [25708 25804])
+            ("run-hooks" code nil nil [25806 25842])
+            ("inf-lisp" package nil nil [27860 27879]))          
+      :file "inf-lisp.el.gz"
+      :pointmax 27907
+      :fsize 8295
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("ansi-color" include nil nil [12249 12270])
+            ("cl-lib" include nil nil [12271 12288])
+            ("comint" include nil nil [12289 12306])
+            ("json" include nil nil [12307 12322])
+            ("tramp-sh" include nil nil [12323 12342])
+            ("view-return-to-alist" variable nil nil [12371 12400])
+            ("compilation-error-regexp-alist" variable nil nil [12401 12440])
+            ("outline-heading-end-regexp" variable nil nil [12441 12476])
+            ("comint-mode" function (:prototype-flag t) nil [12478 12510])
+            ("help-function-arglist" function (:prototype-flag t) nil [12511 12555])
+            ("add-to-list" code nil nil [12572 12647])
+            ("add-to-list" code nil nil [12663 12747])
+            ("python" customgroup (:user-visible-flag t) nil [12749 12905])
+            ("python-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [remap backward-sentence] (quote python-nav-backward-block)) (define-key map [remap forward-sentence] (quote python-nav-forward-block)) (define-key map [remap backward-up-list] (quote python-nav-backward-up-list)) (define-key map [remap mark-defun] (quote python-mark-defun)) (define-key map "
+" (quote imenu)) (define-key map "" (quote python-indent-dedent-line-backspace)) (define-key map (kbd "<backtab>") (quote python-indent-dedent-line)) (define-key map "<" (quote python-indent-shift-left)) (define-key map ">" (quote python-indent-shift-right)) (define-key map "c" (quote python-skeleton-class)) (define-key map "d" (quote python-skeleton-def)) (define-key map "f" (quote python-skeleton-for)) (define-key map "i" (quote python-skeleton-if)) (define-key map "m" (quote python-skeleton-import)) (define-key map "t" (quote python-skeleton-try)) (define-key map "w" (quote python-skeleton-while)) (define-key map "" (quote run-python)) (define-key map "" (quote python-shell-send-string)) (define-key map "" (quote python-shell-send-region)) (define-key map "\230" (quote python-shell-send-defun)) (define-key map "" (quote python-shell-send-buffer)) (define-key map "" (quote python-shell-send-file)) (define-key map "" (quote python-shell-switch-to-shell)) (define-key map "" (quote python-check)) (define-key map "" (quote python-eldoc-at-point)) (substitute-key-definition (quote complete-symbol) (quote completion-at-point) map global-map) (easy-menu-define python-menu map "Python Mode menu" (\` ("Python" :help "Python-specific Features" ["Shift region left" python-indent-shift-left :active mark-active :help "Shift region left by a single indentation step"] ["Shift region right" python-indent-shift-right :active mark-active :help "Shift region right by a single indentation step"] "-" ["Start of def/class" beginning-of-defun :help "Go to start of outermost definition around point"] ["End of def/class" end-of-defun :help "Go to end of definition around point"] ["Mark def/class" mark-defun :help "Mark outermost definition around point"] ["Jump to def/class" imenu :help "Jump to a class or function definition"] "--" ("Skeletons") "---" ["Start interpreter" run-python :help "Run inferior Python process in a separate buffer"] ["Switch to shell" python-shell-switch-to-shell :help "Switch to running inferior Python process"] ["Eval string" python-shell-send-string :help "Eval string in inferior Python session"] ["Eval buffer" python-shell-send-buffer :help "Eval buffer in inferior Python session"] ["Eval region" python-shell-send-region :help "Eval region in inferior Python session"] ["Eval defun" python-shell-send-defun :help "Eval defun in inferior Python session"] ["Eval file" python-shell-send-file :help "Eval file in inferior Python session"] ["Debugger" pdb :help "Run pdb under GUD"] "----" ["Check file" python-check :help "Check file for errors"] ["Help on symbol" python-eldoc-at-point :help "Get help on symbol at point"] ["Complete symbol" completion-at-point :help "Complete symbol before point"]))) map)) nil [12923 16625])
+            ("python-rx" function (:arguments ("regexps")) nil [20479 20890])
+            ("python-rx-constituents" variable
+               (:constant-flag t
+                :default-value (\` ((block-start \, (rx symbol-start (or "def" "class" "if" "elif" "else" "try" "except" "finally" "for" "while" "with" (and "async" (+ space) (or "def" "for" "with"))) symbol-end)) (dedenter \, (rx symbol-start (or "elif" "else" "except" "finally") symbol-end)) (block-ender \, (rx symbol-start (or "break" "continue" "pass" "raise" "return") symbol-end)) (decorator \, (rx line-start (* space) 64 (any letter 95) (* (any word 95)))) (defun \, (rx symbol-start (or "def" "class" (and "async" (+ space) "def")) symbol-end)) (if-name-main \, (rx line-start "if" (+ space) "__name__" (+ space) "==" (+ space) (any 39 34) "__main__" (any 39 34) (* space) 58)) (symbol-name \, (rx (any letter 95) (* (any word 95)))) (open-paren \, (rx (or "{" "[" "("))) (close-paren \, (rx (or "}" "]" ")"))) (simple-operator \, (rx (any 43 45 47 38 94 126 124 42 60 62 61 37))) (not-simple-operator \, (rx (not (any 43 45 47 38 94 126 124 42 60 62 61 37)))) (operator \, (rx (or "+" "-" "/" "&" "^" "~" "|" "*" "<" ">" "=" "%" "**" "//" "<<" ">>" "<=" "!=" "==" ">=" "is" "not"))) (assignment-operator \, (rx (or "=" "+=" "-=" "*=" "/=" "//=" "%=" "**=" ">>=" "<<=" "&=" "^=" "|="))) (string-delimiter \, (rx (and (or (not (any 92 39 34)) point (and (or (not (any 92)) point) 92 (* 92 92) (any 39 34))) (* 92 92) (group (or "\"" "\"\"\"" "'" "'''"))))) (coding-cookie \, (rx line-start 35 (* space) (or (: "coding" (or 58 61) (* space) (group-n 1 (+ (or word 45)))) (: "-*-" (* space) "coding:" (* space) (group-n 1 (+ (or word 45))) (* space) "-*-") (: "vim:" (* space) "set" (+ space) "fileencoding" (* space) 61 (* space) (group-n 1 (+ (or word 45))) (* space) ":")))))))
+                nil [16676 20475])
+            ("python-syntax--context-compiler-macro" function (:arguments ("form" "type" "syntax-ppss")) nil [20941 21345])
+            ("python-syntax-context" function (:arguments ("type" "syntax-ppss")) nil [21348 21842])
+            ("python-syntax-context-type" function (:arguments ("syntax-ppss")) nil [21844 22147])
+            ("python-syntax-comment-or-string-p" function (:arguments ("ppss")) nil [22149 22300])
+            ("python-syntax-closing-paren-p" function nil nil [22302 22495])
+            ("define-obsolete-function-alias" code nil nil [22497 22588])
+            ("define-obsolete-function-alias" code nil nil [22590 22691])
+            ("define-obsolete-function-alias" code nil nil [22693 22810])
+            ("python-font-lock-syntactic-face-function" function (:arguments ("state")) nil [22812 23057])
+            ("python-font-lock-keywords" variable (:default-value (\` ((\, (rx symbol-start (or "and" "del" "from" "not" "while" "as" "elif" "global" "or" "with" "assert" "else" "if" "pass" "yield" "break" "except" "import" "class" "in" "raise" "continue" "finally" "is" "return" "def" "for" "lambda" "try" "print" "exec" "nonlocal" (and "async" (+ space) (or "def" "for" "with")) "await" "self") symbol-end)) ((\, (rx symbol-start "def" (1+ space) (group (1+ (or word 95))))) (1 font-lock-function-name-face)) ((\, (rx symbol-start "class" (1+ space) (group (1+ (or word 95))))) (1 font-lock-type-face)) ((\, (rx symbol-start (or "Ellipsis" "False" "None" "NotImplemented" "True" "__debug__" "copyright" "credits" "exit" "license" "quit") symbol-end)) . font-lock-constant-face) ((\, (rx line-start (* (any " 	")) (group "@" (1+ (or word 95)) (0+ "." (1+ (or word 95)))))) (1 font-lock-type-face)) ((\, (rx symbol-start (or "ArithmeticError" "AssertionError" "AttributeError" "BaseException" "DeprecationWarning" "EOFError" "EnvironmentError" "Exception" "FloatingPointError" "FutureWarning" "GeneratorExit" "IOError" "ImportError" "ImportWarning" "IndexError" "KeyError" "KeyboardInterrupt" "LookupError" "MemoryError" "NameError" "NotImplementedError" "OSError" "OverflowError" "PendingDeprecationWarning" "ReferenceError" "RuntimeError" "RuntimeWarning" "StopIteration" "SyntaxError" "SyntaxWarning" "SystemError" "SystemExit" "TypeError" "UnboundLocalError" "UnicodeDecodeError" "UnicodeEncodeError" "UnicodeError" "UnicodeTranslateError" "UnicodeWarning" "UserWarning" "VMSError" "ValueError" "Warning" "WindowsError" "ZeroDivisionError" "StandardError" "BufferError" "BytesWarning" "IndentationError" "ResourceWarning" "TabError") symbol-end)) . font-lock-type-face) ((\, (rx symbol-start (or "abs" "all" "any" "bin" "bool" "callable" "chr" "classmethod" "compile" "complex" "delattr" "dict" "dir" "divmod" "enumerate" "eval" "filter" "float" "format" "frozenset" "getattr" "globals" "hasattr" "hash" "help" "hex" "id" "input" "int" "isinstance" "issubclass" "iter" "len" "list" "locals" "map" "max" "memoryview" "min" "next" "object" "oct" "open" "ord" "pow" "print" "property" "range" "repr" "reversed" "round" "set" "setattr" "slice" "sorted" "staticmethod" "str" "sum" "super" "tuple" "type" "vars" "zip" "__import__" "basestring" "cmp" "execfile" "file" "long" "raw_input" "reduce" "reload" "unichr" "unicode" "xrange" "apply" "buffer" "coerce" "intern" "ascii" "bytearray" "bytes" "exec" "__all__" "__doc__" "__name__" "__package__") symbol-end)) . font-lock-builtin-face) ((\, (lambda (limit) (let ((re (python-rx (group (+ (any word 46 95))) (32 91 (+ (not (any 93))) 93) (* space) assignment-operator)) (res nil)) (while (and (setq res (re-search-forward re limit t)) (or (python-syntax-context (quote paren)) (equal (char-after (point)) 61)))) res))) (1 font-lock-variable-name-face nil nil)) ((\, (lambda (limit) (let ((re (python-rx (group (+ (any word 46 95))) (* space) (* 44 (* space) (+ (any word 46 95)) (* space)) 44 (* space) (+ (any word 46 95)) (* space) assignment-operator)) (res nil)) (while (and (setq res (re-search-forward re limit t)) (goto-char (match-end 1)) (python-syntax-context (quote paren)))) res))) (1 font-lock-variable-name-face nil nil))))) nil [23059 28037])
+            ("python-syntax-propertize-function" variable
+               (:constant-flag t
+                :default-value (syntax-propertize-rules ((python-rx string-delimiter) (0 (ignore (python-syntax-stringify))))))
+                nil [28039 28188])
+            ("python--prettify-symbols-alist" variable
+               (:constant-flag t
+                :default-value (quote (("lambda" . 955) ("and" . 8743) ("or" . 8744))))
+                nil [28190 28286])
+            ("python-syntax-count-quotes" function (:arguments ("quote-char" "point" "limit")) nil [28288 28755])
+            ("python-syntax-stringify" function nil nil [28757 30387])
+            ("python-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (let ((symbol (string-to-syntax "_")) (sst (standard-syntax-table))) (dotimes (i 128) (unless (= i 95) (if (equal symbol (aref sst i)) (modify-syntax-entry i "." table))))) (modify-syntax-entry 36 "." table) (modify-syntax-entry 37 "." table) (modify-syntax-entry 35 "<" table) (modify-syntax-entry 10 ">" table) (modify-syntax-entry 39 "\"" table) (modify-syntax-entry 96 "$" table) table)) nil [30389 31102])
+            ("python-dotty-syntax-table" variable (:default-value (let ((table (make-syntax-table python-mode-syntax-table))) (modify-syntax-entry 46 "w" table) (modify-syntax-entry 95 "w" table) table)) nil [31104 31384])
+            ("python-indent-offset" variable (:default-value 4) nil [31405 31534])
+            ("python-indent-guess-indent-offset" variable (:default-value t) nil [31536 31704])
+            ("python-indent-guess-indent-offset-verbose" variable (:default-value t) nil [31706 31900])
+            ("python-indent-trigger-commands" variable (:default-value (quote (indent-for-tab-command yas-expand yas/expand))) nil [31902 32097])
+            ("define-obsolete-variable-alias" code nil nil [32099 32177])
+            ("define-obsolete-variable-alias" code nil nil [32179 32276])
+            ("python-indent-current-level" variable nil nil [32278 32364])
+            ("python-indent-levels" variable (:default-value (quote (0))) nil [32366 32448])
+            ("make-obsolete-variable" code nil nil [32450 32807])
+            ("make-obsolete-variable" code nil nil [32809 33159])
+            ("python-indent-guess-indent-offset" function (:user-visible-flag t) nil [33161 34770])
+            ("python-indent-context" function nil nil [34772 43434])
+            ("python-indent--calculate-indentation" function nil nil [43436 46033])
+            ("python-indent--calculate-levels" function (:arguments ("indentation")) nil [46035 46506])
+            ("python-indent--previous-level" function (:arguments ("levels" "indentation")) nil [46508 46858])
+            ("python-indent-calculate-indentation" function (:arguments ("previous")) nil [46860 47357])
+            ("python-indent-line" function (:arguments ("previous")) nil [47359 48130])
+            ("python-indent-calculate-levels" function nil nil [48132 48291])
+            ("python-indent-line-function" function nil nil [48293 48659])
+            ("python-indent-dedent-line" function (:user-visible-flag t) nil [48661 48917])
+            ("python-indent-dedent-line-backspace" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [48919 49200])
+            ("put" code nil nil [49202 49273])
+            ("python-indent-region" function (:arguments ("start" "end")) nil [49275 51171])
+            ("python-indent-shift-left" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "count"))
+                nil [51173 52201])
+            ("python-indent-shift-right" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "count"))
+                nil [52203 52847])
+            ("python-indent-post-self-insert-function" function nil nil [52849 55008])
+            ("python-mark-defun" function
+               (:user-visible-flag t
+                :arguments ("allow-extend"))
+                nil [55022 55495])
+            ("python-nav-beginning-of-defun-regexp" variable (:default-value (python-rx line-start (* space) defun (+ space) (group symbol-name))) nil [55515 55764])
+            ("python-nav--beginning-of-defun" function (:arguments ("arg")) nil [55766 57769])
+            ("python-nav-beginning-of-defun" function (:arguments ("arg")) nil [57771 58501])
+            ("python-nav-end-of-defun" function (:user-visible-flag t) nil [58503 59269])
+            ("python-nav--syntactically" function (:arguments ("fn" "poscompfn" "contextfn")) nil [59271 60494])
+            ("python-nav--forward-defun" function (:arguments ("arg")) nil [60496 61321])
+            ("python-nav-backward-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [61323 61572])
+            ("python-nav-forward-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [61574 61817])
+            ("python-nav-beginning-of-statement" function (:user-visible-flag t) nil [61819 62446])
+            ("python-nav-end-of-statement" function
+               (:user-visible-flag t
+                :arguments ("noend"))
+                nil [62448 64109])
+            ("python-nav-backward-statement" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [64111 64346])
+            ("python-nav-forward-statement" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [64348 64884])
+            ("python-nav-beginning-of-block" function (:user-visible-flag t) nil [64886 65858])
+            ("python-nav-end-of-block" function (:user-visible-flag t) nil [65860 66460])
+            ("python-nav-backward-block" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [66462 66689])
+            ("python-nav-forward-block" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [66691 67643])
+            ("python-nav--lisp-forward-sexp" function (:arguments ("arg")) nil [67645 68020])
+            ("python-nav--lisp-forward-sexp-safe" function (:arguments ("arg")) nil [68022 68722])
+            ("python-nav--forward-sexp" function (:arguments ("dir" "safe" "skip-parens-p")) nil [68724 73649])
+            ("python-nav-forward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "safe" "skip-parens-p"))
+                nil [73651 75218])
+            ("python-nav-backward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg" "safe" "skip-parens-p"))
+                nil [75220 75770])
+            ("python-nav-forward-sexp-safe" function
+               (:user-visible-flag t
+                :arguments ("arg" "skip-parens-p"))
+                nil [75772 76199])
+            ("python-nav-backward-sexp-safe" function
+               (:user-visible-flag t
+                :arguments ("arg" "skip-parens-p"))
+                nil [76201 76630])
+            ("python-nav--up-list" function (:arguments ("dir")) nil [76632 78215])
+            ("python-nav-up-list" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [78217 78675])
+            ("python-nav-backward-up-list" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [78677 79030])
+            ("python-nav-if-name-main" function (:user-visible-flag t) nil [79032 79944])
+            ("python-shell-buffer-name" variable (:default-value "Python") nil [79971 80114])
+            ("python-shell-interpreter" variable (:default-value "python") nil [80116 80236])
+            ("python-shell-internal-buffer-name" variable (:default-value "Python Internal") nil [80238 80412])
+            ("python-shell-interpreter-args" variable (:default-value "-i") nil [80414 80543])
+            ("python-shell-interpreter-interactive-arg" variable (:default-value "-i") nil [80545 80695])
+            ("python-shell-prompt-detect-enabled" variable (:default-value t) nil [80697 80856])
+            ("python-shell-prompt-detect-failure-warning" variable (:default-value t) nil [80858 81028])
+            ("python-shell-prompt-input-regexps" variable (:default-value (quote (">>> " "\\.\\.\\. " "In \\[[0-9]+\\]: " "   \\.\\.\\.: " "In : " "\\.\\.\\.: "))) nil [81030 81490])
+            ("python-shell-prompt-output-regexps" variable (:default-value (quote ("" "Out\\[[0-9]+\\]: " "Out :"))) nil [81492 81794])
+            ("python-shell-prompt-regexp" variable (:default-value ">>> ") nil [81796 81981])
+            ("python-shell-prompt-block-regexp" variable (:default-value "\\.\\.\\. ") nil [81983 82176])
+            ("python-shell-prompt-output-regexp" variable nil nil [82178 82357])
+            ("python-shell-prompt-pdb-regexp" variable (:default-value "[(<]*[Ii]?[Pp]db[>)]+ ") nil [82359 82560])
+            ("define-obsolete-variable-alias" code nil nil [82562 82665])
+            ("python-shell-font-lock-enable" variable (:default-value t) nil [82667 82909])
+            ("python-shell-unbuffered" variable (:default-value t) nil [82911 83148])
+            ("python-shell-process-environment" variable nil nil [83150 83572])
+            ("python-shell-extra-pythonpaths" variable nil nil [83574 83969])
+            ("python-shell-exec-path" variable nil nil [83971 84347])
+            ("python-shell-remote-exec-path" variable nil nil [84349 84865])
+            ("python-shell-virtualenv-root" variable nil nil [84867 85130])
+            ("define-obsolete-variable-alias" code nil nil [85132 85233])
+            ("python-shell-setup-codes" variable nil nil [85235 85374])
+            ("python-shell-compilation-regexp-alist" variable (:default-value (\` (((\, (rx line-start (1+ (any " 	")) "File \"" (group (1+ (not (any "\"<")))) "\", line " (group (1+ digit)))) 1 2) ((\, (rx " in file " (group (1+ not-newline)) " on line " (group (1+ digit)))) 1 2) ((\, (rx line-start "> " (group (1+ (not (any "(\"<")))) "(" (group (1+ digit)) ")" (1+ (not (any "("))) "()")) 1 2)))) nil [85376 85918])
+            ("python-shell--add-to-path-with-priority" function (:arguments ("pathvar" "paths")) nil [85920 86187])
+            ("python-shell-calculate-pythonpath" function nil nil [86189 86562])
+            ("python-shell-calculate-process-environment" function nil nil [86564 87778])
+            ("python-shell-calculate-exec-path" function nil nil [87780 88573])
+            ("python-shell-tramp-refresh-remote-path" function (:arguments ("vec" "paths")) nil [88575 88954])
+            ("python-shell-tramp-refresh-process-environment" function (:arguments ("vec" "env")) nil [88956 90158])
+            ("python-shell-with-environment" function (:arguments ("body")) nil [90160 92209])
+            ("python-shell--prompt-calculated-input-regexp" variable nil nil [92211 92423])
+            ("python-shell--prompt-calculated-output-regexp" variable nil nil [92425 92627])
+            ("python-shell-prompt-detect" function nil nil [92629 96459])
+            ("python-shell-prompt-validate-regexps" function nil nil [96461 97502])
+            ("python-shell-prompt-set-calculated-regexps" function nil nil [97504 100234])
+            ("python-shell-get-process-name" function (:arguments ("dedicated")) nil [100236 100611])
+            ("python-shell-internal-get-process-name" function nil nil [100613 100887])
+            ("python-shell-calculate-command" function nil nil [100889 101117])
+            ("define-obsolete-function-alias" code nil nil [101119 101223])
+            ("python-shell--package-depth" variable (:default-value 10) nil [101225 101264])
+            ("python-shell-package-enable" function
+               (:user-visible-flag t
+                :arguments ("directory" "package"))
+                nil [101266 102049])
+            ("python-shell-accept-process-output" function (:arguments ("process" "timeout" "regexp")) nil [102051 103036])
+            ("python-shell-comint-end-of-output-p" function (:arguments ("output")) nil [103038 103489])
+            ("define-obsolete-function-alias" code nil nil [103491 103599])
+            ("python-comint-postoutput-scroll-to-bottom" function (:arguments ("output")) nil [103601 103972])
+            ("python-shell--parent-buffer" variable nil nil [103974 104014])
+            ("python-shell-with-shell-buffer" function (:arguments ("body")) nil [104016 104444])
+            ("python-shell--font-lock-buffer" variable nil nil [104446 104489])
+            ("python-shell-font-lock-get-or-create-buffer" function nil nil [104491 104900])
+            ("python-shell-font-lock-kill-buffer" function nil nil [104902 105238])
+            ("python-shell-font-lock-with-font-lock-buffer" function (:arguments ("body")) nil [105240 106099])
+            ("python-shell-font-lock-cleanup-buffer" function (:user-visible-flag t) nil [106101 106433])
+            ("python-shell-font-lock-comint-output-filter-function" function (:arguments ("output")) nil [106435 107139])
+            ("python-shell-font-lock-post-command-hook" function nil nil [107141 109189])
+            ("python-shell-font-lock-turn-on" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [109191 109883])
+            ("python-shell-font-lock-turn-off" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [109885 110812])
+            ("python-shell-font-lock-toggle" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [110814 111280])
+            ("python-shell--first-prompt-received-output-buffer" variable nil nil [111282 111344])
+            ("python-shell--first-prompt-received" variable nil nil [111345 111393])
+            ("python-shell-first-prompt-hook" variable nil nil [111395 111878])
+            ("python-shell-comint-watch-for-first-prompt-output-filter" function (:arguments ("output")) nil [111880 112967])
+            ("python-shell--interpreter" variable nil nil [113142 113176])
+            ("python-shell--interpreter-args" variable nil nil [113177 113216])
+            ("define-derived-mode" code nil nil [113218 116175])
+            ("python-shell-make-comint" function (:arguments ("cmd" "proc-name" "show" "internal")) nil [116177 118141])
+            ("run-python" function
+               (:user-visible-flag t
+                :arguments ("cmd" "dedicated" "show"))
+                nil [118158 119359])
+            ("run-python-internal" function nil nil [119361 120297])
+            ("python-shell-get-buffer" function nil nil [120299 121097])
+            ("python-shell-get-process" function nil nil [121099 121238])
+            ("python-shell-get-process-or-error" function (:arguments ("interactivep")) nil [121240 121840])
+            ("python-shell-get-or-create-process" function (:arguments ("cmd" "dedicated" "show")) nil [121842 122558])
+            ("make-obsolete" code nil nil [122560 122695])
+            ("python-shell-internal-buffer" variable nil nil [122697 122898])
+            ("python-shell-internal-last-output" variable nil nil [122900 123096])
+            ("python-shell-internal-get-or-create-process" function nil nil [123098 123366])
+            ("define-obsolete-function-alias" code nil nil [123368 123467])
+            ("define-obsolete-variable-alias" code nil nil [123469 123555])
+            ("define-obsolete-variable-alias" code nil nil [123557 123658])
+            ("python-shell--save-temp-file" function (:arguments ("string")) nil [123660 124111])
+            ("python-shell-send-string" function
+               (:user-visible-flag t
+                :arguments ("string" "process" "msg"))
+                nil [124113 124966])
+            ("python-shell-output-filter-in-progress" variable nil nil [124968 125019])
+            ("python-shell-output-filter-buffer" variable nil nil [125020 125066])
+            ("python-shell-output-filter" function (:arguments ("string")) nil [125068 126301])
+            ("python-shell-send-string-no-output" function (:arguments ("string" "process")) nil [126303 127208])
+            ("python-shell-internal-send-string" function (:arguments ("string")) nil [127210 127795])
+            ("define-obsolete-function-alias" code nil nil [127797 127894])
+            ("define-obsolete-function-alias" code nil nil [127896 127992])
+            ("python-shell-buffer-substring" function (:arguments ("start" "end" "nomain")) nil [127994 131314])
+            ("python-shell-send-region" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "send-main" "msg"))
+                nil [131316 132294])
+            ("python-shell-send-buffer" function
+               (:user-visible-flag t
+                :arguments ("send-main" "msg"))
+                nil [132296 132936])
+            ("python-shell-send-defun" function
+               (:user-visible-flag t
+                :arguments ("arg" "msg"))
+                nil [132938 133830])
+            ("python-shell-send-file" function
+               (:user-visible-flag t
+                :arguments ("file-name" "process" "temp-file-name" "delete" "msg"))
+                nil [133832 135738])
+            ("python-shell-switch-to-shell" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [135740 136095])
+            ("python-shell-send-setup-code" function nil nil [136097 136777])
+            ("add-hook" code nil nil [136779 136862])
+            ("python-shell-completion-setup-code" variable (:default-value "
+def __PYTHON_EL_get_completions(text):
+    completions = []
+    completer = None
+
+    try:
+        import readline
+
+        try:
+            import __builtin__
+        except ImportError:
+            # Python 3
+            import builtins as __builtin__
+        builtins = dir(__builtin__)
+
+        is_ipython = ('__IPYTHON__' in builtins or
+                      '__IPYTHON__active' in builtins)
+        splits = text.split()
+        is_module = splits and splits[0] in ('from', 'import')
+
+        if is_ipython and is_module:
+            from IPython.core.completerlib import module_completion
+            completions = module_completion(text.strip())
+        elif is_ipython and '__IP' in builtins:
+            completions = __IP.complete(text)
+        elif is_ipython and 'get_ipython' in builtins:
+            completions = get_ipython().Completer.all_completions(text)
+        else:
+            # Try to reuse current completer.
+            completer = readline.get_completer()
+            if not completer:
+                # importing rlcompleter sets the completer, use it as a
+                # last resort to avoid breaking customizations.
+                import rlcompleter
+                completer = readline.get_completer()
+            if getattr(completer, 'PYTHON_EL_WRAPPED', False):
+                completer.print_mode = False
+            i = 0
+            while True:
+                completion = completer(text, i)
+                if not completion:
+                    break
+                i += 1
+                completions.append(completion)
+    except:
+        pass
+    finally:
+        if getattr(completer, 'PYTHON_EL_WRAPPED', False):
+            completer.print_mode = True
+    return completions") nil [136888 138763])
+            ("python-shell-completion-string-code" variable (:default-value "';'.join(__PYTHON_EL_get_completions('''%s'''))") nil [138765 139081])
+            ("define-obsolete-variable-alias" code nil nil [139083 139268])
+            ("define-obsolete-variable-alias" code nil nil [139270 139442])
+            ("python-shell-completion-native-disabled-interpreters" variable (:default-value (list "pypy" "ipython")) nil [139444 139817])
+            ("python-shell-completion-native-enable" variable (:default-value t) nil [139819 139950])
+            ("python-shell-completion-native-output-timeout" variable (:default-value 5.0) nil [139952 140114])
+            ("python-shell-completion-native-try-output-timeout" variable (:default-value 1.0) nil [140116 140281])
+            ("python-shell-completion-native-redirect-buffer" variable (:default-value " *Python completions redirect*") nil [140283 140436])
+            ("python-shell-completion-native-interpreter-disabled-p" function nil nil [140438 140775])
+            ("python-shell-completion-native-try" function nil nil [140777 141151])
+            ("python-shell-completion-native-setup" function nil nil [141153 146241])
+            ("python-shell-completion-native-turn-off" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [146243 146605])
+            ("python-shell-completion-native-turn-on" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [146607 146935])
+            ("python-shell-completion-native-turn-on-maybe" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [146937 148065])
+            ("python-shell-completion-native-turn-on-maybe-with-msg" function nil nil [148067 148258])
+            ("add-hook" code nil nil [148260 148368])
+            ("python-shell-completion-native-toggle" function
+               (:user-visible-flag t
+                :arguments ("msg"))
+                nil [148370 148772])
+            ("python-shell-completion-native-get-completions" function (:arguments ("process" "import" "input")) nil [148774 151805])
+            ("python-shell-completion-get-completions" function (:arguments ("process" "import" "input")) nil [151807 152508])
+            ("python-shell-completion-at-point" function (:arguments ("process")) nil [152510 155065])
+            ("define-obsolete-function-alias" code nil nil [155067 155189])
+            ("python-shell-completion-complete-or-indent" function (:user-visible-flag t) nil [155191 155600])
+            ("python-pdbtrack-activate" variable (:default-value t) nil [155631 155772])
+            ("python-pdbtrack-stacktrace-info-regexp" variable (:default-value "> \\([^\"(<]+\\)(\\([0-9]+\\))\\([?a-zA-Z0-9_<>]+\\)()") nil [155774 156050])
+            ("python-pdbtrack-tracked-buffer" variable nil nil [156052 156244])
+            ("python-pdbtrack-buffers-to-kill" variable nil nil [156246 156349])
+            ("python-pdbtrack-set-tracked-buffer" function (:arguments ("file-name")) nil [156351 157313])
+            ("python-pdbtrack-comint-output-filter-function" function (:arguments ("output")) nil [157315 160179])
+            ("python-completion-at-point" function nil nil [160206 160582])
+            ("define-obsolete-function-alias" code nil nil [160584 160694])
+            ("python-fill-comment-function" variable (:default-value (quote python-fill-comment)) nil [160718 160914])
+            ("python-fill-string-function" variable (:default-value (quote python-fill-string)) nil [160916 161108])
+            ("python-fill-decorator-function" variable (:default-value (quote python-fill-decorator)) nil [161110 161314])
+            ("python-fill-paren-function" variable (:default-value (quote python-fill-paren)) nil [161316 161504])
+            ("python-fill-docstring-style" variable (:default-value (quote pep-257)) nil [161506 163226])
+            ("python-fill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("justify"))
+                nil [163228 164493])
+            ("python-fill-comment" function (:arguments ("justify")) nil [164495 164695])
+            ("python-fill-string" function (:arguments ("justify")) nil [164697 167667])
+            ("python-fill-decorator" function (:arguments ("_justify")) nil [167669 167843])
+            ("python-fill-paren" function (:arguments ("justify")) nil [167845 168981])
+            ("python-skeleton-autoinsert" variable nil nil [169000 169250])
+            ("define-obsolete-variable-alias" code nil nil [169252 169343])
+            ("python-skeleton-available" variable (:default-value (quote nil)) nil [169345 169425])
+            ("define-abbrev-table" code nil nil [169427 169826])
+            ("python-skeleton-define" function (:arguments ("name" "doc" "skel")) nil [169828 170522])
+            ("define-abbrev-table" code nil nil [170524 170660])
+            ("python-define-auxiliary-skeleton" function (:arguments ("name" "doc" "skel")) nil [170662 171370])
+            ("python-define-auxiliary-skeleton" code nil nil [171372 171415])
+            ("python-define-auxiliary-skeleton" code nil nil [171417 171462])
+            ("python-define-auxiliary-skeleton" code nil nil [171464 171510])
+            ("python-skeleton-define" code nil nil [171512 171685])
+            ("python-skeleton-define" code nil nil [171687 171799])
+            ("python-skeleton-define" code nil nil [171801 171914])
+            ("python-skeleton-define" code nil nil [171916 172049])
+            ("python-skeleton-define" code nil nil [172051 172275])
+            ("python-skeleton-define" code nil nil [172277 172520])
+            ("python-skeleton-define" code nil nil [172522 172754])
+            ("python-skeleton-add-menu-items" function nil nil [172756 173117])
+            ("python-ffap-setup-code" variable (:default-value "
+def __FFAP_get_module_path(objstr):
+    try:
+        import inspect
+        import os.path
+        # NameError exceptions are delayed until this point.
+        obj = eval(objstr)
+        module = inspect.getmodule(obj)
+        filename = module.__file__
+        ext = os.path.splitext(filename)[1]
+        if ext in ('.pyc', '.pyo'):
+            # Point to the source file.
+            filename = filename[:-1]
+        if os.path.exists(filename):
+            return filename
+        return ''
+    except:
+        return ''") nil [173130 173764])
+            ("python-ffap-string-code" variable (:default-value "__FFAP_get_module_path('''%s''')") nil [173766 173935])
+            ("python-ffap-module-path" function (:arguments ("module")) nil [173937 174590])
+            ("ffap-alist" variable nil nil [174592 174611])
+            ("eval-after-load" code nil nil [174613 174785])
+            ("python-check-command" variable (:default-value (or (executable-find "pyflakes") (executable-find "epylint") "install pyflakes, pylint or something else")) nil [174805 175032])
+            ("python-check-buffer-name" variable (:default-value "*Python check: %s*") nil [175034 175167])
+            ("python-check-custom-command" variable nil nil [175169 175227])
+            ("make-variable-buffer-local" code nil nil [175284 175341])
+            ("python-check" function
+               (:user-visible-flag t
+                :arguments ("command"))
+                nil [175343 176311])
+            ("python-eldoc-setup-code" variable (:default-value "def __PYDOC_get_help(obj):
+    try:
+        import inspect
+        try:
+            str_type = basestring
+        except NameError:
+            str_type = str
+        if isinstance(obj, str_type):
+            obj = eval(obj, globals())
+        doc = inspect.getdoc(obj)
+        if not doc and callable(obj):
+            target = None
+            if inspect.isclass(obj) and hasattr(obj, '__init__'):
+                target = obj.__init__
+                objtype = 'class'
+            else:
+                target = obj
+                objtype = 'def'
+            if target:
+                args = inspect.formatargspec(
+                    *inspect.getargspec(target)
+                )
+                name = obj.__name__
+                doc = '{objtype} {name}{args}'.format(
+                    objtype=objtype, name=name, args=args
+                )
+        else:
+            doc = doc.splitlines()[0]
+    except:
+        doc = ''
+    return doc") nil [176326 177397])
+            ("python-eldoc-string-code" variable (:default-value "__PYDOC_get_help('''%s''')") nil [177399 177573])
+            ("python-eldoc--get-symbol-at-point" function nil nil [177575 178072])
+            ("python-eldoc--get-doc-at-point" function (:arguments ("force-input" "force-process")) nil [178074 179061])
+            ("defvar-local" code nil nil [179063 179309])
+            ("python-eldoc-function-timeout" variable (:default-value 1) nil [179311 179458])
+            ("python-eldoc-function-timeout-permanent" variable (:default-value t) nil [179460 179669])
+            ("python-eldoc-function" function nil nil [179671 180729])
+            ("python-eldoc-at-point" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [180731 181206])
+            ("python-hideshow-forward-sexp-function" function (:arguments ("arg")) nil [181224 181492])
+            ("python-imenu-format-item-label-function" variable (:default-value (quote python-imenu-format-item-label)) nil [181507 181695])
+            ("python-imenu-format-parent-item-label-function" variable (:default-value (quote python-imenu-format-parent-item-label)) nil [181697 181905])
+            ("python-imenu-format-parent-item-jump-label-function" variable (:default-value (quote python-imenu-format-parent-item-jump-label)) nil [181907 182130])
+            ("python-imenu-format-item-label" function (:arguments ("type" "name")) nil [182132 182273])
+            ("python-imenu-format-parent-item-label" function (:arguments ("type" "name")) nil [182275 182454])
+            ("python-imenu-format-parent-item-jump-label" function (:arguments ("type" "_name")) nil [182456 182669])
+            ("python-imenu--put-parent" function (:arguments ("type" "name" "pos" "tree")) nil [182671 183063])
+            ("python-imenu--build-tree" function (:arguments ("min-indent" "prev-indent" "tree")) nil [183065 185046])
+            ("python-imenu-create-index" function nil nil [185048 185493])
+            ("python-imenu-create-flat-index" function (:arguments ("alist" "prefix")) nil [185495 187130])
+            ("python-info-current-defun" function (:arguments ("include-type")) nil [187152 190185])
+            ("python-info-current-symbol" function (:arguments ("replace-self")) nil [190187 191111])
+            ("python-info-statement-starts-block-p" function nil nil [191113 191315])
+            ("python-info-statement-ends-block-p" function nil nil [191317 191719])
+            ("python-info-beginning-of-statement-p" function nil nil [191721 191931])
+            ("python-info-end-of-statement-p" function nil nil [191933 192125])
+            ("python-info-beginning-of-block-p" function nil nil [192127 192317])
+            ("python-info-end-of-block-p" function nil nil [192319 192489])
+            ("define-obsolete-function-alias" code nil nil [192491 192606])
+            ("python-info-dedenter-opening-block-position" function nil nil [192608 193292])
+            ("python-info-dedenter-opening-block-positions" function nil nil [193294 195085])
+            ("define-obsolete-function-alias" code nil nil [195087 195209])
+            ("python-info-dedenter-opening-block-message" function nil nil [195211 195663])
+            ("python-info-dedenter-statement-p" function nil nil [195665 196004])
+            ("python-info-line-ends-backslash-p" function (:arguments ("line-number")) nil [196006 196590])
+            ("python-info-beginning-of-backslash" function (:arguments ("line-number")) nil [196592 197175])
+            ("python-info-continuation-line-p" function nil nil [197177 198733])
+            ("python-info-block-continuation-line-p" function nil nil [198735 199037])
+            ("python-info-assignment-statement-p" function (:arguments ("current-line-only")) nil [199039 200024])
+            ("python-info-assignment-continuation-line-p" function nil nil [200160 200550])
+            ("python-info-looking-at-beginning-of-defun" function (:arguments ("syntax-ppss")) nil [200552 200878])
+            ("python-info-current-line-comment-p" function nil nil [200880 201076])
+            ("python-info-current-line-empty-p" function nil nil [201078 201425])
+            ("python-info-docstring-p" function (:arguments ("syntax-ppss")) nil [201427 203621])
+            ("python-info-encoding-from-cookie" function nil nil [203623 204157])
+            ("python-info-encoding" function nil nil [204159 204627])
+            ("python-util-goto-line" function (:arguments ("line-number")) nil [204654 204788])
+            ("python-util-clone-local-variables" function (:arguments ("from-buffer" "regexp")) nil [204814 205284])
+            ("comint-last-prompt-overlay" variable nil nil [205286 205321])
+            ("python-util-comint-last-prompt" function nil nil [205353 205756])
+            ("python-util-forward-comment" function (:arguments ("direction")) nil [205758 206173])
+            ("python-util-list-directories" function (:arguments ("directory" "predicate" "max-depth")) nil [206175 207380])
+            ("python-util-list-files" function (:arguments ("dir" "predicate")) nil [207382 208101])
+            ("python-util-list-packages" function (:arguments ("dir" "max-depth")) nil [208103 208888])
+            ("python-util-popn" function (:arguments ("lst" "n")) nil [208890 209320])
+            ("python-util-strip-string" function (:arguments ("string")) nil [209322 209587])
+            ("python-util-valid-regexp-p" function (:arguments ("regexp")) nil [209589 209716])
+            ("python-electric-pair-string-delimiter" function nil nil [209720 210137])
+            ("electric-indent-inhibit" variable nil nil [210139 210171])
+            ("define-derived-mode" code nil nil [210188 213826])
+            ("python" package nil nil [213829 213846]))          
+      :file "python.el.gz"
+      :pointmax 213926
+      :fsize 49132
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 21345 . 21346) (symbol 20922 . 20938) (open-paren 20921 . 20922) (close-paren 20890 . 20891) (symbol 16657 . 16673) (open-paren 16656 . 16657)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("ruby" customgroup (:user-visible-flag t) nil [1460 1555])
+            ("ruby-block-beg-keywords" variable
+               (:constant-flag t
+                :default-value (quote ("class" "module" "def" "if" "unless" "case" "while" "until" "for" "begin" "do")))
+                nil [1557 1716])
+            ("ruby-block-beg-re" variable
+               (:constant-flag t
+                :default-value (regexp-opt ruby-block-beg-keywords))
+                nil [1718 1830])
+            ("ruby-non-block-do-re" variable
+               (:constant-flag t
+                :default-value (regexp-opt (quote ("while" "until" "for" "rescue")) (quote symbols)))
+                nil [1832 1976])
+            ("ruby-indent-beg-re" variable
+               (:constant-flag t
+                :default-value (concat "^\\(\\s *" (regexp-opt (quote ("class" "module" "def"))) "\\|" (regexp-opt (quote ("if" "unless" "case" "while" "until" "for" "begin"))) "\\)\\_>"))
+                nil [1978 2227])
+            ("ruby-modifier-beg-keywords" variable
+               (:constant-flag t
+                :default-value (quote ("if" "unless" "while" "until")))
+                nil [2229 2361])
+            ("ruby-modifier-beg-re" variable
+               (:constant-flag t
+                :default-value (regexp-opt ruby-modifier-beg-keywords))
+                nil [2363 2499])
+            ("ruby-modifier-re" variable
+               (:constant-flag t
+                :default-value (regexp-opt (cons "rescue" ruby-modifier-beg-keywords)))
+                nil [2501 2617])
+            ("ruby-block-mid-keywords" variable
+               (:constant-flag t
+                :default-value (quote ("then" "else" "elsif" "when" "rescue" "ensure")))
+                nil [2619 2786])
+            ("ruby-block-mid-re" variable
+               (:constant-flag t
+                :default-value (regexp-opt ruby-block-mid-keywords))
+                nil [2788 2943])
+            ("ruby-block-op-keywords" variable
+               (:constant-flag t
+                :default-value (quote ("and" "or" "not")))
+                nil [2945 3038])
+            ("ruby-block-hanging-re" variable
+               (:constant-flag t
+                :default-value (regexp-opt (append ruby-modifier-beg-keywords ruby-block-op-keywords)))
+                nil [3040 3191])
+            ("ruby-block-end-re" variable
+               (:constant-flag t
+                :default-value "\\_<end\\_>")
+                nil [3193 3235])
+            ("ruby-defun-beg-re" variable
+               (:constant-flag t
+                :default-value (quote "\\(def\\|class\\|module\\)"))
+                nil [3237 3365])
+            ("ruby-singleton-class-re" variable
+               (:constant-flag t
+                :default-value "class\\s *<<")
+                nil [3367 3482])
+            ("ruby-expression-expansion-re" variable
+               (:constant-flag t
+                :default-value "\\(?:[^\\]\\|\\=\\)\\(\\\\\\\\\\)*\\(#\\({[^}
+\\\\]*\\(\\\\.[^}
+\\\\]*\\)*}\\|\\(\\$\\|@\\|@@\\)\\(\\w\\|_\\)+\\|\\$[^a-zA-Z 
+]\\)\\)")
+                nil [3679 3861])
+            ("ruby-here-doc-beg-re" variable
+               (:constant-flag t
+                :default-value "\\(<\\)<\\([~-]\\)?\\(\\([a-zA-Z0-9_]+\\)\\|[\"]\\([^\"]+\\)[\"]\\|[']\\([^']+\\)[']\\)")
+                nil [3504 3675])
+            ("ruby-here-doc-end-match" function nil nil [3864 4205])
+            ("ruby-delimiter" variable
+               (:constant-flag t
+                :default-value (concat "[?$/%(){}#\"'`.:]\\|<<\\|\\[\\|\\]\\|\\_<\\(" ruby-block-beg-re "\\)\\_>\\|" ruby-block-end-re "\\|^=begin\\|" ruby-here-doc-beg-re))
+                nil [4207 4406])
+            ("ruby-negative" variable
+               (:constant-flag t
+                :default-value (concat "^[ 	]*\\(\\(" ruby-block-mid-re "\\)\\>\\|" ruby-block-end-re "\\|}\\|\\]\\)"))
+                nil [4408 4591])
+            ("ruby-operator-re" variable
+               (:constant-flag t
+                :default-value "[-,.+*/%&|^~=<>:]\\|\\\\$")
+                nil [4593 4679])
+            ("ruby-symbol-chars" variable
+               (:constant-flag t
+                :default-value "a-zA-Z0-9_")
+                nil [4681 4776])
+            ("ruby-symbol-re" variable
+               (:constant-flag t
+                :default-value (concat "[" ruby-symbol-chars "]"))
+                nil [4778 4867])
+            ("ruby-use-smie" variable (:default-value t) nil [4869 4893])
+            ("ruby-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (unless ruby-use-smie (define-key map (kbd "M-C-b") (quote ruby-backward-sexp)) (define-key map (kbd "M-C-f") (quote ruby-forward-sexp)) (define-key map (kbd "M-C-q") (quote ruby-indent-exp))) (when ruby-use-smie (define-key map (kbd "M-C-d") (quote smie-down-list))) (define-key map (kbd "M-C-p") (quote ruby-beginning-of-block)) (define-key map (kbd "M-C-n") (quote ruby-end-of-block)) (define-key map (kbd "C-c {") (quote ruby-toggle-block)) (define-key map (kbd "C-c '") (quote ruby-toggle-string-quotes)) map)) nil [4895 5494])
+            ("easy-menu-define" code nil nil [5496 6197])
+            ("ruby-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 39 "\"" table) (modify-syntax-entry 34 "\"" table) (modify-syntax-entry 96 "\"" table) (modify-syntax-entry 35 "<" table) (modify-syntax-entry 10 ">" table) (modify-syntax-entry 92 "\\" table) (modify-syntax-entry 36 "'" table) (modify-syntax-entry 95 "_" table) (modify-syntax-entry 58 "'" table) (modify-syntax-entry 64 "'" table) (modify-syntax-entry 60 "." table) (modify-syntax-entry 62 "." table) (modify-syntax-entry 38 "." table) (modify-syntax-entry 124 "." table) (modify-syntax-entry 37 "." table) (modify-syntax-entry 61 "." table) (modify-syntax-entry 47 "." table) (modify-syntax-entry 43 "." table) (modify-syntax-entry 42 "." table) (modify-syntax-entry 45 "." table) (modify-syntax-entry 59 "." table) (modify-syntax-entry 40 "()" table) (modify-syntax-entry 41 ")(" table) (modify-syntax-entry 123 "(}" table) (modify-syntax-entry 125 "){" table) (modify-syntax-entry 91 "(]" table) (modify-syntax-entry 93 ")[" table) table)) nil [6199 7391])
+            ("ruby-indent-tabs-mode" variable nil nil [7393 7545])
+            ("ruby-indent-level" variable (:default-value 2) nil [7547 7664])
+            ("ruby-comment-column" variable (:default-value (default-value (quote comment-column))) nil [7666 7815])
+            ("ruby-alignable-keywords" variable
+               (:constant-flag t
+                :default-value (quote (if while unless until begin case for def)))
+                nil [7817 7959])
+            ("ruby-align-to-stmt-keywords" variable (:default-value (quote (def))) nil [7961 8812])
+            ("ruby-align-chained-calls" variable nil nil [8814 9092])
+            ("ruby-deep-arglist" variable (:default-value t) nil [9094 9323])
+            ("ruby-deep-indent-paren" variable (:default-value (quote (40 91 93 t))) nil [9396 9969])
+            ("ruby-deep-indent-paren-style" variable (:default-value (quote space)) nil [9971 10163])
+            ("ruby-encoding-map" variable (:default-value (quote ((us-ascii) (shift-jis . cp932) (shift_jis . cp932) (japanese-cp932 . cp932)))) nil [10165 10686])
+            ("ruby-insert-encoding-magic-comment" variable (:default-value t) nil [10688 11059])
+            ("ruby-encoding-magic-comment-style" variable (:default-value (quote ruby)) nil [11061 11344])
+            ("ruby-custom-encoding-magic-comment-template" variable (:default-value "# encoding: %s") nil [11346 11579])
+            ("ruby-use-encoding-map" variable (:default-value t) nil [11581 11724])
+            ("smie" include nil nil [11744 11759])
+            ("ruby-smie-grammar" variable
+               (:constant-flag t
+                :default-value (smie-prec2->grammar (smie-merge-prec2s (smie-bnf->prec2 (quote ((id) (insts (inst) (insts ";" insts)) (inst (exp) (inst "iuwu-mod" exp) (exp "and" exp) (exp "or" exp)) (exp (exp1) (exp "," exp) (exp "=" exp) (id " @ " exp)) (exp1 (exp2) (exp2 "?" exp1 ":" exp1)) (exp2 (exp3) (exp3 "." exp3)) (exp3 ("def" insts "end") ("begin" insts-rescue-insts "end") ("do" insts "end") ("class" insts "end") ("module" insts "end") ("for" for-body "end") ("[" expseq "]") ("{" hashvals "}") ("{" insts "}") ("while" insts "end") ("until" insts "end") ("unless" insts "end") ("if" if-body "end") ("case" cases "end")) (formal-params ("opening-|" exp "closing-|")) (for-body (for-head ";" insts)) (for-head (id "in" exp)) (cases (exp "then" insts) (cases "when" cases) (insts "else" insts)) (expseq (exp)) (hashvals (exp1 "=>" exp1) (hashvals "," hashvals)) (insts-rescue-insts (insts) (insts-rescue-insts "rescue" insts-rescue-insts) (insts-rescue-insts "ensure" insts-rescue-insts)) (itheni (insts) (exp "then" insts)) (ielsei (itheni) (itheni "else" insts)) (if-body (ielsei) (if-body "elsif" if-body)))) (quote ((nonassoc "in") (assoc ";") (right " @ ") (assoc ",") (right "="))) (quote ((assoc "when"))) (quote ((assoc "elsif"))) (quote ((assoc "rescue" "ensure"))) (quote ((assoc ",")))) (smie-precs->prec2 (quote ((right "=") (right "+=" "-=" "*=" "/=" "%=" "**=" "&=" "|=" "^=" "<<=" ">>=" "&&=" "||=") (nonassoc ".." "...") (left "&&" "||") (nonassoc "<=>") (nonassoc "==" "===" "!=") (nonassoc "=~" "!~") (nonassoc ">" ">=" "<" "<=") (left "^" "&" "|") (left "<<" ">>") (left "+" "-") (left "*" "/" "%") (left "**") (assoc ".")))))))
+                nil [11868 14138])
+            ("ruby-smie--bosp" function nil nil [14140 14421])
+            ("ruby-smie--implicit-semi-p" function nil nil [14423 15416])
+            ("ruby-smie--redundant-do-p" function (:arguments ("skip")) nil [15418 15599])
+            ("ruby-smie--opening-pipe-p" function nil nil [15601 15817])
+            ("ruby-smie--closing-pipe-p" function nil nil [15819 16023])
+            ("ruby-smie--args-separator-p" function (:arguments ("pos")) nil [16025 16801])
+            ("ruby-smie--before-method-name" function nil nil [16803 17126])
+            ("ruby-smie--forward-token" function nil nil [17128 18947])
+            ("ruby-smie--backward-token" function nil nil [18949 20745])
+            ("ruby-smie--indent-to-stmt" function nil nil [20747 20872])
+            ("ruby-smie--indent-to-stmt-p" function (:arguments ("keyword")) nil [20874 21019])
+            ("ruby-smie-rules" function (:arguments ("kind" "token")) nil [21021 24739])
+            ("ruby--at-indentation-p" function (:arguments ("point")) nil [24741 24923])
+            ("ruby-imenu-create-index-in-block" function (:arguments ("prefix" "beg" "end")) nil [24925 26508])
+            ("ruby-imenu-create-index" function nil nil [26510 26668])
+            ("ruby-accurate-end-of-block" function (:arguments ("end")) nil [26670 27122])
+            ("ruby-mode-variables" function nil nil [27124 27917])
+            ("ruby--insert-coding-comment" function (:arguments ("encoding")) nil [27919 28419])
+            ("ruby--detect-encoding" function nil nil [28421 29092])
+            ("ruby--encoding-comment-required-p" function nil nil [29094 29243])
+            ("ruby-mode-set-encoding" function nil nil [29245 30255])
+            ("ruby--electric-indent-chars" variable (:default-value (quote (46 41 125 93))) nil [30257 30310])
+            ("ruby--electric-indent-p" function (:arguments ("char")) nil [30312 31138])
+            ("ruby-current-indentation" function nil nil [31269 31444])
+            ("ruby-indent-line" function
+               (:user-visible-flag t
+                :arguments ("ignored"))
+                nil [31446 31603])
+            ("ruby-indent-to" function (:arguments ("column")) nil [31605 32287])
+            ("ruby-special-char-p" function (:arguments ("pos")) nil [32289 32802])
+            ("ruby-verify-heredoc" function (:arguments ("pos")) nil [32804 33343])
+            ("ruby-expr-beg" function (:arguments ("option")) nil [33345 34994])
+            ("ruby-forward-string" function (:arguments ("term" "end" "no-error" "expand")) nil [34996 36329])
+            ("ruby-deep-indent-paren-p" function (:arguments ("c")) nil [36331 36781])
+            ("ruby-parse-partial" function (:arguments ("end" "in-string" "nest" "depth" "pcol" "indent")) nil [36783 44532])
+            ("ruby-parse-region" function (:arguments ("start" "end")) nil [44534 45136])
+            ("ruby-indent-size" function (:arguments ("pos" "nest")) nil [45138 45289])
+            ("ruby-calculate-indent" function (:arguments ("parse-start")) nil [45291 53049])
+            ("ruby-beginning-of-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [53051 53426])
+            ("ruby-end-of-defun" function (:user-visible-flag t) nil [53428 53792])
+            ("ruby-beginning-of-indent" function nil nil [53794 54151])
+            ("ruby-move-to-block" function (:arguments ("n")) nil [54153 56619])
+            ("ruby-beginning-of-block" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [56621 56818])
+            ("ruby-end-of-block" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [56820 57004])
+            ("ruby-forward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [57006 59212])
+            ("ruby-backward-sexp" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [59214 61348])
+            ("ruby-indent-exp" function
+               (:user-visible-flag t
+                :arguments ("ignored"))
+                nil [61350 62160])
+            ("ruby-add-log-current-method" function nil nil [62162 65955])
+            ("ruby-block-contains-point" function (:arguments ("pt")) nil [65957 66083])
+            ("ruby-brace-to-do-end" function (:arguments ("orig" "end")) nil [66085 66985])
+            ("ruby-do-end-to-brace" function (:arguments ("orig" "end")) nil [66987 68098])
+            ("ruby-toggle-block" function (:user-visible-flag t) nil [68100 68901])
+            ("ruby--string-region" function nil nil [68903 69163])
+            ("ruby-string-at-point-p" function nil nil [69165 69265])
+            ("ruby--inverse-string-quote" function (:arguments ("string-quote")) nil [69267 69411])
+            ("ruby-toggle-string-quotes" function (:user-visible-flag t) nil [69413 70331])
+            ("ruby-syntax-before-regexp-re" variable (:default-value (concat "\\(^\\|[[{|=(,~;<>!]" "\\|[?:] " "\\|\\(?:^\\|\\s \\)" (regexp-opt (quote ("if" "elsif" "unless" "while" "until" "when" "and" "or" "not" "&&" "||"))) "\\|\\_<" (regexp-opt ruby-syntax-methods-before-regexp) "\\)\\s *")) nil [70783 71462])
+            ("ruby-syntax-methods-before-regexp" variable
+               (:constant-flag t
+                :default-value (quote ("gsub" "gsub!" "sub" "sub!" "scan" "split" "split!" "index" "match" "assert_match" "Given" "Then" "When")))
+                nil [70494 70779])
+            ("ruby-percent-literal-beg-re" variable
+               (:constant-flag t
+                :default-value "\\(%\\)[qQrswWxIi]?\\([[:punct:]]\\)")
+                nil [70353 70490])
+            ("ruby-syntax-propertize" function (:arguments ("start" "end")) nil [71465 75227])
+            ("define-obsolete-function-alias" code nil nil [75229 75327])
+            ("ruby-syntax-propertize-heredoc" function (:arguments ("limit")) nil [75329 76391])
+            ("ruby-syntax-enclosing-percent-literal" function (:arguments ("limit")) nil [76393 76786])
+            ("ruby-syntax-propertize-percent-literal" function (:arguments ("limit")) nil [76788 78239])
+            ("ruby-syntax-propertize-expansion" function nil nil [78241 78907])
+            ("ruby-syntax-expansion-allowed-p" function (:arguments ("parse-state")) nil [78909 79259])
+            ("ruby-syntax-propertize-expansions" function (:arguments ("start" "end")) nil [79261 79467])
+            ("ruby-in-ppss-context-p" function (:arguments ("context" "ppss")) nil [79469 80186])
+            ("ruby-font-lock-syntax-table" variable (:default-value (let ((tbl (copy-syntax-table ruby-mode-syntax-table))) (modify-syntax-entry 95 "w" tbl) tbl)) nil [80188 80420])
+            ("ruby-font-lock-keyword-beg-re" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\|[^.@$:]\\|\\.\\.\\)")
+                nil [80422 80493])
+            ("ruby-font-lock-keywords" variable
+               (:constant-flag t
+                :default-value (\` (("^\\s *def\\s +\\(?:[^( 	
+.]*\\.\\)?\\([^( 	
+]+\\)" 1 font-lock-function-name-face) ((\, (concat ruby-font-lock-keyword-beg-re (regexp-opt (quote ("alias" "and" "begin" "break" "case" "class" "def" "defined?" "do" "elsif" "else" "fail" "ensure" "for" "end" "if" "in" "module" "next" "not" "or" "redo" "rescue" "retry" "return" "self" "super" "then" "unless" "undef" "until" "when" "while" "yield")) (quote symbols)))) (1 font-lock-keyword-face)) ((\, (concat ruby-font-lock-keyword-beg-re (regexp-opt (quote ("at_exit" "autoload" "autoload?" "callcc" "catch" "eval" "exec" "format" "lambda" "load" "loop" "open" "p" "print" "printf" "proc" "putc" "puts" "require" "require_relative" "spawn" "sprintf" "syscall" "system" "throw" "trace_var" "trap" "untrace_var" "warn" "alias_method" "attr" "attr_accessor" "attr_reader" "attr_writer" "define_method" "extend" "include" "module_function" "prepend" "private_class_method" "private_constant" "public_class_method" "public_constant" "refine" "using")) (quote symbols)))) (1 (unless (looking-at " *\\(?:[]|,.)}=]\\|$\\)") font-lock-builtin-face))) ((\, (concat ruby-font-lock-keyword-beg-re (regexp-opt (quote ("__callee__" "__dir__" "__method__" "abort" "binding" "block_given?" "caller" "exit" "exit!" "fail" "fork" "global_variables" "local_variables" "private" "protected" "public" "raise" "rand" "readline" "readlines" "sleep" "srand")) (quote symbols)))) (1 font-lock-builtin-face)) ((\, ruby-here-doc-beg-re) (0 (when (ruby-verify-heredoc (match-beginning 0)) (quote font-lock-string-face)))) "\\_<\\(?:BEGIN\\|END\\)\\_>\\|^__END__$" ((\, (concat ruby-font-lock-keyword-beg-re "\\_<\\(nil\\|true\\|false\\)\\_>")) 1 font-lock-constant-face) ("\\_<__\\(?:LINE\\|ENCODING\\|FILE\\)__\\_>" (0 font-lock-builtin-face)) ("\\(^\\|[^:]\\)\\(:@\\{0,2\\}\\(?:\\sw\\|\\s_\\)+\\)" (2 font-lock-constant-face) (3 (unless (and (eq (char-before (match-end 3)) 61) (eq (char-after (match-end 3)) 62)) font-lock-constant-face) nil t)) ((\, (concat "\\$\\(?:[:\"!@;,/\\._><\\$?~=*&`'+0-9]\\|-[0adFiIlpvw]\\|" (regexp-opt (quote ("LOAD_PATH" "LOADED_FEATURES" "PROGRAM_NAME" "ERROR_INFO" "ERROR_POSITION" "FS" "FIELD_SEPARATOR" "OFS" "OUTPUT_FIELD_SEPARATOR" "RS" "INPUT_RECORD_SEPARATOR" "ORS" "OUTPUT_RECORD_SEPARATOR" "NR" "INPUT_LINE_NUMBER" "LAST_READ_LINE" "DEFAULT_OUTPUT" "DEFAULT_INPUT" "PID" "PROCESS_ID" "CHILD_STATUS" "LAST_MATCH_INFO" "IGNORECASE" "ARGV" "MATCH" "PREMATCH" "POSTMATCH" "LAST_PAREN_MATCH" "stdin" "stdout" "stderr" "DEBUG" "FILENAME" "VERBOSE" "SAFE" "CLASSPATH" "JRUBY_VERSION" "JRUBY_REVISION" "ENV_JAVA"))) "\\_>\\)")) 0 font-lock-builtin-face) ("\\(\\$\\|@\\|@@\\)\\(\\w\\|_\\)+" 0 font-lock-variable-name-face) ("\\_<\\([A-Z]+\\(\\w\\|_\\)*\\)" 1 (unless (eq 40 (char-after)) font-lock-type-face)) ("\\(?:^\\s *\\|[[{(,]\\s *\\|\\sw\\s +\\)\\(\\(\\sw\\|_\\)+:\\)[^:]" (1 (progn (forward-char -1) font-lock-constant-face))) ((\, (concat ruby-font-lock-keyword-beg-re (regexp-opt (quote ("Array" "Complex" "Float" "Hash" "Integer" "Rational" "String")) (quote symbols)))) (1 font-lock-builtin-face)) (ruby-match-expression-expansion 2 font-lock-variable-name-face t) ("\\(?:^\\|[^[:alnum:]_]\\)\\(!+\\)[^=~]" 1 font-lock-negation-char-face) ("\\?\\\\?\\_<.\\_>" 0 font-lock-string-face) ("\\(?:\\s|\\|/\\)\\([imxo]+\\)" 1 (when (save-excursion (let ((state (syntax-ppss (match-beginning 0)))) (and (nth 3 state) (or (eq (char-after) 47) (progn (goto-char (nth 8 state)) (looking-at "%r")))))) font-lock-preprocessor-face)))))
+                nil [80495 86534])
+            ("ruby-match-expression-expansion" function (:arguments ("limit")) nil [86536 86932])
+            ("define-derived-mode" code nil nil [86949 87752])
+            ("add-to-list" code nil nil [87808 88375])
+            ("dolist" code nil nil [88392 88529])
+            ("ruby-mode" package nil nil [88531 88551]))          
+      :file "ruby-mode.el.gz"
+      :pointmax 88580
+      :fsize 21531
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 71462 . 71463) (symbol 70334 . 70350) (open-paren 70333 . 70334) (close-paren 3861 . 3862) (symbol 3485 . 3501) (open-paren 3484 . 3485)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1154 1171])
+            ("tool-bar" include nil nil [1173 1192])
+            ("comint" include nil nil [1193 1210])
+            ("compilation" customgroup (:user-visible-flag t) nil [1212 1335])
+            ("compilation-mode-hook" variable nil nil [1353 1480])
+            ("compilation-start-hook" variable nil nil [1497 1678])
+            ("compilation-window-height" variable nil nil [1695 1886])
+            ("compilation-filter-hook" variable nil nil [1888 2265])
+            ("compilation-filter-start" variable nil nil [2267 2432])
+            ("compilation-first-column" variable (:default-value 1) nil [2434 2721])
+            ("compilation-parse-errors-filename-function" variable nil nil [2723 2988])
+            ("compilation-process-setup-function" variable nil nil [3005 3310])
+            ("compilation-buffer-name-function" variable nil nil [3327 3624])
+            ("compilation-finish-function" variable nil nil [3641 3846])
+            ("make-obsolete-variable" code nil nil [3848 3985])
+            ("compilation-finish-functions" variable nil nil [4002 4220])
+            ("compilation-in-progress" variable nil nil [4222 4305])
+            ("or" code nil nil [4306 4456])
+            ("compilation-error" variable (:default-value "error") nil [4458 4548])
+            ("compilation-arguments" variable nil nil [4550 4638])
+            ("compilation-num-errors-found" variable nil nil [4640 4677])
+            ("compilation-error-regexp-alist-alist" variable (:default-value (\` ((absoft "^\\(?:[Ee]rror on \\|[Ww]arning on\\( \\)\\)?[Ll]ine[ 	]+\\([0-9]+\\)[ 	]+of[ 	]+\"?\\([a-zA-Z]?:?[^\":
+]+\\)\"?:" 3 2 nil (1)) (ada "\\(warning: .*\\)? at \\([^ 
+]+\\):\\([0-9]+\\)$" 2 3 nil (1)) (aix " in line \\([0-9]+\\) of file \\([^ 
+]+[^. 
+]\\)\\.? " 2 1) (ant "^[ 	]*\\[[^] 
+]+\\][ 	]*\\(\\(?:[A-Za-z]:\\\\\\)?[^: 
+]+\\):\\([0-9]+\\):\\(?:\\([0-9]+\\):\\([0-9]+\\):\\([0-9]+\\):\\)?\\( warning\\)?" 1 (2 . 4) (3 . 5) (6)) (bash "^\\([^: 
+	]+\\): line \\([0-9]+\\):" 1 2) (borland "^\\(?:Error\\|Warnin\\(g\\)\\) \\(?:[FEW][0-9]+ \\)?\\([a-zA-Z]?:?[^:( 	
+]+\\) \\([0-9]+\\)\\(?:[) 	]\\|:[^0-9
+]\\)" 2 3 nil (1)) (python-tracebacks-and-caml "^[ 	]*File \\(\"?\\)\\([^,\" 
+	<>]+\\)\\1, lines? \\([0-9]+\\)-?\\([0-9]+\\)?\\(?:$\\|,\\(?: characters? \\([0-9]+\\)-?\\([0-9]+\\)?:\\)?\\([ 
+]Warning\\(?: [0-9]+\\)?:\\)?\\)" 2 (3 . 4) (5 . 6) (7)) (comma "^\"\\([^,\" 
+	]+\\)\", line \\([0-9]+\\)\\(?:[(. pos]+\\([0-9]+\\))?\\)?[:.,; (-]\\( warning:\\|[-0-9 ]*(W)\\)?" 1 2 3 (4)) (cucumber "\\(?:^cucumber\\(?: -p [^[:space:]]+\\)?\\|#\\)\\(?: \\)\\([^(].*\\):\\([1-9][0-9]*\\)" 1 2) (msft "^ *\\([0-9]+>\\)?\\(\\(?:[a-zA-Z]:\\)?[^:(	
+]+\\)(\\([0-9]+\\)) ?: \\(?:see declaration\\|\\(?:warnin\\(g\\)\\|[a-z ]+\\) C[0-9]+:\\)" 2 3 nil (4)) (edg-1 "^\\([^ 
+]+\\)(\\([0-9]+\\)): \\(?:error\\|warnin\\(g\\)\\|remar\\(k\\)\\)" 1 2 nil (3 . 4)) (edg-2 "at line \\([0-9]+\\) of \"\\([^ 
+]+\\)\"$" 2 1 nil 0) (epc "^Error [0-9]+ at (\\([0-9]+\\):\\([^)
+]+\\))" 2 1) (ftnchek "\\(^Warning .*\\)? line[ 
+]\\([0-9]+\\)[ 
+]\\(?:col \\([0-9]+\\)[ 
+]\\)?file \\([^ :;
+]+\\)" 4 2 3 (1)) (iar "^\"\\(.*\\)\",\\([0-9]+\\)\\s-+\\(?:Error\\|Warnin\\(g\\)\\)\\[[0-9]+\\]:" 1 2 nil (3)) (ibm "^\\([^( 
+	]+\\)(\\([0-9]+\\):\\([0-9]+\\)) : \\(?:warnin\\(g\\)\\|informationa\\(l\\)\\)?" 1 2 3 (4 . 5)) (irix "^[-[:alnum:]_/ ]+: \\(?:\\(?:[sS]evere\\|[eE]rror\\|[wW]arnin\\(g\\)\\|[iI]nf\\(o\\)\\)[0-9 ]*: \\)?\\([^,\" 
+	]+\\)\\(?:, line\\|:\\) \\([0-9]+\\):" 3 4 nil (1 . 2)) (java "^\\(?:[ 	]+at \\|==[0-9]+== +\\(?:at\\|b\\(y\\)\\)\\).+(\\([^()
+]+\\):\\([0-9]+\\))$" 2 3 nil (1)) (jikes-file "^\\(?:Found\\|Issued\\) .* compiling \"\\(.+\\)\":$" 1 nil nil 0) (maven "\\(\\[WARNING\\] *\\)?\\([^ 
+]\\(?:[^
+ :]\\| [^-/
+]\\|:[^ 
+]\\)*?\\):\\[\\([0-9]+\\),\\([0-9]+\\)\\] " 2 3 4 (1)) (jikes-line "^ *\\([0-9]+\\)\\.[ 	]+.*
+ +\\(<-*>
+\\*\\*\\* \\(?:Error\\|Warnin\\(g\\)\\)\\)" nil 1 nil 2 0 (2 (compilation-face (quote (3))))) (gcc-include "^\\(?:In file included \\|                 \\|	\\)from \\([0-9]*[^0-9
+]\\(?:[^
+ :]\\| [^-/
+]\\|:[^ 
+]\\)*?\\):\\([0-9]+\\)\\(?::\\([0-9]+\\)\\)?\\(?:\\(:\\)\\|\\(,\\|$\\)\\)?" 1 2 3 (4 . 5)) (ruby-Test::Unit "^[	 ]*\\[\\([^(].*\\):\\([1-9][0-9]*\\)\\(\\]\\)?:in " 1 2) (gnu (\, (rx bol (32 (| (regexp "[[:alpha:]][-[:alnum:].]+: ?") (regexp "[ 	]+\\(?:in \\|from\\)"))) (group-n 1 (: (regexp "[0-9]*[^0-9
+]") (*\? (| (regexp "[^
+ :]") (regexp " [^-/
+]") (regexp ":[^ 
+]"))))) (regexp ": ?") (group-n 2 (regexp "[0-9]+")) (32 (| (: "-" (group-n 4 (regexp "[0-9]+")) (32 "." (group-n 5 (regexp "[0-9]+")))) (: (in ".:") (group-n 3 (regexp "[0-9]+")) (32 "-" (32 (group-n 4 (regexp "[0-9]+")) ".") (group-n 5 (regexp "[0-9]+")))))) ":" (| (: (* " ") (group-n 6 (| "FutureWarning" "RuntimeWarning" "Warning" "warning" "W:"))) (: (* " ") (group-n 7 (| (regexp "[Ii]nfo\\(?:\\>\\|rmationa?l?\\)") "I:" (: "[ skipping " (+ ".") " ]") "instantiated from" "required from" (regexp "[Nn]ote")))) (: (* " ") (regexp "[Ee]rror")) (: (regexp "[0-9]?") (| (regexp "[^0-9
+]") eol)) (regexp "[0-9][0-9][0-9]")))) 1 (2 . 4) (3 . 5) (6 . 7)) (lcc "^\\(?:E\\|\\(W\\)\\), \\([^(
+]+\\)(\\([0-9]+\\),[ 	]*\\([0-9]+\\)" 2 3 4 (1)) (makepp "^makepp\\(?:\\(?:: warning\\(:\\).*?\\|\\(: Scanning\\|: [LR]e?l?oading makefile\\|: Imported\\|log:.*?\\) \\|: .*?\\)`\\(\\(\\S +?\\)\\(?::\\([0-9]+\\)\\)?\\)['(]\\)" 4 5 nil (1 . 2) 3 (0 (progn (save-match-data (compilation-parse-errors (match-end 0) (line-end-position) (\` ("`\\(\\(\\S +?\\)\\(?::\\([0-9]+\\)\\)?\\)['(]" 2 3 nil (\, (cond ((match-end 1) 1) ((match-end 2) 0) (t 2))) 1)))) (end-of-line) nil))) (mips-1 " (\\([0-9]+\\)) in \\([^ 
+]+\\)" 2 1) (mips-2 " in \\([^()
+ ]+\\)(\\([0-9]+\\))$" 1 2) (msft "^ *\\([0-9]+>\\)?\\(\\(?:[a-zA-Z]:\\)?[^:(	
+]+\\)(\\([0-9]+\\)) : \\(?:see declaration\\|\\(?:warnin\\(g\\)\\|[a-z ]+\\) C[0-9]+:\\)" 2 3 nil (4)) (omake "omake: file \\(.*\\) changed" 1 nil nil nil nil (0 (progn (compilation--flush-file-structure (match-string 1)) nil))) (oracle "^\\(?:Semantic error\\|Error\\|PCC-[0-9]+:\\).* line \\([0-9]+\\)\\(?:\\(?:,\\| at\\)? column \\([0-9]+\\)\\)?\\(?:,\\| in\\| of\\)? file \\(.*?\\):?$" 3 1 2) (perl " at \\([^ 
+]+\\) line \\([0-9]+\\)\\(?:[,.]\\|$\\| during global destruction\\.$\\)" 1 2) (php "\\(?:Parse\\|Fatal\\) error: \\(.*\\) in \\(.*\\) on line \\([0-9]+\\)" 2 3 nil nil) (rxp "^\\(?:Error\\|Warnin\\(g\\)\\):.*
+.* line \\([0-9]+\\) char \\([0-9]+\\) of file://\\(.+\\)" 4 2 3 (1)) (sparc-pascal-file "^\\w\\w\\w \\w\\w\\w +[0-3]?[0-9] +[0-2][0-9]:[0-5][0-9]:[0-5][0-9] [12][09][0-9][0-9] +\\(.*\\):$" 1 nil nil 0) (sparc-pascal-line "^\\(\\(?:E\\|\\(w\\)\\) +[0-9]+\\) line \\([0-9]+\\) -  " nil 3 nil (2) nil (1 (compilation-face (quote (2))))) (sparc-pascal-example "^ +\\([0-9]+\\) +.*
+\\(\\(?:e\\|\\(w\\)\\) [0-9]+\\)-+" nil 1 nil (3) nil (2 (compilation-face (quote (3))))) (sun ": \\(?:ERROR\\|WARNIN\\(G\\)\\|REMAR\\(K\\)\\) \\(?:[[:alnum:] ]+, \\)?File = \\(.+\\), Line = \\([0-9]+\\)\\(?:, Column = \\([0-9]+\\)\\)?" 3 4 5 (1 . 2)) (sun-ada "^\\([^, 
+	]+\\), line \\([0-9]+\\), char \\([0-9]+\\)[:., (-]" 1 2 3) (watcom "^[ 	]*\\(\\(?:[a-zA-Z]:\\)?[^:(	
+]+\\)(\\([0-9]+\\)): ?\\(?:\\(Error! E[0-9]+\\)\\|\\(Warning! W[0-9]+\\)\\):" 1 2 nil (4)) (4bsd "\\(?:^\\|::  \\|\\S ( \\)\\(/[^ 
+	()]+\\)(\\([0-9]+\\))\\(?:: \\(warning:\\)?\\|$\\| ),\\)" 1 2 nil (3)) (gcov-file "^ *-: *\\(0\\):Source:\\(.+\\)$" 2 1 nil 0 nil) (gcov-header "^ *-: *\\(0\\):\\(?:Object\\|Graph\\|Data\\|Runs\\|Programs\\):.+$" nil 1 nil 0 nil) (gcov-nomark "^ *-: *\\([1-9]\\|[0-9]\\{2,\\}\\):.*$" nil 1 nil 0 nil (0 (quote default)) (1 compilation-line-face)) (gcov-called-line "^ *\\([0-9]+\\): *\\([0-9]+\\):.*$" nil 2 nil 0 nil (0 (quote default)) (1 compilation-info-face) (2 compilation-line-face)) (gcov-never-called "^ *\\(#####\\): *\\([0-9]+\\):.*$" nil 2 nil 2 nil (0 (quote default)) (1 compilation-error-face) (2 compilation-line-face)) (perl--Pod::Checker "^\\*\\*\\* \\(?:ERROR\\|\\(WARNING\\)\\).* \\(?:at\\|on\\) line \\([0-9]+\\) \\(?:.* \\)?in file \\([^ 	
+]+\\)" 3 2 nil (1)) (perl--Test "^# Failed test [0-9]+ in \\([^ 	
+]+\\) at line \\([0-9]+\\)" 1 2) (perl--Test2 "^\\(.*NOK.*\\)?# Test [0-9]+ got:.* (\\([^ 	
+]+\\) at line \\([0-9]+\\)\\( fail #[0-9]+\\)?)" 2 3) (perl--Test::Harness "^.*NOK.* \\([^ 	
+]+\\) at line \\([0-9]+\\)" 1 2) (weblint "^\\([^ 	
+(]+\\) (\\([0-9]+\\):\\([0-9]+\\)) " 1 2 3) (guile-file "^In \\(.+\\..+\\):
+" 1 nil nil 0) (guile-line "^ *\\([0-9]+\\): *\\([0-9]+\\)" nil 1 2)))) nil [4885 18918])
+            ("compilation-error-regexp-alist" variable (:default-value (mapcar (quote car) compilation-error-regexp-alist-alist)) nil [18920 21732])
+            ("compilation-directory" variable nil nil [21807 21893])
+            ("compilation-directory-matcher" variable (:default-value (quote ("\\(?:Entering\\|Leavin\\(g\\)\\) directory [`']\\(.+\\)'$" (2 . 1)))) nil [21895 22736])
+            ("compilation-page-delimiter" variable (:default-value "^\\(?:\\|.*\\(?:Entering\\|Leaving\\) directory [`'].+'
+\\)+") nil [22738 22892])
+            ("compilation-mode-font-lock-keywords" variable (:default-value (quote (("^[Cc]hecking \\(?:[Ff]or \\|[Ii]f \\|[Ww]hether \\(?:to \\)?\\)?\\(.+\\)\\.\\.\\. *\\(?:(cached) *\\)?\\(\\(yes\\(?: .+\\)?\\)\\|no\\|\\(.*\\)\\)$" (1 font-lock-variable-name-face) (2 (compilation-face (quote (4 . 3))))) ("^\\([[:alnum:]_/.+-]+\\)\\(\\[\\([0-9]+\\)\\]\\)?[ 	]*:" (1 font-lock-function-name-face) (3 compilation-line-face nil t)) (" --?o\\(?:utfile\\|utput\\)?[= ]\\(\\S +\\)" . 1) ("^Compilation \\(finished\\).*" (0 (quote (face nil compilation-message nil help-echo nil mouse-face nil)) t) (1 compilation-info-face)) ("^Compilation \\(exited abnormally\\|interrupt\\|killed\\|terminated\\|segmentation fault\\)\\(?:.*with code \\([0-9]+\\)\\)?.*" (0 (quote (face nil compilation-message nil help-echo nil mouse-face nil)) t) (1 compilation-error-face) (2 compilation-error-face nil t))))) nil [22894 24009])
+            ("compilation-highlight-regexp" variable (:default-value t) nil [24011 24190])
+            ("compilation-highlight-overlay" variable nil nil [24192 24297])
+            ("compilation-error-screen-columns" variable (:default-value t) nil [24299 24924])
+            ("compilation-read-command" variable (:default-value t) nil [24926 25378])
+            ("compilation-ask-about-save" variable (:default-value t) nil [25395 25606])
+            ("compilation-save-buffers-predicate" variable nil nil [25608 26209])
+            ("compilation-search-path" variable (:default-value (quote (nil))) nil [26226 26581])
+            ("compile-command" variable (:default-value (purecopy "make -k ")) nil [26598 27286])
+            ("compilation-disable-input" variable nil nil [27463 27765])
+            ("compilation-locs" variable nil nil [27991 28019])
+            ("compilation-debug" variable nil nil [28021 28252])
+            ("compilation-exit-message-function" variable nil nil [28254 28597])
+            ("compilation-environment" variable nil nil [28599 28981])
+            ("compile-history" variable nil nil [29015 29043])
+            ("compilation-error" variable
+               (:default-value (quote ((t :inherit error)))
+                :type "face")
+                nil [29045 29180])
+            ("compilation-warning" variable
+               (:default-value (quote ((t :inherit warning)))
+                :type "face")
+                nil [29182 29323])
+            ("compilation-info" variable
+               (:default-value (quote ((t :inherit success)))
+                :type "face")
+                nil [29325 29466])
+            ("compilation-mode-line-fail" variable
+               (:default-value (quote ((default :inherit compilation-error) (((class color) (min-colors 16)) (:foreground "Red1" :weight bold)) (((class color) (min-colors 8)) (:foreground "red")) (t (:inverse-video t :weight bold))))
+                :type "face")
+                nil [29578 29928])
+            ("compilation-mode-line-run" variable
+               (:default-value (quote ((t :inherit compilation-warning)))
+                :type "face")
+                nil [29930 30108])
+            ("compilation-mode-line-exit" variable
+               (:default-value (quote ((default :inherit compilation-info) (((class color) (min-colors 16)) (:foreground "ForestGreen" :weight bold)) (((class color)) (:foreground "green" :weight bold)) (t (:weight bold))))
+                :type "face")
+                nil [30110 30453])
+            ("compilation-line-number" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [30455 30628])
+            ("compilation-column-number" variable
+               (:default-value (quote ((t :inherit font-lock-doc-face)))
+                :type "face")
+                nil [30630 30803])
+            ("compilation-message-face" variable (:default-value (quote underline)) nil [30805 31126])
+            ("compilation-error-face" variable (:default-value (quote compilation-error)) nil [31128 31232])
+            ("compilation-warning-face" variable (:default-value (quote compilation-warning)) nil [31234 31344])
+            ("compilation-info-face" variable (:default-value (quote compilation-info)) nil [31346 31456])
+            ("compilation-line-face" variable (:default-value (quote compilation-line-number)) nil [31458 31573])
+            ("compilation-column-face" variable (:default-value (quote compilation-column-number)) nil [31575 31696])
+            ("compilation-enter-directory-face" variable (:default-value (quote font-lock-function-name-face)) nil [31726 31851])
+            ("compilation-leave-directory-face" variable (:default-value (quote font-lock-builtin-face)) nil [31853 31971])
+            ("compilation-parse-errors-function" variable nil nil [32024 32070])
+            ("make-obsolete-variable" code nil nil [32071 32172])
+            ("compilation-auto-jump-to-first-error" variable nil nil [32174 32357])
+            ("compilation-auto-jump-to-next" variable nil nil [32359 32467])
+            ("make-variable-buffer-local" code nil nil [32468 32527])
+            ("compilation-skip-to-next-location" variable (:default-value t) nil [32709 32828])
+            ("compilation-skip-threshold" variable (:default-value 1) nil [32830 33310])
+            ("compilation-set-skip-threshold" function
+               (:user-visible-flag t
+                :arguments ("level"))
+                nil [33312 33789])
+            ("compilation-skip-visited" variable nil nil [33791 34139])
+            ("compilation-face" function (:arguments ("type")) nil [34141 34341])
+            ("compilation--make-cdrloc" function (:arguments ("line" "file-struct" "marker")) nil [35753 35855])
+            ("compilation--loc->col" function (:arguments ("loc")) nil [35856 35906])
+            ("compilation--loc->line" function (:arguments ("loc")) nil [35907 35959])
+            ("compilation--loc->file-struct" function (:arguments ("loc")) nil [35960 36020])
+            ("compilation--loc->marker" function (:arguments ("loc")) nil [36021 36076])
+            ("compilation--loc->visited" function (:arguments ("loc")) nil [36139 36198])
+            ("compilation--make-file-struct" function (:arguments ("file-spec" "formats" "loc-tree")) nil [36888 37014])
+            ("compilation--file-struct->file-spec" function (:arguments ("fs")) nil [37015 37077])
+            ("compilation--file-struct->formats" function (:arguments ("fs")) nil [37078 37139])
+            ("compilation--file-struct->loc-tree" function (:arguments ("fs")) nil [37203 37264])
+            ("cl-defstruct" code nil nil [37713 38010])
+            ("compilation--previous-directory-cache" variable nil nil [38012 38326])
+            ("make-variable-buffer-local" code nil nil [38327 38394])
+            ("compilation--flush-directory-cache" function (:arguments ("start" "_end")) nil [38396 38891])
+            ("compilation--previous-directory" function (:arguments ("pos")) nil [38893 40533])
+            ("compilation-directory-properties" function (:arguments ("idx" "leave")) nil [40813 41896])
+            ("compilation-assq" function (:arguments ("key" "alist")) nil [42451 42758])
+            ("compilation-auto-jump" function (:arguments ("buffer" "pos")) nil [42761 43011])
+            ("compilation-error-properties" function (:arguments ("file" "line" "end-line" "col" "end-col" "type" "fmt")) nil [43235 46062])
+            ("compilation-beginning-of-line" function (:arguments ("n")) nil [46064 46401])
+            ("compilation-move-to-column" function (:arguments ("col" "screen")) nil [46403 46924])
+            ("compilation-internal-error-properties" function (:arguments ("file" "line" "end-line" "col" "end-col" "type" "fmts")) nil [46926 51790])
+            ("compilation--put-prop" function (:arguments ("matchnum" "prop" "val")) nil [51792 51994])
+            ("compilation--remove-properties" function (:arguments ("start" "end")) nil [51996 53198])
+            ("compilation--parse-region" function (:arguments ("start" "end")) nil [53200 54909])
+            ("compilation-parse-errors" function (:arguments ("start" "end" "rules")) nil [54911 60000])
+            ("compilation--parsed" variable (:default-value -1) nil [60002 60033])
+            ("make-variable-buffer-local" code nil nil [60034 60083])
+            ("compilation--ensure-parse" function (:arguments ("limit")) nil [60085 61095])
+            ("compilation--flush-parse" function (:arguments ("start" "_end")) nil [61097 61309])
+            ("compilation-mode-font-lock-keywords" function nil nil [61311 61498])
+            ("compilation-read-command" function (:arguments ("command")) nil [61500 61748])
+            ("compile" function
+               (:user-visible-flag t
+                :arguments ("command" "comint"))
+                nil [61767 63494])
+            ("recompile" function
+               (:user-visible-flag t
+                :arguments ("edit-command"))
+                nil [63541 64361])
+            ("compilation-scroll-output" variable nil nil [64363 64971])
+            ("compilation-buffer-name" function (:arguments ("name-of-mode" "mode-command" "name-function")) nil [64974 65678])
+            ("compilation-always-kill" variable nil nil [65680 65879])
+            ("compilation-start" function (:arguments ("command" "mode" "name-function" "highlight-regexp")) nil [65896 76296])
+            ("compilation-set-window-height" function (:arguments ("window")) nil [76298 76893])
+            ("compilation-menu-map" variable (:default-value (let ((map (make-sparse-keymap "Errors")) (opt-map (make-sparse-keymap "Skip"))) (define-key map [stop-subjob] (quote (menu-item "Stop Compilation" kill-compilation :help "Kill the process made by the M-x compile or M-x grep commands"))) (define-key map [compilation-mode-separator3] (quote ("----"))) (define-key map [compilation-next-error-follow-minor-mode] (quote (menu-item "Auto Error Display" next-error-follow-minor-mode :help "Display the error under cursor when moving the cursor" :button (:toggle . next-error-follow-minor-mode)))) (define-key map [compilation-skip] (cons "Skip Less Important Messages" opt-map)) (define-key opt-map [compilation-skip-none] (quote (menu-item "Don't Skip Any Messages" (lambda nil (interactive) (customize-set-variable (quote compilation-skip-threshold) 0)) :help "Do not skip any type of messages" :button (:radio eq compilation-skip-threshold 0)))) (define-key opt-map [compilation-skip-info] (quote (menu-item "Skip Info" (lambda nil (interactive) (customize-set-variable (quote compilation-skip-threshold) 1)) :help "Skip anything less than warning" :button (:radio eq compilation-skip-threshold 1)))) (define-key opt-map [compilation-skip-warning-and-info] (quote (menu-item "Skip Warnings and Info" (lambda nil (interactive) (customize-set-variable (quote compilation-skip-threshold) 2)) :help "Skip over Warnings and Info, stop for errors" :button (:radio eq compilation-skip-threshold 2)))) (define-key map [compilation-mode-separator2] (quote ("----"))) (define-key map [compilation-first-error] (quote (menu-item "First Error" first-error :help "Restart at the first error, visit corresponding source code"))) (define-key map [compilation-previous-error] (quote (menu-item "Previous Error" previous-error :help "Visit previous `next-error' message and corresponding source code"))) (define-key map [compilation-next-error] (quote (menu-item "Next Error" next-error :help "Visit next `next-error' message and corresponding source code"))) map)) nil [76895 79059])
+            ("compilation-minor-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map special-mode-map) (define-key map [mouse-2] (quote compile-goto-error)) (define-key map [follow-link] (quote mouse-face)) (define-key map "" (quote compile-goto-error)) (define-key map "" (quote compile-goto-error)) (define-key map "" (quote compilation-display-error)) (define-key map "" (quote kill-compilation)) (define-key map "\356" (quote compilation-next-error)) (define-key map "\360" (quote compilation-previous-error)) (define-key map "\373" (quote compilation-previous-file)) (define-key map "\375" (quote compilation-next-file)) (define-key map "g" (quote recompile)) (define-key map [menu-bar compilation] (cons "Errors" compilation-menu-map)) map)) nil [79061 79903])
+            ("compilation-shell-minor-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "\215" (quote compile-goto-error)) (define-key map "\216" (quote compilation-next-error)) (define-key map "\220" (quote compilation-previous-error)) (define-key map "\373" (quote compilation-previous-file)) (define-key map "\375" (quote compilation-next-file)) (define-key map [menu-bar compilation] (cons "Errors" compilation-menu-map)) map)) nil [79905 80423])
+            ("compilation-button-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [mouse-2] (quote compile-goto-error)) (define-key map [follow-link] (quote mouse-face)) (define-key map "" (quote compile-goto-error)) map)) nil [80425 80691])
+            ("fset" code nil nil [80692 80745])
+            ("compilation-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map special-mode-map) (define-key map [mouse-2] (quote compile-goto-error)) (define-key map [follow-link] (quote mouse-face)) (define-key map "" (quote compile-goto-error)) (define-key map "" (quote compile-goto-error)) (define-key map "" (quote compilation-display-error)) (define-key map "" (quote kill-compilation)) (define-key map "\356" (quote compilation-next-error)) (define-key map "\360" (quote compilation-previous-error)) (define-key map "\373" (quote compilation-previous-file)) (define-key map "\375" (quote compilation-next-file)) (define-key map "	" (quote compilation-next-error)) (define-key map [backtab] (quote compilation-previous-error)) (define-key map "g" (quote recompile)) (define-key map "" (quote next-error-follow-minor-mode)) (let ((submap (make-sparse-keymap "Compile"))) (define-key map [menu-bar compilation] (cons "Compile" submap)) (set-keymap-parent submap compilation-menu-map)) (define-key map [menu-bar compilation compilation-separator2] (quote ("----"))) (define-key map [menu-bar compilation compilation-grep] (quote (menu-item "Search Files (grep)..." grep :help "Run grep, with user-specified args, and collect output in a buffer"))) (define-key map [menu-bar compilation compilation-recompile] (quote (menu-item "Recompile" recompile :help "Re-compile the program including the current buffer"))) (define-key map [menu-bar compilation compilation-compile] (quote (menu-item "Compile..." compile :help "Compile the program including the current buffer.  Default: run `make'"))) map)) nil [80747 82681])
+            ("compilation-mode-tool-bar-map" variable (:default-value (when (keymapp tool-bar-map) (let ((map (copy-keymap tool-bar-map))) (define-key map [undo] nil) (define-key map [separator-2] nil) (define-key-after map [separator-compile] menu-bar-separator) (tool-bar-local-item "left-arrow" (quote previous-error-no-select) (quote previous-error-no-select) map :rtl "right-arrow" :help "Goto previous error") (tool-bar-local-item "right-arrow" (quote next-error-no-select) (quote next-error-no-select) map :rtl "left-arrow" :help "Goto next error") (tool-bar-local-item "cancel" (quote kill-compilation) (quote kill-compilation) map :enable (quote (let ((buffer (compilation-find-buffer))) (get-buffer-process buffer))) :help "Stop compilation") (tool-bar-local-item "refresh" (quote recompile) (quote recompile) map :help "Restart compilation") map))) nil [82683 83680])
+            ("put" code nil nil [83682 83726])
+            ("compilation-mode" function
+               (:user-visible-flag t
+                :arguments ("name-of-mode"))
+                nil [83743 85100])
+            ("put" code nil nil [85117 85165])
+            ("define-compilation-mode" function (:arguments ("mode" "name" "doc" "body")) nil [85167 86752])
+            ("compilation-revert-buffer" function (:arguments ("ignore-auto" "noconfirm")) nil [86754 87032])
+            ("compilation-current-error" variable nil nil [87034 87207])
+            ("compilation-messages-start" variable nil nil [87209 87351])
+            ("compilation-setup" function (:arguments ("minor")) nil [87353 89040])
+            ("compilation--unsetup" function nil nil [89042 89340])
+            ("define-minor-mode" code nil nil [89357 89956])
+            ("define-minor-mode" code nil nil [89973 90484])
+            ("compilation-handle-exit" function (:arguments ("process-status" "exit-status" "msg")) nil [90486 92154])
+            ("compilation-sentinel" function (:arguments ("proc" "msg")) nil [92206 92951])
+            ("compilation-filter" function (:arguments ("proc" "string")) nil [92953 94578])
+            ("compilation-buffer-internal-p" function nil nil [94655 94778])
+            ("compilation-buffer-p" function (:arguments ("buffer")) nil [94862 95013])
+            ("compilation-loop" function (:arguments ("<" "property-change" "1+" "error" "limit")) nil [95015 96403])
+            ("compilation-next-single-property-change" function (:arguments ("position" "prop" "object" "limit")) nil [96405 97194])
+            ("compilation-next-error" function
+               (:user-visible-flag t
+                :arguments ("n" "different-file" "pt"))
+                nil [97196 99327])
+            ("compilation-previous-error" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [99329 99627])
+            ("compilation-next-file" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [99629 99868])
+            ("compilation-previous-file" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [99870 100118])
+            ("compilation-display-error" function (:user-visible-flag t) nil [100120 100302])
+            ("kill-compilation" function (:user-visible-flag t) nil [100304 100612])
+            ("defalias" code nil nil [100614 100670])
+            ("compile-goto-error" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [100672 101252])
+            ("compilation-find-buffer" function (:arguments ("avoid-current")) nil [101367 101782])
+            ("compilation-next-error-function" function
+               (:user-visible-flag t
+                :arguments ("n" "reset"))
+                nil [101799 105917])
+            ("compilation-gcpro" variable nil nil [105919 106013])
+            ("make-variable-buffer-local" code nil nil [106014 106061])
+            ("compilation-fake-loc" function (:arguments ("marker" "file" "line" "col")) nil [106063 107566])
+            ("compilation-context-lines" variable nil nil [107568 108036])
+            ("compilation-set-window" function (:arguments ("w" "mk")) nil [108038 108589])
+            ("next-error-highlight-timer" variable nil nil [108591 108626])
+            ("compilation-goto-locus" function (:arguments ("msg" "mk" "end-mk")) nil [108628 112465])
+            ("compilation-goto-locus-delete-o" function nil nil [112467 112788])
+            ("compilation-find-file" function (:arguments ("marker" "filename" "directory" "formats")) nil [112791 117194])
+            ("compilation-get-file-structure" function (:arguments ("file" "fmt")) nil [117196 119569])
+            ("compilation--flush-file-structure" function (:arguments ("file")) nil [119571 120005])
+            ("defvaralias" code nil nil [120051 120113])
+            ("compilation-parsing-end" variable (:default-value (make-marker)) nil [120114 120160])
+            ("compilation-error-list" variable nil nil [120161 120196])
+            ("compilation-old-error-list" variable nil nil [120197 120236])
+            ("compilation--compat-error-properties" function (:arguments ("err")) nil [120238 121109])
+            ("compilation--compat-parse-errors" function (:arguments ("limit")) nil [121111 123057])
+            ("compilation-forget-errors" function nil nil [123139 124951])
+            ("compile" package nil nil [124953 124971]))          
+      :file "compile.el.gz"
+      :pointmax 124998
+      :fsize 35052
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 42758 . 42759) (symbol 42387 . 42404) (open-paren 42386 . 42387) (close-paren 1171 . 1172) (symbol 1136 . 1153) (open-paren 1135 . 1136))))
+  :file "!usr!share!emacs!25.3!lisp!progmodes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

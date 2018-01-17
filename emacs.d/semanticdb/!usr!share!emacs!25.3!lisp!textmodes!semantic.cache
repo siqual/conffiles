@@ -1,0 +1,1969 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("remember-version" variable
+               (:constant-flag t
+                :default-value "2.0")
+                nil [7596 7659])
+            ("remember" customgroup (:user-visible-flag t) nil [7661 7735])
+            ("remember-mode-hook" variable nil nil [7758 7948])
+            ("remember-in-new-frame" variable nil nil [7950 8091])
+            ("remember-register" variable (:default-value 82) nil [8093 8225])
+            ("remember-filter-functions" variable nil nil [8227 8390])
+            ("remember-handler-functions" variable (:default-value (quote (remember-append-to-file))) nil [8392 8921])
+            ("remember-all-handler-functions" variable nil nil [8923 9078])
+            ("remember-buffer" variable (:default-value "*Remember*") nil [9144 9229])
+            ("remember-save-after-remembering" variable (:default-value t) nil [9231 9368])
+            ("remember-annotation-functions" variable (:default-value (quote (buffer-file-name))) nil [9391 9617])
+            ("remember-annotation" variable nil nil [9619 9675])
+            ("remember-initial-contents" variable nil nil [9676 9768])
+            ("remember-before-remember-hook" variable nil nil [9770 9909])
+            ("remember-run-all-annotation-functions-flag" variable nil nil [9911 10088])
+            ("remember" function
+               (:user-visible-flag t
+                :arguments ("initial"))
+                nil [10105 11909])
+            ("remember-other-frame" function
+               (:user-visible-flag t
+                :arguments ("initial"))
+                nil [11926 12168])
+            ("remember-mail-date" function (:arguments ("rfc822-p")) nil [12170 12337])
+            ("remember-buffer-desc" function nil nil [12339 12743])
+            ("remember-mailbox" variable (:default-value "~/Mail/remember") nil [12779 12912])
+            ("remember-default-priority" variable (:default-value "medium") nil [12914 13050])
+            ("remember-store-in-mailbox" function nil nil [13052 14296])
+            ("remember-data-file" variable (:default-value (locate-user-emacs-file "notes" ".notes")) nil [14329 14993])
+            ("remember-leader-text" variable (:default-value "** ") nil [14995 15115])
+            ("remember-append-to-file" function nil nil [15117 15879])
+            ("remember-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [15881 16756])
+            ("remember-data-directory" variable (:default-value "~/remember") nil [16758 16957])
+            ("remember-directory-file-name-format" variable (:default-value "%Y-%m-%d_%T-%z") nil [16959 17223])
+            ("remember-store-in-files" function nil nil [17225 17699])
+            ("remember-clipboard" function (:user-visible-flag t) nil [17716 17903])
+            ("remember-finalize" function (:user-visible-flag t) nil [17905 18042])
+            ("define-obsolete-function-alias" code nil nil [18062 18137])
+            ("remember-destroy" function (:user-visible-flag t) nil [18139 18348])
+            ("remember-diary-file" variable nil nil [18373 18574])
+            ("calendar-date-style" variable nil nil [18576 18604])
+            ("remember-diary-convert-entry" function (:arguments ("entry")) nil [18631 19769])
+            ("diary-make-entry" function (:prototype-flag t) nil [19771 19811])
+            ("remember-diary-extract-entries" function nil nil [19828 20244])
+            ("remember-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (quote remember-finalize)) (define-key map "" (quote remember-finalize)) (define-key map "" (quote remember-destroy)) map)) nil [20294 20553])
+            ("define-derived-mode" code nil nil [20555 20951])
+            ("remember-notes-buffer-name" variable (:default-value "*notes*") nil [20989 21192])
+            ("remember-notes-initial-major-mode" variable nil nil [21194 21471])
+            ("remember-notes-bury-on-kill" variable (:default-value t) nil [21473 21628])
+            ("remember-notes-save-and-bury-buffer" function (:user-visible-flag t) nil [21630 21813])
+            ("remember-notes-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (quote remember-notes-save-and-bury-buffer)) map)) nil [21817 22005])
+            ("define-minor-mode" code nil nil [22007 22419])
+            ("remember-notes" function
+               (:user-visible-flag t
+                :arguments ("switch-to"))
+                nil [22436 23971])
+            ("remember-notes--kill-buffer-query" function nil nil [23973 24425])
+            ("remember" package nil nil [24427 24446]))          
+      :file "remember.el.gz"
+      :pointmax 24474
+      :fsize 8077
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [935 948])
+            ("reftex-global" package nil nil [950 974])
+            ("reftex" include nil nil [975 992])
+            ("reftex-create-tags-file" function (:user-visible-flag t) nil [1013 1604])
+            ("reftex-grep-history" variable nil nil [1635 1667])
+            ("reftex-grep-command" variable (:default-value "grep -n ") nil [1668 1786])
+            ("reftex-grep-document" function
+               (:user-visible-flag t
+                :arguments ("grep-cmd"))
+                nil [1803 2404])
+            ("reftex-search-document" function
+               (:user-visible-flag t
+                :arguments ("regexp"))
+                nil [2421 3079])
+            ("reftex-query-replace-document" function
+               (:user-visible-flag t
+                :arguments ("from" "to" "delimited"))
+                nil [3096 3983])
+            ("TeX-master" variable nil nil [3985 4004])
+            ("isearch-next-buffer-function" variable nil nil [4005 4042])
+            ("reftex-find-duplicate-labels" function (:user-visible-flag t) nil [4059 6316])
+            ("reftex-change-label" function
+               (:user-visible-flag t
+                :arguments ("from" "to"))
+                nil [6333 7122])
+            ("reftex-renumber-simple-labels" function (:user-visible-flag t) nil [7139 10390])
+            ("reftex-translate" function (:arguments ("files" "search-re" "translate-alist" "error-fmt" "test")) nil [10392 12748])
+            ("reftex-save-all-document-buffers" function (:user-visible-flag t) nil [12765 13230])
+            ("reftex-ensure-write-access" function (:arguments ("files")) nil [13232 14058])
+            ("reftex-isearch-wrap-function" function nil nil [14425 14605])
+            ("reftex-isearch-push-state-function" function nil nil [14607 14733])
+            ("reftex-isearch-pop-state-function" function (:arguments ("cmd" "buffer")) nil [14735 14817])
+            ("reftex-isearch-isearch-search" function (:arguments ("string" "bound" "noerror")) nil [14819 15665])
+            ("reftex-isearch-switch-to-next-file" function (:arguments ("crt-buf" "wrapp")) nil [16194 16667])
+            ("reftex-isearch-minor-mode" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [16733 18853])
+            ("add-minor-mode" code nil nil [18855 18940]))          
+      :file "reftex-global.el.gz"
+      :pointmax 19042
+      :fsize 5528
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 948 . 949) (symbol 917 . 934) (open-paren 916 . 917)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("when" code nil nil [4594 4909])
+            ("rst-testcover-defcustom" function nil nil [4911 5393])
+            ("rst-testcover-add-compose" function (:arguments ("fun")) nil [5395 5578])
+            ("rst-testcover-add-1value" function (:arguments ("fun")) nil [5580 5759])
+            ("cl" include nil nil [5959 5972])
+            ("rst-signum" function (:arguments ("x")) nil [6076 6205])
+            ("rst-some" function (:arguments ("seq" "pred")) nil [6207 6614])
+            ("rst-position-if" function (:arguments ("pred" "seq")) nil [6616 6862])
+            ("rst-position" function (:arguments ("elem" "seq")) nil [6864 7265])
+            ("rst-extract-version" function (:arguments ("delim-re" "head-re" "re" "tail-re" "var" "default")) nil [7444 7860])
+            ("rst-cvs-header" variable
+               (:constant-flag t
+                :default-value "$CVSHeader: sm/rst_el/rst.el,v 1.327.2.26 2015/10/04 09:26:04 stefan Exp $")
+                nil [7956 8060])
+            ("rst-cvs-rev" variable
+               (:constant-flag t
+                :default-value (rst-extract-version "\\$" "CVSHeader: \\S + " "[0-9]+\\(?:\\.[0-9]+\\)+" " .*" rst-cvs-header "0.0"))
+                nil [8061 8274])
+            ("rst-cvs-timestamp" variable
+               (:constant-flag t
+                :default-value (rst-extract-version "\\$" "CVSHeader: \\S + \\S + " "[0-9]+-[0-9]+-[0-9]+ [0-9]+:[0-9]+:[0-9]+" " .*" rst-cvs-header "1970-01-01 00:00:00"))
+                nil [8275 8501])
+            ("rst-svn-rev" variable
+               (:constant-flag t
+                :default-value (rst-extract-version "\\$" "LastChangedRevision: " "[0-9]+" " " "$LastChangedRevision: 7925 $"))
+                nil [8561 8775])
+            ("rst-svn-timestamp" variable
+               (:constant-flag t
+                :default-value (rst-extract-version "\\$" "LastChangedDate: " ".+?+" " " "$LastChangedDate: 2015-10-04 11:21:35 +0200 (Sun, 04 Oct 2015) $"))
+                nil [8776 8978])
+            ("rst-official-version" variable
+               (:constant-flag t
+                :default-value (rst-extract-version "%" "OfficialVersion: " "[0-9]+\\(?:\\.[0-9]+\\)+" " " "%OfficialVersion: 1.4.1 %"))
+                nil [9018 9202])
+            ("rst-official-cvs-rev" variable
+               (:constant-flag t
+                :default-value (rst-extract-version "[%$]" "Revision: " "[0-9]+\\(?:\\.[0-9]+\\)+" " " "%Revision: 1.327.2.25 %"))
+                nil [9203 9399])
+            ("rst-version" variable
+               (:constant-flag t
+                :default-value (if (equal rst-official-cvs-rev rst-cvs-rev) rst-official-version (format "%s (development %s [%s])" rst-official-version rst-cvs-rev rst-cvs-timestamp)))
+                nil [9401 9752])
+            ("rst-package-emacs-version-alist" variable
+               (:constant-flag t
+                :default-value (quote (("1.0.0" . "24.3") ("1.1.0" . "24.3") ("1.2.0" . "24.3") ("1.2.1" . "24.3") ("1.3.0" . "24.3") ("1.3.1" . "24.3") ("1.4.0" . "24.3") ("1.4.1" . "25.1"))))
+                nil [9754 9986])
+            ("unless" code nil nil [9988 10142])
+            ("add-to-list" code nil nil [10144 10247])
+            ("rst" customgroup (:user-visible-flag t) nil [10361 10515])
+            ("rst-bullets" variable
+               (:constant-flag t
+                :default-value (quote (45 42 43 8226 8227 8259)))
+                nil [10857 11031])
+            ("rst-uri-schemes" variable
+               (:constant-flag t
+                :default-value (quote ("acap" "cid" "data" "dav" "fax" "file" "ftp" "gopher" "http" "https" "imap" "ldap" "mailto" "mid" "modem" "news" "nfs" "nntp" "pop" "prospero" "rtsp" "service" "sip" "tel" "telnet" "tip" "urn" "vemmi" "wais")))
+                nil [11033 11307])
+            ("rst-adornment-chars" variable
+               (:constant-flag t
+                :default-value (quote (93 33 34 35 36 37 38 39 40 41 42 43 44 46 47 58 59 60 61 62 63 64 91 92 94 95 96 123 124 125 126 45)))
+                nil [11309 11602])
+            ("rst-max-inline-length" variable
+               (:constant-flag t
+                :default-value 1000)
+                nil [11604 11693])
+            ("rst-re-alist-def" variable
+               (:constant-flag t
+                :default-value (\` ((hws-prt "[	 ]") (hws-tag hws-prt "*") (hws-sta hws-prt "+") (lin-beg "^" hws-tag) (lin-end hws-tag "$") (linemp-tag "^" hws-tag "$") (ell-tag "\\.\\.\\.") (bul-tag (\, (concat "[" rst-bullets "]"))) (ltr-tag "[a-zA-Z]") (num-prt "[0-9]") (num-tag num-prt "+") (rom-prt "[IVXLCDMivxlcdm]") (rom-tag rom-prt "+") (aut-tag "#") (dcl-tag "::") (bli-sfx (:alt hws-sta "$")) (bul-sta bul-tag bli-sfx) (exm-tag "\\.\\.") (exm-sta exm-tag hws-sta) (exm-beg lin-beg exm-sta) (cntany-tag (:alt ltr-tag num-tag rom-tag aut-tag)) (cntexp-tag (:alt ltr-tag num-tag rom-tag)) (enmany-tag (:alt (:seq cntany-tag "\\.") (:seq "(?" cntany-tag ")"))) (enmexp-tag (:alt (:seq cntexp-tag "\\.") (:seq "(?" cntexp-tag ")"))) (enmaut-tag (:alt (:seq aut-tag "\\.") (:seq "(?" aut-tag ")"))) (enmany-sta enmany-tag bli-sfx) (enmexp-sta enmexp-tag bli-sfx) (enmexp-beg lin-beg enmexp-sta) (itmany-tag (:alt enmany-tag bul-tag)) (itmany-sta-1 (:grp itmany-tag) bli-sfx) (itmany-beg-1 lin-beg itmany-sta-1) (ilm-pfx (:alt "^" hws-prt "[-'\"([{<‘“«’/:]")) (ilm-sfx (:alt "$" hws-prt "[]-'\")}>’”»/:.,;!?\\]")) (ilcsgl-tag "\\S ") (ilcast-prt (:alt "[^*\\]" "\\\\.")) (ilcbkq-prt (:alt "[^`\\]" "\\\\.")) (ilcbkqdef-prt (:alt "[^`\\
+]" "\\\\.")) (ilcbar-prt (:alt "[^|\\]" "\\\\.")) (ilcbardef-prt (:alt "[^|\\
+]" "\\\\.")) (ilcast-sfx "[^	 *\\]") (ilcbkq-sfx "[^	 `\\]") (ilcbar-sfx "[^	 |\\]") (ilcrep-hlp (\, (format "\\{0,%d\\}" rst-max-inline-length))) (ilcast-tag (:alt ilcsgl-tag (:seq ilcsgl-tag ilcast-prt ilcrep-hlp ilcast-sfx))) (ilcbkq-tag (:alt ilcsgl-tag (:seq ilcsgl-tag ilcbkq-prt ilcrep-hlp ilcbkq-sfx))) (ilcbkqdef-tag (:alt ilcsgl-tag (:seq ilcsgl-tag ilcbkqdef-prt ilcrep-hlp ilcbkq-sfx))) (ilcbar-tag (:alt ilcsgl-tag (:seq ilcsgl-tag ilcbar-prt ilcrep-hlp ilcbar-sfx))) (ilcbardef-tag (:alt ilcsgl-tag (:seq ilcsgl-tag ilcbardef-prt ilcrep-hlp ilcbar-sfx))) (fldnam-prt (:alt "[^:
+]" "\\\\:")) (fldnam-tag fldnam-prt "+") (fld-tag ":" fldnam-tag ":") (optsta-tag (:alt "[-+/]" "--")) (optnam-tag "\\sw" (:alt "-" "\\sw") "*") (optarg-tag (:shy "[ =]\\S +")) (optsep-tag (:shy "," hws-prt)) (opt-tag (:shy optsta-tag optnam-tag optarg-tag "?")) (fncnam-prt "[^]
+]") (fncnam-tag fncnam-prt "+") (fnc-tag "\\[" fncnam-tag "]") (fncdef-tag-2 (:grp exm-sta) (:grp fnc-tag)) (fnc-sta-2 fncdef-tag-2 bli-sfx) (sub-tag "|" ilcbar-tag "|") (subdef-tag "|" ilcbardef-tag "|") (sym-prt "[-+.:_]") (sym-tag (:shy "\\sw+" (:shy sym-prt "\\sw+") "*")) (uri-tag (:alt (\,@ rst-uri-schemes))) (ado-prt "[" (\, (concat rst-adornment-chars)) "]") (adorep3-hlp "\\{3,\\}") (adorep2-hlp "\\{2,\\}") (ado-tag-1-1 (:grp ado-prt) "\\1" adorep2-hlp) (ado-tag-1-2 (:grp ado-prt) "\\2" adorep2-hlp) (ado-beg-2-1 "^" (:grp ado-tag-1-2) lin-end) (ttl-tag "\\S *\\w\\S *") (ttl-beg lin-beg ttl-tag) (dir-tag-3 (:grp exm-sta) (:grp (:shy subdef-tag hws-sta) "?") (:grp sym-tag dcl-tag)) (dir-sta-3 dir-tag-3 bli-sfx) (lit-sta-2 (:grp (:alt "[^.
+]" "\\.[^.
+]") ".*") "?" (:grp dcl-tag) "$") (cmt-sta-1 (:grp exm-sta) "[^[|_
+]" (:alt "[^:
+]" (:seq ":" (:alt "[^:
+]" "$"))) "*$") (par-tag- (:alt itmany-tag fld-tag opt-tag fncdef-tag-2 dir-tag-3 exm-tag)))))
+                nil [11695 20289])
+            ("rst-re-alist" variable nil nil [20291 20312])
+            ("rst-testcover-add-compose" code nil nil [20421 20456])
+            ("rst-re" function (:arguments ("args")) nil [20475 22189])
+            ("with-no-warnings" code nil nil [22265 22699])
+            ("rst-define-key" function (:arguments ("keymap" "key" "def" "deprecated")) nil [22822 24077])
+            ("rst-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (rst-define-key map [3 8] (quote describe-prefix-bindings)) (rst-define-key map [3 67108925] (quote rst-adjust) [3 1 t]) (rst-define-key map [67108925] (quote rst-adjust)) (rst-define-key map [3 1 8] (quote describe-prefix-bindings)) (rst-define-key map [3 1 1] (quote rst-adjust)) (rst-define-key map [3 1 4] (quote rst-display-adornments-hierarchy)) (rst-define-key map [3 1 19] (quote rst-straighten-adornments) [3 19]) (rst-define-key map [134217736] (quote rst-mark-section) [3 13]) (rst-define-key map [134217729] (quote rst-backward-section) [3 14]) (rst-define-key map [134217733] (quote rst-forward-section) [3 16]) (rst-define-key map [3 18 8] (quote describe-prefix-bindings)) (rst-define-key map [3 18 12] (quote rst-line-block-region) [3 4]) (rst-define-key map [3 18 tab] (quote rst-shift-region) [3 18 t] [3 12 t]) (rst-define-key map [3 12 8] (quote describe-prefix-bindings)) (rst-define-key map [3 12 2] (quote rst-bullet-list-region) [3 2]) (rst-define-key map [3 12 5] (quote rst-enumerate-region) [3 5]) (rst-define-key map [3 12 3] (quote rst-convert-bullets-to-enumeration) [3 22]) (rst-define-key map [3 12 19] (quote rst-straighten-bullets-region) [3 23]) (rst-define-key map [3 12 9] (quote rst-insert-list)) (rst-define-key map [3 20 8] (quote describe-prefix-bindings)) (rst-define-key map [3 20 20] (quote rst-toc)) (rst-define-key map [3 20 9] (quote rst-toc-insert) [3 9]) (rst-define-key map [3 20 21] (quote rst-toc-update) [3 21]) (rst-define-key map [3 20 10] (quote rst-goto-section) [3 6]) (rst-define-key map [3 3 8] (quote describe-prefix-bindings)) (rst-define-key map [3 3 3] (quote rst-compile) [3 49]) (rst-define-key map [3 3 1] (quote rst-compile-alt-toolset) [3 50]) (rst-define-key map [3 3 24] (quote rst-compile-pseudo-region) [3 51]) (rst-define-key map [3 3 16] (quote rst-compile-pdf-preview) [3 52]) (rst-define-key map [3 3 19] (quote rst-compile-slides-preview) [3 53]) map)) nil [24096 28591])
+            ("define-abbrev-table" code nil nil [28606 29013])
+            ("rst-mode-syntax-table" variable (:default-value (let ((st (copy-syntax-table text-mode-syntax-table))) (modify-syntax-entry 36 "." st) (modify-syntax-entry 37 "." st) (modify-syntax-entry 38 "." st) (modify-syntax-entry 39 "." st) (modify-syntax-entry 42 "." st) (modify-syntax-entry 43 "." st) (modify-syntax-entry 45 "." st) (modify-syntax-entry 47 "." st) (modify-syntax-entry 60 "." st) (modify-syntax-entry 61 "." st) (modify-syntax-entry 62 "." st) (modify-syntax-entry 92 "\\" st) (modify-syntax-entry 95 "." st) (modify-syntax-entry 124 "." st) (modify-syntax-entry 171 "." st) (modify-syntax-entry 187 "." st) (modify-syntax-entry 8216 "." st) (modify-syntax-entry 8217 "." st) (modify-syntax-entry 8220 "." st) (modify-syntax-entry 8221 "." st) st)) nil [29033 29893])
+            ("rst-mode-hook" variable nil nil [29895 30046])
+            ("rst-testcover-defcustom" code nil nil [30047 30072])
+            ("newcomment" include nil nil [30131 30152])
+            ("electric-pair-pairs" variable nil nil [30154 30182])
+            ("define-derived-mode" code nil nil [30420 33272])
+            ("define-minor-mode" code nil nil [33289 33811])
+            ("rst-adjust" customgroup (:user-visible-flag t) nil [37000 37126])
+            ("define-obsolete-variable-alias" code nil nil [37128 37227])
+            ("rst-preferred-adornments" variable (:default-value (quote ((61 over-and-under 1) (61 simple 0) (45 simple 0) (126 simple 0) (43 simple 0) (96 simple 0) (35 simple 0) (64 simple 0)))) nil [37228 38608])
+            ("rst-testcover-defcustom" code nil nil [38609 38634])
+            ("rst-default-indent" variable (:default-value 1) nil [38636 38894])
+            ("rst-testcover-defcustom" code nil nil [38895 38920])
+            ("rst-compare-adornments" function (:arguments ("ado1" "ado2")) nil [38922 39238])
+            ("rst-get-adornment-match" function (:arguments ("hier" "ado")) nil [39241 39607])
+            ("rst-suggest-new-adornment" function (:arguments ("allados" "prev")) nil [39715 40759])
+            ("rst-delete-entire-line" function nil nil [40761 40949])
+            ("rst-update-section" function (:arguments ("char" "style" "indent")) nil [40951 43177])
+            ("rst-classify-adornment" function (:arguments ("adornment" "end")) nil [43179 46705])
+            ("rst-find-title-line" function nil nil [46707 48918])
+            ("rst-all-sections" variable nil nil [49123 49280])
+            ("make-variable-buffer-local" code nil nil [49281 49327])
+            ("rst-section-hierarchy" variable nil nil [49436 49629])
+            ("make-variable-buffer-local" code nil nil [49630 49681])
+            ("rst-testcover-add-1value" code nil nil [49683 49735])
+            ("rst-reset-section-caches" function nil nil [49736 49935])
+            ("rst-find-all-adornments" function nil nil [49937 51132])
+            ("rst-infer-hierarchy" function (:arguments ("adornments")) nil [51134 51899])
+            ("rst-get-hierarchy" function (:arguments ("ignore")) nil [51901 52798])
+            ("rst-get-adornments-around" function nil nil [52800 53371])
+            ("rst-adornment-complete-p" function (:arguments ("ado")) nil [53373 54390])
+            ("rst-get-next-adornment" function (:arguments ("curado" "hier" "suggestion" "reverse-direction")) nil [54393 55410])
+            ("rst-adjust" function
+               (:user-visible-flag t
+                :arguments ("pfxarg"))
+                nil [55479 57216])
+            ("rst-adjust-hook" variable nil nil [57218 57370])
+            ("rst-testcover-defcustom" code nil nil [57371 57396])
+            ("rst-new-adornment-down" variable nil nil [57398 57681])
+            ("rst-testcover-defcustom" code nil nil [57682 57707])
+            ("rst-adjust-adornment" function
+               (:user-visible-flag t
+                :arguments ("pfxarg"))
+                nil [57709 58147])
+            ("rst-adjust-adornment-work" function (:arguments ("toggle-style" "reverse-direction")) nil [58149 66014])
+            ("defalias" code nil nil [66056 66104])
+            ("rst-promote-region" function
+               (:user-visible-flag t
+                :arguments ("demote"))
+                nil [66107 67643])
+            ("rst-display-adornments-hierarchy" function
+               (:user-visible-flag t
+                :arguments ("adornments"))
+                nil [67647 68302])
+            ("rst-straighten-adornments" function (:user-visible-flag t) nil [68304 69247])
+            ("rst-arabic-to-roman" variable
+               (:constant-flag t
+                :default-value (quote ((1000 . "M") (900 . "CM") (500 . "D") (400 . "CD") (100 . "C") (90 . "XC") (50 . "L") (40 . "XL") (10 . "X") (9 . "IX") (5 . "V") (4 . "IV") (1 . "I"))))
+                nil [69593 69912])
+            ("rst-arabic-to-roman" function (:arguments ("num" "arg")) nil [69914 70547])
+            ("rst-roman-to-arabic" function (:arguments ("string" "arg")) nil [70549 71156])
+            ("rst-find-pfx-in-region" function (:arguments ("beg" "end" "pfx-re")) nil [71209 72171])
+            ("rst-insert-list-pos" function (:arguments ("newitem")) nil [72173 73059])
+            ("rst-initial-enums" variable (:default-value (let (vals) (dolist (fmt (quote ("%s." "(%s)" "%s)"))) (dolist (c (quote ("1" "a" "A" "I" "i"))) (push (format fmt c) vals))) (cons "#." (nreverse vals)))) nil [73096 73321])
+            ("rst-initial-items" variable (:default-value (append (mapcar (quote char-to-string) rst-bullets) rst-initial-enums)) nil [73358 73525])
+            ("rst-insert-list-new-item" function (:user-visible-flag t) nil [73527 75131])
+            ("rst-preferred-bullets" variable (:default-value (quote (42 45 43))) nil [75133 75399])
+            ("rst-testcover-defcustom" code nil nil [75400 75425])
+            ("rst-insert-list-continue" function (:arguments ("curitem" "prefer-roman")) nil [75427 76901])
+            ("rst-insert-list" function
+               (:user-visible-flag t
+                :arguments ("prefer-roman"))
+                nil [76904 78347])
+            ("rst-straighten-bullets-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [78349 79694])
+            ("rst-section-tree" function nil nil [79870 81314])
+            ("rst-section-tree-rec" function (:arguments ("remaining" "lev")) nil [81364 82675])
+            ("rst-section-tree-point" function (:arguments ("tree" "point")) nil [82677 84080])
+            ("rst-toc" customgroup (:user-visible-flag t) nil [84082 84189])
+            ("rst-toc-indent" variable (:default-value 2) nil [84191 84365])
+            ("rst-testcover-defcustom" code nil nil [84366 84391])
+            ("rst-toc-insert-style" variable (:default-value (quote fixed)) nil [84393 84917])
+            ("rst-testcover-defcustom" code nil nil [84918 84943])
+            ("rst-toc-insert-number-separator" variable (:default-value "  ") nil [84945 85089])
+            ("rst-testcover-defcustom" code nil nil [85090 85115])
+            ("rst-toc-insert-click-keymap" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [mouse-1] (quote rst-toc-mode-mouse-goto)) map)) nil [85176 85394])
+            ("rst-toc-insert-max-level" variable nil nil [85396 85543])
+            ("rst-testcover-defcustom" code nil nil [85544 85569])
+            ("rst-toc-insert" function
+               (:user-visible-flag t
+                :arguments ("pfxarg"))
+                nil [85571 86748])
+            ("rst-toc-insert-node" function (:arguments ("node" "level" "indent" "pfx")) nil [86750 89361])
+            ("rst-toc-update" function (:user-visible-flag t) nil [89364 90745])
+            ("defalias" code nil nil [91218 91267])
+            ("rst-toc-node" function (:arguments ("node" "level")) nil [91371 91952])
+            ("rst-toc-count-lines" function (:arguments ("node" "target-node")) nil [91954 92526])
+            ("rst-toc-buffer-name" variable (:default-value "*Table of Contents*") nil [92528 92620])
+            ("rst-toc-return-wincfg" variable nil nil [92622 92722])
+            ("rst-toc" function (:user-visible-flag t) nil [92725 94146])
+            ("rst-toc-mode-find-section" function nil nil [94149 94459])
+            ("rst-goto-section" function
+               (:user-visible-flag t
+                :arguments ("kill"))
+                nil [94639 95160])
+            ("rst-toc-mode-goto-section" function (:user-visible-flag t) nil [95162 95311])
+            ("rst-toc-mode-mouse-goto" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [95313 95743])
+            ("rst-toc-mode-mouse-goto-kill" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [95745 96006])
+            ("rst-toc-quit-window" function (:user-visible-flag t) nil [96008 96203])
+            ("rst-toc-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [mouse-1] (quote rst-toc-mode-mouse-goto-kill)) (define-key map [mouse-2] (quote rst-toc-mode-mouse-goto)) (define-key map "" (quote rst-toc-mode-goto-section)) (define-key map "f" (quote rst-toc-mode-goto-section)) (define-key map "q" (quote rst-toc-quit-window)) (define-key map "z" (quote kill-this-buffer)) map)) nil [96205 96619])
+            ("put" code nil nil [96621 96661])
+            ("define-derived-mode" code nil nil [96709 96870])
+            ("rst-forward-section" function
+               (:user-visible-flag t
+                :arguments ("offset"))
+                nil [97101 98384])
+            ("rst-backward-section" function (:user-visible-flag t) nil [98386 98520])
+            ("rst-mark-section" function
+               (:user-visible-flag t
+                :arguments ("count" "allow-extend"))
+                nil [98560 99192])
+            ("rst-find-leftmost-column" function (:arguments ("beg" "end")) nil [99414 99799])
+            ("rst-iterate-leftmost-paragraphs" function (:arguments ("beg" "end" "first-only" "body-consequent" "body-alternative")) nil [99905 100953])
+            ("rst-iterate-leftmost-paragraphs-2" function (:arguments ("spec" "body")) nil [101074 102127])
+            ("rst-indent" customgroup (:user-visible-flag t) nil [102484 102858])
+            ("define-obsolete-variable-alias" code nil nil [102860 102948])
+            ("rst-indent-width" variable (:default-value 2) nil [102949 103082])
+            ("rst-testcover-defcustom" code nil nil [103083 103108])
+            ("rst-indent-field" variable (:default-value 3) nil [103110 103296])
+            ("rst-testcover-defcustom" code nil nil [103297 103322])
+            ("rst-indent-literal-normal" variable (:default-value 3) nil [103324 103512])
+            ("rst-testcover-defcustom" code nil nil [103513 103538])
+            ("rst-indent-literal-minimized" variable (:default-value 2) nil [103540 103726])
+            ("rst-testcover-defcustom" code nil nil [103727 103752])
+            ("rst-indent-comment" variable (:default-value 3) nil [103754 103915])
+            ("rst-testcover-defcustom" code nil nil [103916 103941])
+            ("rst-line-tabs" function nil nil [104057 106334])
+            ("rst-compute-tabs" function (:arguments ("pt")) nil [106336 107702])
+            ("rst-indent-line" function (:arguments ("dflt")) nil [107704 108828])
+            ("rst-shift-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end" "cnt"))
+                nil [108830 110308])
+            ("rst-adaptive-fill" function nil nil [110467 111026])
+            ("rst-comment-line-break" function (:arguments ("soft")) nil [111122 111613])
+            ("rst-comment-indent" function nil nil [111615 111728])
+            ("rst-comment-insert-comment" function nil nil [111730 111856])
+            ("rst-comment-region" function (:arguments ("beg" "end" "arg")) nil [111858 112336])
+            ("rst-uncomment-region" function (:arguments ("beg" "end" "_arg")) nil [112338 112709])
+            ("rst-enumerate-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end" "all"))
+                nil [113040 113558])
+            ("rst-bullet-list-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end" "all"))
+                nil [113560 113910])
+            ("rst-convert-bullets-to-enumeration" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [114097 114686])
+            ("rst-line-block-region" function
+               (:user-visible-flag t
+                :arguments ("rbeg" "rend" "pfxarg"))
+                nil [114770 115364])
+            ("font-lock" include nil nil [115476 115496])
+            ("rst-faces" customgroup (:user-visible-flag t) nil [115685 115783])
+            ("rst-block" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [115785 115938])
+            ("rst-block-face" variable (:default-value (quote rst-block)) nil [115940 116074])
+            ("rst-testcover-defcustom" code nil nil [116075 116100])
+            ("make-obsolete-variable" code nil nil [116101 116238])
+            ("rst-external" variable
+               (:default-value (quote ((t :inherit font-lock-type-face)))
+                :type "face")
+                nil [116240 116388])
+            ("rst-external-face" variable (:default-value (quote rst-external)) nil [116390 116525])
+            ("rst-testcover-defcustom" code nil nil [116526 116551])
+            ("make-obsolete-variable" code nil nil [116552 116695])
+            ("rst-definition" variable
+               (:default-value (quote ((t :inherit font-lock-function-name-face)))
+                :type "face")
+                nil [116697 116853])
+            ("rst-definition-face" variable (:default-value (quote rst-definition)) nil [116855 116991])
+            ("rst-testcover-defcustom" code nil nil [116992 117017])
+            ("make-obsolete-variable" code nil nil [117018 117165])
+            ("rst-directive" variable
+               (:default-value (if (boundp (quote font-lock-builtin-face)) (quote ((t :inherit font-lock-builtin-face))) (quote ((t :inherit font-lock-preprocessor-face))))
+                :type "face")
+                nil [117196 117470])
+            ("rst-directive-face" variable (:default-value (quote rst-directive)) nil [117472 117579])
+            ("rst-testcover-defcustom" code nil nil [117580 117605])
+            ("make-obsolete-variable" code nil nil [117606 117751])
+            ("rst-comment" variable
+               (:default-value (quote ((t :inherit font-lock-comment-face)))
+                :type "face")
+                nil [117753 117879])
+            ("rst-comment-face" variable (:default-value (quote rst-comment)) nil [117881 117990])
+            ("rst-testcover-defcustom" code nil nil [117991 118016])
+            ("make-obsolete-variable" code nil nil [118017 118158])
+            ("rst-emphasis1" variable
+               (:default-value (quote ((t :inherit italic)))
+                :type "face")
+                nil [118160 118279])
+            ("rst-emphasis1-face" variable (:default-value (quote rst-emphasis1)) nil [118281 118401])
+            ("rst-testcover-defcustom" code nil nil [118402 118427])
+            ("make-obsolete-variable" code nil nil [118428 118573])
+            ("rst-emphasis2" variable
+               (:default-value (quote ((t :inherit bold)))
+                :type "face")
+                nil [118575 118692])
+            ("rst-emphasis2-face" variable (:default-value (quote rst-emphasis2)) nil [118694 118796])
+            ("rst-testcover-defcustom" code nil nil [118797 118822])
+            ("make-obsolete-variable" code nil nil [118823 118968])
+            ("rst-literal" variable
+               (:default-value (quote ((t :inherit font-lock-string-face)))
+                :type "face")
+                nil [118970 119099])
+            ("rst-literal-face" variable (:default-value (quote rst-literal)) nil [119101 119214])
+            ("rst-testcover-defcustom" code nil nil [119215 119240])
+            ("make-obsolete-variable" code nil nil [119241 119382])
+            ("rst-reference" variable
+               (:default-value (quote ((t :inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [119384 119536])
+            ("rst-reference-face" variable (:default-value (quote rst-reference)) nil [119538 119669])
+            ("rst-testcover-defcustom" code nil nil [119670 119695])
+            ("make-obsolete-variable" code nil nil [119696 119841])
+            ("rst-transition" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [119843 119994])
+            ("rst-adornment" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [119996 120167])
+            ("dolist" code nil nil [120250 120636])
+            ("rst-level-1" variable
+               (:default-value (quote ((((background light)) (:background "grey85")) (((background dark)) (:background "grey15"))))
+                :type "face")
+                nil [120713 120925])
+            ("rst-level-2" variable
+               (:default-value (quote ((((background light)) (:background "grey78")) (((background dark)) (:background "grey22"))))
+                :type "face")
+                nil [120927 121139])
+            ("rst-level-3" variable
+               (:default-value (quote ((((background light)) (:background "grey71")) (((background dark)) (:background "grey29"))))
+                :type "face")
+                nil [121141 121353])
+            ("rst-level-4" variable
+               (:default-value (quote ((((background light)) (:background "grey64")) (((background dark)) (:background "grey36"))))
+                :type "face")
+                nil [121355 121567])
+            ("rst-level-5" variable
+               (:default-value (quote ((((background light)) (:background "grey57")) (((background dark)) (:background "grey43"))))
+                :type "face")
+                nil [121569 121781])
+            ("rst-level-6" variable
+               (:default-value (quote ((((background light)) (:background "grey50")) (((background dark)) (:background "grey50"))))
+                :type "face")
+                nil [121783 121995])
+            ("rst-adornment-faces-alist" variable (:default-value (quote ((t . rst-transition) (nil . rst-adornment) (1 . rst-level-1) (2 . rst-level-2) (3 . rst-level-3) (4 . rst-level-4) (5 . rst-level-5) (6 . rst-level-6)))) nil [121997 122663])
+            ("rst-testcover-defcustom" code nil nil [122664 122689])
+            ("rst-font-lock-keywords" variable (:default-value (\` (((\, (rst-re (quote lin-beg) (quote (:grp bul-sta)))) 1 rst-block-face) ((\, (rst-re (quote lin-beg) (quote (:grp enmany-sta)))) 1 rst-block-face) ((\, (rst-re (quote lin-beg) (quote (:grp fld-tag)) (quote bli-sfx))) 1 rst-external-face) ((\, (rst-re (quote lin-beg) (quote (:grp opt-tag (:shy optsep-tag opt-tag) "*")) (quote (:alt "$" (:seq hws-prt "\\{2\\}"))))) 1 rst-block-face) ((\, (rst-re (quote lin-beg) (quote (:grp "|" bli-sfx)) "[^|
+]*$")) 1 rst-block-face) ((\, (rst-re (quote lin-beg) (quote fnc-sta-2))) (1 rst-definition-face) (2 rst-definition-face)) ((\, (rst-re (quote lin-beg) (quote dir-sta-3))) (1 rst-directive-face) (2 rst-definition-face) (3 rst-directive-face)) ((\, (rst-re (quote lin-beg) (quote (:grp exm-sta "_" (:alt (:seq "`" ilcbkqdef-tag "`") (:seq (:alt "[^:\\
+]" "\\\\.") "+")) ":")) (quote bli-sfx))) 1 rst-definition-face) ((\, (rst-re (quote lin-beg) (quote (:grp "__")) (quote bli-sfx))) 1 rst-definition-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp "\\*\\*" ilcast-tag "\\*\\*")) (quote ilm-sfx))) 1 rst-emphasis2-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp "\\*" ilcast-tag "\\*")) (quote ilm-sfx))) 1 rst-emphasis1-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp "``" ilcbkq-tag "``")) (quote ilm-sfx))) 1 rst-literal-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp "_`" ilcbkq-tag "`")) (quote ilm-sfx))) 1 rst-definition-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp (:alt (:seq "`" ilcbkq-tag "`") (:seq "\\sw" (:alt "\\sw" "-") "+\\sw")) "__?")) (quote ilm-sfx))) 1 rst-reference-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp (:shy ":" sym-tag ":") "?")) (quote (:grp "`" ilcbkq-tag "`")) (quote (:grp (:shy ":" sym-tag ":") "?")) (quote ilm-sfx))) (1 rst-directive-face) (2 rst-external-face) (3 rst-directive-face)) ((\, (rst-re (quote ilm-pfx) (quote (:grp fnc-tag "_")) (quote ilm-sfx))) 1 rst-reference-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp sub-tag)) (quote ilm-sfx))) 1 rst-reference-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp uri-tag ":\\S +")) (quote ilm-sfx))) 1 rst-definition-face) ((\, (rst-re (quote ilm-pfx) (quote (:grp sym-tag "@" sym-tag)) (quote ilm-sfx))) 1 rst-definition-face) ((\, (rst-re (quote ado-beg-2-1))) (rst-font-lock-handle-adornment-matcher (rst-font-lock-handle-adornment-pre-match-form (match-string-no-properties 1) (match-end 1)) nil (1 (cdr (assoc nil rst-adornment-faces-alist)) append t) (2 (cdr (assoc rst-font-lock-adornment-level rst-adornment-faces-alist)) append t) (3 (cdr (assoc nil rst-adornment-faces-alist)) append t))) ((\, (rst-re (quote lin-beg) (quote cmt-sta-1))) (1 rst-comment-face) (rst-font-lock-find-unindented-line-match (rst-font-lock-find-unindented-line-limit (match-end 1)) nil (0 rst-comment-face append))) ((\, (rst-re (quote lin-beg) (quote (:grp exm-tag)) (quote (:grp hws-tag)) "$")) (1 rst-comment-face) (2 rst-comment-face) (rst-font-lock-find-unindented-line-match (rst-font-lock-find-unindented-line-limit (quote next)) nil (0 rst-comment-face append))) ((\, (rst-re (quote lin-beg) (quote lit-sta-2))) (2 rst-block-face) (rst-font-lock-find-unindented-line-match (rst-font-lock-find-unindented-line-limit t) nil (0 rst-literal-face append))) ((\, (rst-re (quote lin-beg) (quote (:grp (:alt ">>>" ell-tag))) (quote (:grp ".+")))) (1 rst-block-face) (2 rst-literal-face))))) nil [122772 129896])
+            ("font-lock-beg" variable nil nil [129898 129920])
+            ("font-lock-end" variable nil nil [129921 129943])
+            ("rst-font-lock-extend-region" function nil nil [129945 130313])
+            ("rst-font-lock-extend-region-internal" function (:arguments ("beg" "end")) nil [130315 130681])
+            ("rst-forward-line" function (:arguments ("n")) nil [130683 130956])
+            ("rst-font-lock-extend-region-extend" function (:arguments ("pt" "dir")) nil [131084 133257])
+            ("rst-forward-indented-block" function
+               (:user-visible-flag t
+                :arguments ("column" "limit"))
+                nil [133359 134594])
+            ("rst-font-lock-find-unindented-line-begin" variable nil nil [134596 134721])
+            ("rst-font-lock-find-unindented-line-end" variable nil nil [134723 134927])
+            ("rst-font-lock-find-unindented-line-limit" function (:arguments ("ind-pnt")) nil [134929 136789])
+            ("rst-font-lock-find-unindented-line-match" function (:arguments ("_limit")) nil [136791 137508])
+            ("rst-font-lock-adornment-level" variable nil nil [137605 137774])
+            ("rst-adornment-level" function (:arguments ("key")) nil [137776 138418])
+            ("rst-font-lock-adornment-match" variable nil nil [138420 138633])
+            ("rst-font-lock-handle-adornment-pre-match-form" function (:arguments ("ado" "ado-end")) nil [138635 139502])
+            ("rst-font-lock-handle-adornment-matcher" function (:arguments ("_limit")) nil [139524 140196])
+            ("rst-compile" customgroup (:user-visible-flag t) nil [140296 140444])
+            ("rst-compile-toolsets" variable (:default-value (\` ((html (\, (if (executable-find "rst2html.py") "rst2html.py" "rst2html")) ".html" nil) (latex (\, (if (executable-find "rst2latex.py") "rst2latex.py" "rst2latex")) ".tex" nil) (newlatex (\, (if (executable-find "rst2newlatex.py") "rst2newlatex.py" "rst2newlatex")) ".tex" nil) (pseudoxml (\, (if (executable-find "rst2pseudoxml.py") "rst2pseudoxml.py" "rst2pseudoxml")) ".xml" nil) (xml (\, (if (executable-find "rst2xml.py") "rst2xml.py" "rst2xml")) ".xml" nil) (pdf (\, (if (executable-find "rst2pdf.py") "rst2pdf.py" "rst2pdf")) ".pdf" nil) (s5 (\, (if (executable-find "rst2s5.py") "rst2s5.py" "rst2s5")) ".html" nil)))) nil [140446 142204])
+            ("rst-testcover-defcustom" code nil nil [142205 142230])
+            ("rst-compile-primary-toolset" variable (:default-value (quote html)) nil [142261 142347])
+            ("rst-compile-secondary-toolset" variable (:default-value (quote latex)) nil [142378 142490])
+            ("rst-compile-find-conf" function (:user-visible-flag t) nil [142492 143256])
+            ("compile" include nil nil [143258 143276])
+            ("rst-compile" function
+               (:user-visible-flag t
+                :arguments ("use-alt"))
+                nil [143278 144766])
+            ("rst-compile-alt-toolset" function (:user-visible-flag t) nil [144768 144887])
+            ("rst-compile-pseudo-region" function (:user-visible-flag t) nil [144889 145377])
+            ("rst-pdf-program" variable (:default-value "xpdf") nil [145410 145480])
+            ("rst-compile-pdf-preview" function (:user-visible-flag t) nil [145482 145998])
+            ("rst-slides-program" variable (:default-value "firefox") nil [146066 146142])
+            ("rst-compile-slides-preview" function (:user-visible-flag t) nil [146144 146683])
+            ("rst-imenu-find-adornments-for-position" function (:arguments ("adornments" "pos")) nil [146906 147223])
+            ("rst-imenu-convert-cell" function (:arguments ("elt" "adornments")) nil [147225 148275])
+            ("rst-imenu-create-index" function nil nil [148405 149014])
+            ("rst-replace-lines" function
+               (:user-visible-flag t
+                :arguments ("fromchar" "tochar"))
+                nil [149226 149806])
+            ("rst-join-paragraph" function (:user-visible-flag t) nil [149864 150073])
+            ("rst-force-fill-paragraph" function (:user-visible-flag t) nil [150131 150352])
+            ("rst-repeat-last-character" function
+               (:user-visible-flag t
+                :arguments ("use-next"))
+                nil [150565 152318])
+            ("rst" package nil nil [152583 152597]))          
+      :file "rst.el.gz"
+      :pointmax 152620
+      :fsize 42515
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 5972 . 5973) (symbol 5939 . 5956) (open-paren 5938 . 5939)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("reftex-tables-dirty" variable nil nil [916 944])
+            ("cl" include nil nil [964 977])
+            ("reftex-set-dirty" function (:arguments ("symbol" "value")) nil [999 1094])
+            ("reftex-index-macros-builtin" variable
+               (:constant-flag t
+                :default-value (quote ((default "Default \\index and \\glossary macros" (("\\index{*}" "idx" 105 "" nil t) ("\\glossary{*}" "glo" 103 "" nil t))) (multind "The multind.sty package" (("\\index{}{*}" 1 105 "" nil t))) (index "The index.sty package" (("\\index[]{*}" 1 105 "" nil t) ("\\index*[]{*}" 1 73 "" nil nil))) (Index-Shortcut "index.sty with \\shortindexingon" (("\\index[]{*}" 1 105 "" nil t) ("\\index*[]{*}" 1 73 "" nil nil) ("^[]{*}" 1 94 "" texmathp t) ("_[]{*}" 1 95 "" texmathp nil))))))
+                nil [7786 8565])
+            ("reftex-cite-format-builtin" variable
+               (:constant-flag t
+                :default-value (quote ((default "Default macro \\cite{%l}" "\\cite[]{%l}") (natbib "The Natbib package" ((13 . "\\cite[][]{%l}") (116 . "\\citet[][]{%l}") (84 . "\\citet*[][]{%l}") (112 . "\\citep[][]{%l}") (80 . "\\citep*[][]{%l}") (101 . "\\citep[e.g.][]{%l}") (115 . "\\citep[see][]{%l}") (97 . "\\citeauthor{%l}") (65 . "\\citeauthor*{%l}") (121 . "\\citeyear{%l}") (110 . "\\nocite{%l}"))) (amsrefs "The AMSRefs package" ((13 . "\\cite{%l}") (112 . "\\cite{%l}") (80 . "\\cites{%l}") (116 . "\\ocite{%l}") (84 . "\\ocites{%l}") (121 . "\\ycite{%l}") (89 . "\\ycites{%l}") (97 . "\\citeauthor{%l}") (65 . "\\citeauthory{%l}") (102 . "\\fullcite{%l}") (70 . "\\fullocite{%l}") (110 . "\\nocite{%l}"))) (jurabib "The Jurabib package" ((13 . "\\cite{%l}") (99 . "\\cite[][]{%l}") (116 . "\\citet{%l}") (112 . "\\citep{%l}") (101 . "\\citep[e.g.][]{%l}") (115 . "\\citep[see][]{%l}") (117 . "\\fullcite{%l}") (105 . "\\citetitle{%l}") (97 . "\\citeauthor{%l}") (101 . "\\citefield{}{%l}") (121 . "\\citeyear{%l}") (102 . "\\footcite{%l}") (70 . "\\footcite[][]{%l}") (108 . "\\footfullcite{%l}"))) (bibentry "The Bibentry package" "\\bibentry{%l}") (harvard "The Harvard package" ((13 . "\\cite[]{%l}") (112 . "\\cite[]{%l}") (116 . "\\citeasnoun{%l}") (110 . "\\citeasnoun{%l}") (115 . "\\possessivecite{%l}") (101 . "\\citeaffixed{%l}{?}") (121 . "\\citeyear{%l}") (97 . "\\citename{%l}"))) (chicago "The Chicago package" ((13 . "\\cite[]{%l}") (116 . "\\citeN[]{%l}") (84 . "\\shortciteN{%l}") (112 . "\\cite[]{%l}") (80 . "\\shortcite{%l}") (97 . "\\citeA{%l}") (65 . "\\shortciteA{%l}") (121 . "\\citeyear{%l}"))) (astron "The Astron package" ((13 . "\\cite[]{%l}") (112 . "\\cite[]{%l}") (116 . "%2a (\\cite{%l})"))) (author-year "Do-it-yourself Author-year" ((13 . "\\cite{%l}") (116 . "%2a (%y)\\nocite{%l}") (112 . "(%2a %y\\nocite{%l})"))) (locally "Full info in parenthesis" "(%2a %y, %j %v, %P, %e: %b, %u, %s %<)") (context "ConTeXt bib module" ((13 . "\\cite[%l]") (115 . "\\cite[][%l]") (110 . "\\nocite[%l]"))))))
+                nil [4873 7784])
+            ("reftex-label-alist-builtin" variable
+               (:constant-flag t
+                :default-value (quote ((Sideways "Alias for -->rotating" (rotating)) (AMSTeX "amsmath with eqref macro" ((nil 101 nil "~\\eqref{%s}") amsmath)) (amsmath "AMS-LaTeX math environments" (("align" 101 nil nil eqnarray-like) ("gather" 101 nil nil eqnarray-like) ("multline" 101 nil nil t) ("flalign" 101 nil nil eqnarray-like) ("alignat" 101 nil nil alignat-like) ("xalignat" 101 nil nil alignat-like) ("xxalignat" 101 nil nil alignat-like) ("subequations" 101 nil nil t))) (endnotes "The \\endnote macro" (("\\endnote[]{}" 78 "en:" "~\\ref{%s}" 2 (regexp "endnotes?" "notes?" "Anmerkung\\(en\\)?" "Anm\\.")))) (fancybox "The Beqnarray environment" (("Beqnarray" 101 nil nil eqnarray-like))) (floatfig "The floatingfigure environment" (("floatingfigure" 102 nil nil caption))) (longtable "The longtable environment" (("longtable" 116 nil nil caption))) (picinpar "The figwindow and tabwindow environments" (("figwindow" 102 nil nil 1) ("tabwindow" 102 nil nil 1))) (rotating "Sidewaysfigure and table" (("sidewaysfigure" 102 nil nil caption) ("sidewaystable" 116 nil nil caption))) (sidecap "CSfigure and SCtable" (("SCfigure" 102 nil nil caption) ("SCtable" 116 nil nil caption))) (subfigure "Subfigure environments/macro" (("subfigure" 102 nil nil caption) ("subfigure*" 102 nil nil caption) ("\\subfigure[]{}" 102 nil nil 1))) (supertab "Supertabular environment" (("supertabular" 116 nil nil "\\tablecaption{"))) (wrapfig "The wrapfig package" (("wrapfigure" 102 nil nil caption) ("wraptable" 116 nil nil caption))) (ctable "The ctable package" (("\\ctable[]{}{}{}" 116 "tab:" "~\\ref{%s}" 1 ("table" "Tabelle")))) (listings "The listings package" (("lstlisting" 108 "lst:" "~\\ref{%s}" nil (regexp "[Ll]isting")))) (minted "The minted package" (("minted" 108 "lst:" "~\\ref{%s}" nil (regexp "[Ll]isting")))) (LaTeX "LaTeX default environments" (("section" 115 "%S" "~\\ref{%s}" (nil . t) (regexp "parts?" "chapters?" "chap\\." "sections?" "sect?\\." "paragraphs?" "par\\." "\\\\S" "\247" "Teile?" "Kapitel" "Kap\\." "Abschnitte?" "appendi\\(x\\|ces\\)" "App\\." "Anh\"?ange?" "Anh\\.")) ("enumerate" 105 "item:" "~\\ref{%s}" item (regexp "items?" "Punkte?")) ("equation" 101 "eq:" "~(\\ref{%s})" t (regexp "equations?" "eqs?\\." "eqn\\." "Gleichung\\(en\\)?" "Gl\\.")) ("eqnarray" 101 "eq:" nil eqnarray-like) ("figure" 102 "fig:" "~\\ref{%s}" caption (regexp "figure?[sn]?" "figs?\\." "Abbildung\\(en\\)?" "Abb\\.")) ("figure*" 102 nil nil caption) ("table" 116 "tab:" "~\\ref{%s}" caption (regexp "tables?" "tab\\." "Tabellen?")) ("table*" 116 nil nil caption) ("\\footnote[]{}" 110 "fn:" "~\\ref{%s}" 2 (regexp "footnotes?" "Fussnoten?")) ("any" 32 " " "~\\ref{%s}" nil))) (Texinfo "Texinfo default environments" nil))))
+                nil [1180 4871])
+            ("reftex" customgroup (:user-visible-flag t) nil [8644 8973])
+            ("reftex-table-of-contents-browser" customgroup (:user-visible-flag t) nil [9051 9158])
+            ("reftex-include-file-commands" variable (:default-value (quote ("include" "input"))) nil [9160 9449])
+            ("reftex-max-section-depth" variable (:default-value 12) nil [9451 9703])
+            ("reftex-section-levels" variable (:default-value (quote (("part" . 0) ("chapter" . 1) ("section" . 2) ("subsection" . 3) ("subsubsection" . 4) ("paragraph" . 5) ("subparagraph" . 6) ("addchap" . -1) ("addsec" . -2)))) nil [9749 11214])
+            ("reftex-toc-max-level" variable (:default-value 100) nil [11216 11574])
+            ("reftex-part-resets-chapter" variable nil nil [11576 11984])
+            ("reftex-auto-recenter-toc" variable (:default-value (quote frame)) nil [11987 13006])
+            ("reftex-toc-split-windows-horizontally" variable nil nil [13008 13192])
+            ("reftex-toc-split-windows-fraction" variable (:default-value 0.3) nil [13194 13427])
+            ("reftex-toc-split-windows-horizontally-fraction" variable (:default-value 0.5) nil [13429 13568])
+            ("reftex-toc-keep-other-windows" variable (:default-value t) nil [13570 13935])
+            ("reftex-toc-include-file-boundaries" variable nil nil [13937 14179])
+            ("reftex-toc-include-labels" variable nil nil [14181 14405])
+            ("reftex-toc-include-index-entries" variable nil nil [14407 14645])
+            ("reftex-toc-confirm-promotion" variable (:default-value 2) nil [14647 15112])
+            ("reftex-toc-include-context" variable nil nil [15114 15416])
+            ("reftex-toc-follow-mode" variable nil nil [15418 15731])
+            ("reftex-revisit-to-follow" variable nil nil [15733 16001])
+            ("reftex-toc-mode-hook" variable nil nil [16003 16133])
+            ("reftex-label-support" customgroup (:user-visible-flag t) nil [16167 16291])
+            ("reftex-defining-label-environments" customgroup (:user-visible-flag t) nil [16293 16433])
+            ("reftex-default-label-alist-entries" variable (:default-value (quote (amsmath endnotes fancybox floatfig longtable picinpar rotating sidecap subfigure supertab wrapfig listings minted ctable LaTeX))) nil [16435 17259])
+            ("reftex-label-alist" variable nil nil [17261 26206])
+            ("reftex-section-prefixes" variable (:default-value (quote ((0 . "part:") (1 . "cha:") (t . "sec:")))) nil [26208 26990])
+            ("reftex-default-context-regexps" variable (:default-value (quote ((caption . "\\\\\\(rot\\|bi\\)?\\(sub\\)?caption\\(box\\)?\\*?[[{]") (item . "\\\\item\\(\\[[^]]*\\]\\)?") (eqnarray-like . "\\\\begin{%s}\\|\\\\\\\\") (alignat-like . "\\\\begin{%s}{[0-9]*}\\|\\\\\\\\")))) nil [26992 27579])
+            ("reftex-trust-label-prefix" variable nil nil [27581 29527])
+            ("reftex-special-environment-functions" variable nil nil [29529 32287])
+            ("reftex-making-and-inserting-labels" customgroup (:user-visible-flag t) nil [32309 32430])
+            ("reftex-insert-label-flags" variable (:default-value (quote ("s" "sft"))) nil [32432 34834])
+            ("reftex-string-to-label-function" variable (:default-value (quote reftex-string-to-label)) nil [34836 35103])
+            ("reftex-translate-to-ascii-function" variable (:default-value (quote reftex-latin1-to-ascii)) nil [35105 35633])
+            ("reftex-derive-label-parameters" variable (:default-value (quote (3 20 t 1 "-" ("the" "on" "in" "off" "a" "for" "by" "of" "and" "is" "to") t))) nil [35635 37412])
+            ("if" code nil nil [37414 38574])
+            ("reftex-label-ignored-macros-and-environments" variable nil nil [38576 39409])
+            ("reftex-label-illegal-re" variable (:default-value "[^-a-zA-Z0-9_+=:;,.]") nil [39411 39610])
+            ("reftex-abbrev-parameters" variable (:default-value (quote (4 2 "^aeiou" "aeiou"))) nil [39612 40311])
+            ("reftex-format-label-function" variable nil nil [40313 40756])
+            ("reftex-referencing-labels" customgroup (:user-visible-flag t) nil [40780 40891])
+            ("reftex-tmp" variable
+               (:constant-flag t
+                :default-value (quote ((const :tag "on" t) (const :tag "off" nil) (string :tag "Selected label types"))))
+                nil [40913 41033])
+            ("reftex-label-menu-flags" variable (:default-value (quote (t t nil nil nil nil t nil))) nil [41036 42983])
+            ("reftex-multiref-punctuation" variable (:default-value (quote ((44 . ", ") (45 . "--") (43 . " and ")))) nil [42985 43551])
+            ("reftex-ref-style-alist" variable (:default-value (quote (("Default" t (("\\ref" 13) ("\\pageref" 112))) ("Varioref" "varioref" (("\\vref" 118) ("\\vpageref" 103) ("\\Vref" 86) ("\\Ref" 82))) ("Fancyref" "fancyref" (("\\fref" 102) ("\\Fref" 70))) ("Hyperref" "hyperref" (("\\autoref" 97) ("\\autopageref" 117))) ("Cleveref" "cleveref" (("\\cref" 99) ("\\Cref" 67) ("\\cpageref" 100) ("\\Cpageref" 68)))))) nil [43553 44710])
+            ("reftex-ref-macro-prompt" variable (:default-value t) nil [44712 44888])
+            ("reftex-vref-is-default" variable nil nil [44890 45391])
+            ("reftex-fref-is-default" variable nil nil [45500 46001])
+            ("reftex-ref-style-default-list" variable (:default-value (quote ("Default"))) nil [46110 46600])
+            ("when" code nil nil [46644 46731])
+            ("when" code nil nil [46732 46819])
+            ("reftex-level-indent" variable (:default-value 2) nil [46821 46974])
+            ("reftex-guess-label-type" variable (:default-value t) nil [47048 47517])
+            ("reftex-format-ref-function" variable nil nil [47616 48293])
+            ("reftex-select-label-mode-hook" variable nil nil [48295 48436])
+            ("reftex-citation-support" customgroup (:user-visible-flag t) nil [48513 48628])
+            ("reftex-bibliography-commands" variable (:default-value (quote ("bibliography" "nobibliography" "setupbibtex\\[.*?database=" "addbibresource"))) nil [48630 48892])
+            ("reftex-bibfile-ignore-list" variable nil nil [48895 48934])
+            ("reftex-bibfile-ignore-regexps" variable nil nil [48951 49336])
+            ("reftex-default-bibliography" variable nil nil [49338 49815])
+            ("reftex-sort-bibtex-matches" variable (:default-value (quote reverse-year)) nil [49817 50369])
+            ("reftex-cite-format" variable (:default-value (quote default)) nil [50371 53190])
+            ("reftex-cite-prompt-optional-args" variable (:default-value (quote maybe)) nil [53192 53940])
+            ("reftex-cite-cleanup-optional-args" variable (:default-value t) nil [53942 54884])
+            ("reftex-comment-citations" variable nil nil [54886 55122])
+            ("reftex-cite-comment-format" variable (:default-value "%% %2a %y, %j %v, %P, %b, %e, %u, %s %<
+") nil [55124 55398])
+            ("reftex-cite-view-format" variable (:default-value "%2a %y, %T, %B, %j %v:%P, %s %<") nil [55400 55722])
+            ("reftex-cite-punctuation" variable (:default-value (quote (", " " \\& " " {\\it et al.}"))) nil [55724 56318])
+            ("reftex-format-cite-function" variable nil nil [56320 56812])
+            ("reftex-select-bib-mode-hook" variable nil nil [56814 56947])
+            ("reftex-cite-key-separator" variable (:default-value ",") nil [56949 57127])
+            ("reftex-create-bibtex-header" variable nil nil [57129 57336])
+            ("reftex-create-bibtex-footer" variable nil nil [57338 57545])
+            ("reftex-index-support" customgroup (:user-visible-flag t) nil [57579 57678])
+            ("reftex-support-index" variable (:default-value t) nil [57680 58111])
+            ("reftex-index-special-chars" variable (:default-value (quote ("!" "|" "@" "\"" "\\"))) nil [58113 58593])
+            ("reftex-index-macros" variable nil nil [58595 61539])
+            ("reftex-index-default-macro" variable (:default-value (quote (105 "idx"))) nil [61541 62314])
+            ("reftex-index-default-tag" variable (:default-value "idx") nil [62316 63024])
+            ("reftex-index-math-format" variable (:default-value "$%s$") nil [63026 63488])
+            ("reftex-index-phrase-file-extension" variable (:default-value ".rip") nil [63490 63702])
+            ("reftex-index-phrases-logical-and-regexp" variable (:default-value " *&& *") nil [63704 64274])
+            ("reftex-index-phrases-logical-or-regexp" variable (:default-value " *|| *") nil [64276 64899])
+            ("reftex-index-phrases-search-whole-words" variable (:default-value t) nil [64901 65275])
+            ("reftex-index-phrases-case-fold-search" variable (:default-value t) nil [65277 65441])
+            ("reftex-index-verify-function" variable nil nil [65443 65731])
+            ("reftex-index-phrases-skip-indexed-matches" variable nil nil [65733 66342])
+            ("reftex-index-phrases-wrap-long-lines" variable nil nil [66344 66851])
+            ("reftex-index-phrases-sort-prefers-entry" variable nil nil [66853 67279])
+            ("reftex-index-phrases-sort-in-blocks" variable (:default-value t) nil [67281 67542])
+            ("reftex-index-section-letters" variable (:default-value "ABCDEFGHIJKLMNOPQRSTUVWXYZ") nil [67544 68132])
+            ("reftex-index-include-context" variable nil nil [68134 68373])
+            ("reftex-index-follow-mode" variable nil nil [68375 68694])
+            ("reftex-viewing-cross-references" customgroup (:user-visible-flag t) nil [68725 68835])
+            ("reftex-view-crossref-extra" variable nil nil [68837 69780])
+            ("reftex-auto-view-crossref" variable (:default-value t) nil [69782 70547])
+            ("reftex-idle-time" variable (:default-value 1.2) nil [70549 70752])
+            ("reftex-revisit-to-echo" variable nil nil [70754 71069])
+            ("reftex-cache-cite-echo" variable (:default-value t) nil [71071 71443])
+            ("reftex-display-copied-context-hook" variable nil nil [71445 71710])
+            ("reftex-finding-files" customgroup (:user-visible-flag t) nil [71787 71874])
+            ("reftex-texpath-environment-variables" variable (:default-value (quote ("TEXINPUTS"))) nil [71876 72657])
+            ("reftex-bibpath-environment-variables" variable (:default-value (quote ("BIBINPUTS" "TEXBIB"))) nil [72659 73489])
+            ("reftex-file-extensions" variable (:default-value (quote (("tex" ".tex" ".ltx") ("bib" ".bib")))) nil [73491 74320])
+            ("reftex-try-all-extensions" variable nil nil [74322 74945])
+            ("reftex-search-unrecursed-path-first" variable (:default-value t) nil [74947 75521])
+            ("reftex-use-external-file-finders" variable nil nil [75523 76068])
+            ("reftex-external-file-finders" variable (:default-value (quote (("tex" . "kpsewhich -format=.tex %f") ("bib" . "kpsewhich -format=.bib %f")))) nil [76070 76765])
+            ("reftex-optimizations-for-large-documents" customgroup (:user-visible-flag t) nil [76842 76966])
+            ("reftex-keep-temporary-buffers" variable (:default-value 1) nil [76968 78106])
+            ("reftex-initialize-temporary-buffers" variable nil nil [78108 78749])
+            ("reftex-no-include-regexps" variable (:default-value (quote ("\\.pstex_t\\'"))) nil [78751 79112])
+            ("reftex-enable-partial-scans" variable nil nil [79114 79684])
+            ("reftex-allow-automatic-rescan" variable (:default-value t) nil [79686 80017])
+            ("reftex-save-parse-info" variable nil nil [80019 80563])
+            ("reftex-parse-file-extension" variable (:default-value ".rel") nil [80565 80810])
+            ("reftex-use-multiple-selection-buffers" variable nil nil [80812 81352])
+            ("reftex-auto-update-selection-buffers" variable (:default-value t) nil [81354 81970])
+            ("reftex-fontification-configurations" customgroup (:user-visible-flag t) nil [82047 82237])
+            ("reftex-use-fonts" variable (:default-value t) nil [82239 82538])
+            ("reftex-refontify-context" variable (:default-value 1) nil [82540 83211])
+            ("reftex-highlight-selection" variable (:default-value (quote cursor)) nil [83213 84194])
+            ("reftex-cursor-selected-face" variable (:default-value (quote highlight)) nil [84196 84438])
+            ("reftex-mouse-selected-face" variable (:default-value (quote secondary-selection)) nil [84439 84689])
+            ("reftex-file-boundary-face" variable (:default-value (quote font-lock-comment-face)) nil [84690 84868])
+            ("reftex-label-face" variable (:default-value (quote font-lock-constant-face)) nil [84869 85031])
+            ("reftex-section-heading-face" variable (:default-value (quote font-lock-function-name-face)) nil [85032 85228])
+            ("reftex-toc-header-face" variable (:default-value (quote font-lock-comment-face)) nil [85229 85395])
+            ("reftex-bib-author-face" variable (:default-value (quote font-lock-keyword-face)) nil [85396 85572])
+            ("reftex-bib-year-face" variable (:default-value (quote font-lock-comment-face)) nil [85573 85739])
+            ("reftex-bib-title-face" variable (:default-value (quote font-lock-function-name-face)) nil [85740 85922])
+            ("reftex-bib-extra-face" variable (:default-value (quote font-lock-comment-face)) nil [85923 86111])
+            ("reftex-select-mark-face" variable (:default-value (quote bold)) nil [86112 86274])
+            ("reftex-index-header-face" variable (:default-value (quote font-lock-comment-face)) nil [86275 86446])
+            ("reftex-index-section-face" variable (:default-value (quote font-lock-function-name-face)) nil [86447 86642])
+            ("reftex-index-tag-face" variable (:default-value (quote font-lock-keyword-face)) nil [86643 86816])
+            ("reftex-index-face" variable (:default-value (quote font-lock-constant-face)) nil [86817 86966])
+            ("reftex-pre-refontification-functions" variable nil nil [86968 87239])
+            ("reftex-miscellaneous-configurations" customgroup (:user-visible-flag t) nil [87316 87425])
+            ("reftex-extra-bindings" variable nil nil [87427 87716])
+            ("reftex-plug-into-AUCTeX" variable nil nil [87718 89378])
+            ("reftex-allow-detached-macro-args" variable nil nil [89380 89675])
+            ("reftex-load-hook" variable nil nil [89678 89822])
+            ("reftex-mode-hook" variable nil nil [89824 89973])
+            ("reftex-vars" package nil nil [89976 89998]))          
+      :file "reftex-vars.el.gz"
+      :pointmax 90029
+      :fsize 25347
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 41033 . 41034) (symbol 40894 . 40910) (open-paren 40893 . 40894) (close-paren 8566 . 8567) (symbol 1163 . 1179) (open-paren 1162 . 1163) (close-paren 1094 . 1095) (symbol 980 . 996) (open-paren 979 . 980) (close-paren 977 . 978) (symbol 946 . 963) (open-paren 945 . 946)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [921 934])
+            ("reftex" include nil nil [937 954])
+            ("reftex-cite-regexp-hist" variable nil nil [984 1083])
+            ("reftex-citation-prompt" variable
+               (:constant-flag t
+                :default-value "Select: [n]ext [p]revious [r]estrict [ ]full_entry [q]uit RET [?]Help+more")
+                nil [1085 1247])
+            ("reftex-citation-help" variable
+               (:constant-flag t
+                :default-value " n / p      Go to next/previous entry (Cursor motion works as well).
+ g / r      Start over with new regexp / Refine with additional regexp.
+ SPC        Show full database entry in other window.
+ f          Toggle follow mode: Other window will follow with full db entry.
+ .          Show insertion point.
+ q          Quit without inserting \\cite macro into buffer.
+ TAB        Enter citation key with completion.
+ RET        Accept current entry (also on mouse-2) and create \\cite macro.
+ m / u      Mark/Unmark the entry.
+ e / E      Create BibTeX file with all (marked/unmarked) entries
+ a / A      Put all (marked) entries into one/many \\cite commands.")
+                nil [1249 1944])
+            ("reftex-with-special-syntax-for-bib" function (:arguments ("body")) nil [1968 2221])
+            ("reftex-default-bibliography" function nil nil [2238 2782])
+            ("reftex-bib-or-thebib" function nil nil [2799 3554])
+            ("reftex-get-bibfile-list" function nil nil [3571 4564])
+            ("reftex-pop-to-bibtex-entry" function (:arguments ("key" "file-list" "mark-to-kill" "highlight" "item" "return")) nil [4638 6624])
+            ("reftex-end-of-bib-entry" function (:arguments ("item")) nil [6641 7008])
+            ("reftex--query-search-regexps" function (:arguments ("default")) nil [7010 7791])
+            ("reftex-extract-bib-entries" function (:arguments ("buffers")) nil [7818 12735])
+            ("reftex-bib-sort-author" function (:arguments ("e1" "e2")) nil [12737 13201])
+            ("reftex-bib-sort-year" function (:arguments ("e1" "e2")) nil [13203 13416])
+            ("reftex-bib-sort-year-reverse" function (:arguments ("e1" "e2")) nil [13418 13640])
+            ("reftex-get-crossref-alist" function (:arguments ("entry")) nil [13642 14225])
+            ("reftex-extract-bib-entries-from-thebibliography" function (:arguments ("files")) nil [14265 16582])
+            ("reftex-get-bibkey-default" function nil nil [16584 16950])
+            ("reftex-get-bib-names" function (:arguments ("field" "entry")) nil [16992 17730])
+            ("reftex-parse-bibtex-entry" function (:arguments ("entry" "from" "to" "raw")) nil [17747 20134])
+            ("reftex-get-bib-field" function (:arguments ("fieldname" "entry" "format")) nil [20136 20436])
+            ("reftex-format-bib-entry" function (:arguments ("entry")) nil [20438 22817])
+            ("reftex-parse-bibitem" function (:arguments ("item")) nil [22819 23398])
+            ("reftex-format-bibitem" function (:arguments ("item")) nil [23400 24139])
+            ("reftex-citation" function
+               (:user-visible-flag t
+                :arguments ("no-insert" "format-key"))
+                nil [24226 25720])
+            ("reftex-do-citation" function (:arguments ("arg" "no-insert" "format-key")) nil [25722 29559])
+            ("reftex-figure-out-cite-format" function (:arguments ("arg" "no-insert" "format-key")) nil [29561 31444])
+            ("reftex-citep" function (:user-visible-flag t) nil [31461 31583])
+            ("reftex-citet" function (:user-visible-flag t) nil [31600 31722])
+            ("reftex-select-bib-map" variable nil nil [31724 31754])
+            ("reftex-offer-bib-menu" function nil nil [31755 36568])
+            ("reftex-restrict-bib-matches" function (:arguments ("found-list")) nil [36570 37330])
+            ("reftex-extract-bib-file" function (:arguments ("all" "marked" "complement")) nil [37332 38236])
+            ("reftex-insert-bib-matches" function (:arguments ("list")) nil [38238 38784])
+            ("reftex-format-names" function (:arguments ("namelist" "n")) nil [38786 39287])
+            ("reftex-format-citation" function (:arguments ("entry" "format")) nil [39289 42642])
+            ("reftex-make-cite-echo-string" function (:arguments ("entry" "docstruct-symbol")) nil [42659 43761])
+            ("reftex-bibtex-selection-callback" function (:arguments ("data" "ignore" "no-revisit")) nil [43763 45172])
+            ("reftex-all-used-citation-keys" function nil nil [45197 46091])
+            ("reftex-get-string-refs" function (:arguments ("alist")) nil [46093 46484])
+            ("reftex-create-bibtex-file" function
+               (:user-visible-flag t
+                :arguments ("bibfile"))
+                nil [46501 50751])
+            ("reftex-cite" package nil nil [50753 50775]))          
+      :file "reftex-cite.el.gz"
+      :pointmax 50874
+      :fsize 12510
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 934 . 935) (symbol 903 . 920) (open-paren 902 . 903)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [919 932])
+            ("reftex" include nil nil [935 952])
+            ("reftex-with-special-syntax" function (:arguments ("body")) nil [954 1235])
+            ("reftex-parse-one" function (:user-visible-flag t) nil [1252 1396])
+            ("reftex-parse-all" function (:user-visible-flag t) nil [1413 1520])
+            ("reftex--index-tags" variable nil nil [1522 1549])
+            ("reftex-do-parse" function (:arguments ("rescan" "file")) nil [1566 6229])
+            ("reftex-everything-regexp" function nil nil [6246 6378])
+            ("reftex-all-document-files" function (:arguments ("relative")) nil [6444 7120])
+            ("reftex-parse-from-file" function (:arguments ("file" "docstruct" "master-dir")) nil [7163 13754])
+            ("reftex-using-biblatex-p" function nil nil [13756 14089])
+            ("reftex-locate-bibliography-files" function (:arguments ("master-dir" "files")) nil [14106 15421])
+            ("reftex-replace-label-list-segment" function (:arguments ("old" "insert" "entirely")) nil [15423 16404])
+            ("reftex-section-info" function (:arguments ("file")) nil [16421 18059])
+            ("reftex-ensure-index-support" function (:arguments ("abort")) nil [18076 18598])
+            ("reftex-index-info-safe" function (:arguments ("file")) nil [18615 18711])
+            ("test-dummy" variable nil nil [18713 18732])
+            ("reftex-index-info" function (:arguments ("file")) nil [18748 20904])
+            ("reftex-short-context" function (:arguments ("env" "parse" "bound" "derive")) nil [20921 22788])
+            ("reftex-where-am-I" function nil nil [22805 27475])
+            ("reftex-notice-new" function (:arguments ("n" "force")) nil [27492 31077])
+            ("reftex-move-to-previous-arg" function (:arguments ("bound")) nil [31079 31632])
+            ("reftex-what-macro-safe" function (:arguments ("which" "bound")) nil [31649 31825])
+            ("reftex-what-macro" function (:arguments ("which" "bound")) nil [31842 34742])
+            ("reftex-what-environment" function (:arguments ("which" "bound")) nil [34759 36379])
+            ("reftex-what-special-env" function (:arguments ("which" "bound")) nil [36396 38131])
+            ("reftex-move-to-next-arg" function (:arguments ("_ignore")) nil [38133 38662])
+            ("reftex-nth-arg-wrapper" function (:arguments ("key")) nil [38664 38803])
+            ("reftex-nth-arg" function (:arguments ("n" "opt-args")) nil [38820 40032])
+            ("reftex-move-over-touching-args" function nil nil [40049 40203])
+            ("reftex-context-substring" function (:arguments ("to-end")) nil [40205 41223])
+            ("reftex-section-numbers" variable (:default-value (make-vector reftex-max-section-depth 0)) nil [41277 41349])
+            ("reftex-init-section-numbers" function (:arguments ("toc-entry" "appendix")) nil [41366 42192])
+            ("reftex-section-number" function (:arguments ("level" "star")) nil [42209 44323])
+            ("reftex-roman-number" function (:arguments ("n")) nil [44325 44928])
+            ("reftex-parse" package nil nil [44930 44953]))          
+      :file "reftex-parse.el.gz"
+      :pointmax 45054
+      :fsize 11120
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 932 . 933) (symbol 901 . 918) (open-paren 900 . 901)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [2148 2161])
+            ("custom" include nil nil [2218 2235])
+            ("easymenu" include nil nil [2237 2256])
+            ("reftex-tables-dirty" variable (:default-value t) nil [2258 2339])
+            ("reftex-set-dirty" function (:arguments ("symbol" "value")) nil [2361 2456])
+            ("reftex-vars" include nil nil [2487 2509])
+            ("reftex-varioref-vref" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [3186 3264])
+            ("reftex-fancyref-fref" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [3265 3350])
+            ("reftex-fancyref-Fref" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [3351 3436])
+            ("reftex-version" variable
+               (:constant-flag t
+                :default-value emacs-version)
+                nil [3584 3654])
+            ("reftex-mode-map" variable (:default-value (make-sparse-keymap)) nil [3656 3729])
+            ("reftex-mode-menu" variable nil nil [3731 3760])
+            ("reftex-syntax-table" variable nil nil [3761 3793])
+            ("reftex-syntax-table-for-bib" variable nil nil [3794 3834])
+            ("reftex--prepare-syntax-tables" function nil nil [3836 4447])
+            ("unless" code nil nil [4449 4545])
+            ("reftex-auto-view-crossref-timer" variable nil nil [4671 4758])
+            ("reftex-toc-auto-recenter-timer" variable nil nil [4759 4854])
+            ("turn-on-reftex" function nil nil [4871 4939])
+            ("put" code nil nil [4941 5011])
+            ("put" code nil nil [5012 5054])
+            ("define-minor-mode" code nil nil [5070 7291])
+            ("reftex-docstruct-symbol" variable nil nil [7293 7325])
+            ("reftex-kill-buffer-hook" function nil nil [7326 8028])
+            ("reftex-kill-emacs-hook" function nil nil [8030 8319])
+            ("TeX-master" variable nil nil [8459 8478])
+            ("LaTeX-section-hook" variable nil nil [8479 8506])
+            ("LaTeX-label-function" variable nil nil [8507 8536])
+            ("tex-main-file" variable nil nil [8537 8559])
+            ("outline-minor-mode" variable nil nil [8560 8587])
+            ("font-lock-mode" variable nil nil [8588 8611])
+            ("font-lock-keywords" variable nil nil [8612 8639])
+            ("font-lock-fontify-region-function" variable nil nil [8640 8682])
+            ("reftex-multifile-symbols" variable
+               (:constant-flag t
+                :default-value (quote (reftex-docstruct-symbol)))
+                nil [9269 9333])
+            ("reftex-master-index-list" variable nil nil [9410 9447])
+            ("reftex-multifile-index" variable nil nil [9487 9520])
+            ("reftex-docstruct-symbol" variable nil nil [9590 9626])
+            ("make-variable-buffer-local" code nil nil [9627 9680])
+            ("reftex-next-multifile-index" function nil nil [9682 9807])
+            ("reftex-tie-multifile-symbols" function nil nil [9809 11130])
+            ("reftex-untie-multifile-symbols" function nil nil [11132 11424])
+            ("reftex-TeX-master-file" function nil nil [11426 14180])
+            ("reftex-is-multi" function nil nil [14182 14395])
+            ("reftex-set-cite-format" function (:arguments ("value")) nil [14397 14917])
+            ("reftex-get-cite-format" function nil nil [14919 15326])
+            ("reftex-add-index-macros" function (:arguments ("entry-list")) nil [15328 16628])
+            ("reftex-ref-style-activate" function (:arguments ("style")) nil [16630 16757])
+            ("reftex-ref-style-toggle" function (:arguments ("style" "action")) nil [16759 17822])
+            ("reftex-ref-style-list" function nil nil [17824 18342])
+            ("reftex-type-query-prompt" variable nil nil [18611 18648])
+            ("reftex-type-query-help" variable nil nil [18689 18724])
+            ("reftex-typekey-to-format-alist" variable nil nil [18776 18819])
+            ("reftex-typekey-to-prefix-alist" variable nil nil [18867 18910])
+            ("reftex-env-or-mac-alist" variable nil nil [18987 19023])
+            ("reftex-special-env-parsers" variable nil nil [19073 19112])
+            ("reftex-label-mac-list" variable nil nil [19150 19184])
+            ("reftex-label-env-list" variable nil nil [19228 19262])
+            ("reftex-typekey-list" variable nil nil [19303 19335])
+            ("reftex-words-to-typekey-alist" variable nil nil [19384 19426])
+            ("reftex-prefix-to-typekey-alist" variable nil nil [19477 19520])
+            ("reftex-last-used-reference" variable (:default-value (list nil nil nil nil)) nil [19576 19634])
+            ("reftex-key-to-index-macro-alist" variable nil nil [19682 19726])
+            ("reftex-query-index-macro-prompt" variable nil nil [19761 19805])
+            ("reftex-query-index-macro-help" variable nil nil [19845 19887])
+            ("reftex-no-follow-message" variable (:default-value "No follow-mode into unvisited file.  Press SPC to visit it.") nil [19934 20031])
+            ("reftex-no-info-message" variable (:default-value "%s: info not available, use `\\[reftex-view-crossref]' to get it.") nil [20032 20133])
+            ("reftex-default-context-position" variable nil nil [20197 20241])
+            ("reftex-location-start" variable nil nil [20242 20276])
+            ("reftex-call-back-to-this-buffer" variable nil nil [20277 20321])
+            ("reftex-select-return-marker" variable (:default-value (make-marker)) nil [20322 20372])
+            ("reftex-active-toc" variable nil nil [20373 20403])
+            ("reftex-tex-path" variable nil nil [20404 20432])
+            ("reftex-bib-path" variable nil nil [20433 20461])
+            ("reftex-select-marked" variable nil nil [20462 20495])
+            ("reftex-last-follow-point" variable nil nil [20496 20533])
+            ("reftex-latex-syntax-table" variable nil nil [20534 20572])
+            ("reftex-prefix" variable nil nil [20573 20599])
+            ("reftex-section-levels-all" variable nil nil [20600 20638])
+            ("reftex-buffers-with-changed-invisibility" variable nil nil [20639 20692])
+            ("reftex-callback-fwd" variable (:default-value t) nil [20693 20723])
+            ("reftex-last-toc-master" variable nil nil [20724 20830])
+            ("reftex-recursive-edit-marker" variable (:default-value (make-marker)) nil [20878 20929])
+            ("reftex-buffers-to-kill" variable nil nil [21006 21041])
+            ("reftex-section-regexp" variable nil nil [21071 21105])
+            ("reftex-section-or-include-regexp" variable nil nil [21106 21151])
+            ("reftex-index-macro-regexp" variable nil nil [21152 21190])
+            ("reftex-index-level-re" variable nil nil [21191 21225])
+            ("reftex-index-key-end-re" variable nil nil [21226 21262])
+            ("reftex-find-index-entry-regexp-format" variable nil nil [21263 21313])
+            ("reftex-everything-regexp" variable nil nil [21314 21351])
+            ("reftex-everything-regexp-no-index" variable nil nil [21352 21398])
+            ("reftex-index-re" variable nil nil [21399 21427])
+            ("reftex-find-citation-regexp-format" variable (:default-value "\\\\\\([a-zA-Z]*cite[*a-zA-Z]*\\*?\\|bibentry\\)\\(\\[[^]]*\\]\\|{[^}]*}\\)*{\\([^}]*,\\)?\\(%s\\)[},]") nil [21428 21578])
+            ("reftex-find-reference-format" variable (:default-value "\\\\\\(ref[a-zA-Z]*\\|[a-zA-Z]*ref\\(range\\)?\\)\\*?\\(\\[[^]]*\\]\\|{[^}]*}\\)*{\\(%s\\)}") nil [21579 21712])
+            ("reftex-macros-with-labels" variable nil nil [21713 21751])
+            ("reftex-macros-with-index" variable nil nil [21752 21789])
+            ("reftex-index-macro-alist" variable nil nil [21790 21827])
+            ("reftex-find-label-regexp-format" variable nil nil [21828 21872])
+            ("reftex-find-label-regexp-format2" variable nil nil [21873 21918])
+            ("reftex-section-pre-regexp" variable (:default-value "\\\\") nil [21975 22016])
+            ("reftex-section-post-regexp" variable (:default-value "\\*?\\(\\[[^]]*\\]\\)?[[{ 	
+\\]") nil [22300 22373])
+            ("reftex-section-info-function" variable (:default-value (quote reftex-section-info)) nil [22374 22432])
+            ("reftex-memory" variable nil nil [22434 22534])
+            ("reftex-cache-variables" variable
+               (:constant-flag t
+                :default-value (quote (reftex-memory reftex-section-levels-all reftex-env-or-mac-alist reftex-special-env-parsers reftex-macros-with-labels reftex-label-mac-list reftex-label-env-list reftex-typekey-list reftex-typekey-to-format-alist reftex-typekey-to-prefix-alist reftex-words-to-typekey-alist reftex-prefix-to-typekey-alist reftex-type-query-prompt reftex-type-query-help reftex-index-macro-alist reftex-macros-with-index reftex-query-index-macro-prompt reftex-query-index-macro-help reftex-key-to-index-macro-alist reftex-section-regexp reftex-section-or-include-regexp reftex-index-re reftex-everything-regexp reftex-everything-regexp-no-index reftex-find-label-regexp-format reftex-find-label-regexp-format2 reftex-find-index-entry-regexp-format)))
+                nil [22647 23626])
+            ("reftex-ensure-compiled-variables" function nil nil [23628 24884])
+            ("reftex-reset-mode" function (:user-visible-flag t) nil [24886 26045])
+            ("reftex-reset-scanning-information" function nil nil [26062 26612])
+            ("reftex-erase-all-selection-and-index-buffers" function nil nil [26614 27041])
+            ("reftex-compile-variables" function nil nil [27043 42196])
+            ("reftex-parse-args" function (:arguments ("macro")) nil [42198 42950])
+            ("reftex-access-scan-info" function (:arguments ("rescan" "file")) nil [43071 44593])
+            ("reftex-scanning-info-available-p" function nil nil [44595 44868])
+            ("reftex-silence-toc-markers" function (:arguments ("list" "n")) nil [44870 45148])
+            ("reftex-access-parse-file" function (:arguments ("action")) nil [45150 48596])
+            ("reftex-check-parse-consistency" function nil nil [48598 49543])
+            ("reftex-select-external-document" function (:arguments ("xr-alist" "xr-index")) nil [49545 50953])
+            ("reftex-locate-file" function (:arguments ("file" "type" "master-dir" "die")) nil [51056 52837])
+            ("reftex-find-file-externally" function (:arguments ("file" "type" "master-dir")) nil [52839 53582])
+            ("reftex-process-string" function (:arguments ("program" "args")) nil [53584 53987])
+            ("reftex-access-search-path" function (:arguments ("type" "recurse" "master-dir" "file")) nil [53989 56810])
+            ("reftex-find-file-on-path" function (:arguments ("file" "path" "def-dir")) nil [56812 57483])
+            ("reftex-parse-colon-path" function (:arguments ("path")) nil [57485 57876])
+            ("reftex-expand-path" function (:arguments ("path" "default-dir")) nil [57878 58583])
+            ("reftex-recursive-directory-list" function (:arguments ("dir")) nil [58585 59048])
+            ("reftex-typekey-check" function (:arguments ("typekey" "conf-variable" "n")) nil [59169 59471])
+            ("reftex-check-recursive-edit" function nil nil [59473 59792])
+            ("reftex-in-comment" function nil nil [59794 60250])
+            ("reftex-no-props" function (:arguments ("string")) nil [60252 60428])
+            ("reftex-match-string" function (:arguments ("n")) nil [60430 60598])
+            ("reftex-region-active-p" function nil nil [60600 60769])
+            ("reftex-kill-buffer" function (:arguments ("buffer")) nil [60771 60907])
+            ("reftex-erase-buffer" function (:arguments ("buffer")) nil [60909 61314])
+            ("reftex-this-word" function (:arguments ("class")) nil [61316 61591])
+            ("reftex-number" function (:arguments ("n" "unit" "ending")) nil [61593 61752])
+            ("reftex-all-assq" function (:arguments ("key" "list")) nil [61754 61994])
+            ("reftex-all-assoc-string" function (:arguments ("key" "list")) nil [61996 62260])
+            ("reftex-last-assoc-before-elt" function (:arguments ("key" "elt" "list" "exclusive")) nil [62262 62925])
+            ("reftex-sublist-nth" function (:arguments ("list" "nth" "predicate" "completion")) nil [62927 63484])
+            ("reftex-make-selection-buffer-name" function (:arguments ("type" "index")) nil [63486 63699])
+            ("reftex-make-index-buffer-name" function (:arguments ("tag" "cnt")) nil [63701 63899])
+            ("reftex-truncate" function (:arguments ("string" "ncols" "ellipses" "padding")) nil [63901 64496])
+            ("reftex-nearest-match" function (:arguments ("regexp" "max-length")) nil [64498 65332])
+            ("reftex-auto-mode-alist" function nil nil [65334 65637])
+            ("reftex-window-height" function nil nil [65639 65764])
+            ("reftex-enlarge-to-fit" function (:arguments ("buf2" "keep-current")) nil [65766 66614])
+            ("reftex-select-with-char" function (:arguments ("prompt" "help-string" "delay-time" "scroll")) nil [66616 68409])
+            ("reftex-make-regexp-allow-for-ctrl-m" function (:arguments ("string")) nil [68412 68731])
+            ("reftex-get-buffer-visiting" function (:arguments ("file")) nil [68733 69095])
+            ("message-stack" variable nil nil [69169 69191])
+            ("if" code nil nil [69192 69342])
+            ("reftex-visited-files" function (:arguments ("list")) nil [69344 69561])
+            ("reftex-get-file-buffer-force" function (:arguments ("file" "mark-to-kill")) nil [69563 71344])
+            ("reftex-kill-temporary-buffers" function (:arguments ("buffer")) nil [71346 72027])
+            ("reftex-splice-symbols-into-list" function (:arguments ("list" "alist")) nil [72029 72625])
+            ("reftex-remove-symbols-from-list" function (:arguments ("list")) nil [72627 72852])
+            ("reftex-uniquify" function (:arguments ("list" "sort")) nil [72854 73846])
+            ("reftex-uniquify-by-car" function (:arguments ("alist" "keep-list" "sort")) nil [73848 75464])
+            ("reftex-remove-if" function (:arguments ("predicate" "list")) nil [75466 75697])
+            ("reftex-abbreviate-title" function (:arguments ("string")) nil [75699 75875])
+            ("reftex-convert-string" function (:arguments ("string" "split-re" "invalid-re" "dot" "keep-fp" "nwords" "maxchar" "invalid" "abbrev" "sep" "ignore-words" "downcase")) nil [75877 79123])
+            ("reftex-nicify-text" function (:arguments ("text")) nil [79125 79922])
+            ("reftex-use-fonts" function nil nil [80043 80194])
+            ("reftex-refontify" function nil nil [80196 80534])
+            ("font-lock-defaults-computed" variable nil nil [80536 80572])
+            ("reftex-fontify-select-label-buffer" function (:arguments ("parent-buffer")) nil [80573 82059])
+            ("reftex-select-font-lock-fontify-region" function (:arguments ("beg" "end" "_loudly")) nil [82061 82569])
+            ("reftex-select-font-lock-unfontify" function (:arguments ("_ignore")) nil [82571 82630])
+            ("reftex-verified-face" function (:arguments ("faces")) nil [82632 83140])
+            ("defalias" code nil nil [83202 83286])
+            ("defalias" code nil nil [83287 83377])
+            ("defalias" code nil nil [83378 83471])
+            ("defalias" code nil nil [83472 83562])
+            ("reftex-highlight-overlays" variable (:default-value [nil nil nil]) nil [83640 83688])
+            ("aset" code nil nil [83717 83777])
+            ("reftex-overlay-put" code nil nil [83778 83863])
+            ("aset" code nil nil [83864 83924])
+            ("reftex-overlay-put" code nil nil [83925 84027])
+            ("aset" code nil nil [84028 84088])
+            ("reftex-overlay-put" code nil nil [84089 84191])
+            ("reftex-highlight" function (:arguments ("index" "begin" "end" "buffer")) nil [84261 84481])
+            ("reftex-unhighlight" function (:arguments ("index")) nil [84482 84607])
+            ("reftex-highlight-shall-die" function nil nil [84609 84794])
+            ("loop" code nil nil [84936 85472])
+            ("if" code nil nil [85543 85828])
+            ("bibtex-mode-map" variable nil nil [85830 85854])
+            ("eval-after-load" code nil nil [85918 86018])
+            ("when" code nil nil [86285 86664])
+            ("reftex-isearch-minor-mode" variable nil nil [86821 86859])
+            ("make-variable-buffer-local" code nil nil [86860 86915])
+            ("easy-menu-define" code nil nil [86917 91872])
+            ("reftex-customize" function (:user-visible-flag t) nil [91874 92003])
+            ("reftex-create-customize-menu" function (:user-visible-flag t) nil [92005 92735])
+            ("reftex-show-commentary" function (:user-visible-flag t) nil [92748 92899])
+            ("reftex-info" function
+               (:user-visible-flag t
+                :arguments ("node"))
+                nil [92901 93097])
+            ("reftex-report-bug" function (:user-visible-flag t) nil [93099 94245])
+            ("add-hook" code nil nil [94328 94381])
+            ("unless" code nil nil [94382 94460])
+            ("run-hooks" code nil nil [94543 94572])
+            ("setq" code nil nil [94655 94683])
+            ("reftex-arg-label" function (:prototype-flag t) nil [94910 95143])
+            ("reftex-arg-cite" function (:prototype-flag t) nil [95145 95376])
+            ("reftex-arg-index-tag" function (:prototype-flag t) nil [95378 95565])
+            ("reftex-arg-index" function (:prototype-flag t) nil [95567 95829])
+            ("reftex-plug-into-AUCTeX" function (:prototype-flag t) nil [95831 95899])
+            ("reftex-toggle-plug-into-AUCTeX" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [95901 96028])
+            ("reftex-add-label-environments" function (:prototype-flag t) nil [96030 96646])
+            ("defalias" code nil nil [96648 96716])
+            ("reftex-add-section-levels" function (:prototype-flag t) nil [96718 97028])
+            ("reftex-notice-new-section" function (:prototype-flag t) nil [97030 97100])
+            ("reftex-default-bibliography" function (:prototype-flag t) nil [97245 97416])
+            ("reftex-bib-or-thebib" function (:prototype-flag t) nil [97418 97590])
+            ("reftex-get-bibfile-list" function (:prototype-flag t) nil [97592 97969])
+            ("reftex-pop-to-bibtex-entry" function (:prototype-flag t) nil [97971 98389])
+            ("reftex-end-of-bib-entry" function (:prototype-flag t) nil [98391 98465])
+            ("reftex-parse-bibtex-entry" function (:prototype-flag t) nil [98467 98731])
+            ("reftex-citation" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [98733 99833])
+            ("reftex-citep" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [99835 99942])
+            ("reftex-citet" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [99944 100051])
+            ("reftex-make-cite-echo-string" function (:prototype-flag t) nil [100053 100211])
+            ("reftex-create-bibtex-file" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [100213 100862])
+            ("reftex-view-crossref" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [101004 102022])
+            ("reftex-mouse-view-crossref" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [102024 102419])
+            ("reftex-toggle-auto-view-crossref" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [102421 102677])
+            ("reftex-view-crossref-from-bibtex" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [102679 103106])
+            ("reftex-create-tags-file" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [103257 103453])
+            ("reftex-grep-document" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [103455 103665])
+            ("reftex-search-document" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [103667 103980])
+            ("reftex-query-replace-document" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [103982 104379])
+            ("reftex-find-duplicate-labels" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [104381 104510])
+            ("reftex-change-label" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [104512 104852])
+            ("reftex-renumber-simple-labels" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [104854 105508])
+            ("reftex-save-all-document-buffers" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [105510 105727])
+            ("reftex-isearch-minor-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [105729 106155])
+            ("reftex-index-selection-or-word" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [106303 106965])
+            ("reftex-index" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [106967 107375])
+            ("reftex-index-complete-tag" function (:prototype-flag t) nil [107377 107473])
+            ("reftex-index-select-tag" function (:prototype-flag t) nil [107475 107545])
+            ("reftex-index-complete-key" function (:prototype-flag t) nil [107547 107650])
+            ("reftex-index-show-entry" function (:prototype-flag t) nil [107652 107748])
+            ("reftex-display-index" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [107750 108224])
+            ("reftex-index-phrase-selection-or-word" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [108226 108575])
+            ("reftex-index-visit-phrases-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [108577 108705])
+            ("reftex-index-phrases-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [108707 109650])
+            ("reftex-parse-one" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [109798 109878])
+            ("reftex-parse-all" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [109880 109966])
+            ("reftex-do-parse" function (:prototype-flag t) nil [109968 110121])
+            ("reftex-everything-regexp" function (:prototype-flag t) nil [110123 110194])
+            ("reftex-all-document-files" function (:prototype-flag t) nil [110196 110428])
+            ("reftex-locate-bibliography-files" function (:prototype-flag t) nil [110430 110593])
+            ("reftex-section-info" function (:prototype-flag t) nil [110595 110779])
+            ("reftex-ensure-index-support" function (:prototype-flag t) nil [110781 111025])
+            ("reftex-index-info-safe" function (:prototype-flag t) nil [111027 111101])
+            ("reftex-index-info" function (:prototype-flag t) nil [111103 111284])
+            ("reftex-short-context" function (:prototype-flag t) nil [111286 111457])
+            ("reftex-where-am-I" function (:prototype-flag t) nil [111459 111683])
+            ("reftex-notice-new" function (:prototype-flag t) nil [111685 111835])
+            ("reftex-what-macro-safe" function (:prototype-flag t) nil [111837 111979])
+            ("reftex-what-macro" function (:prototype-flag t) nil [111981 112885])
+            ("reftex-what-environment" function (:prototype-flag t) nil [112887 113568])
+            ("reftex-what-special-env" function (:prototype-flag t) nil [113570 114126])
+            ("reftex-nth-arg" function (:prototype-flag t) nil [114128 114323])
+            ("reftex-move-over-touching-args" function (:prototype-flag t) nil [114325 114402])
+            ("reftex-init-section-numbers" function (:prototype-flag t) nil [114404 114588])
+            ("reftex-section-number" function (:prototype-flag t) nil [114590 114790])
+            ("reftex-label-location" function (:prototype-flag t) nil [114932 115159])
+            ("reftex-label-info-update" function (:prototype-flag t) nil [115161 115235])
+            ("reftex-label-info" function (:prototype-flag t) nil [115237 115344])
+            ("reftex-label" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [115346 115905])
+            ("reftex-reference" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [115907 116483])
+            ("reftex-query-label-type" function (:prototype-flag t) nil [116485 116553])
+            ("reftex-show-label-location" function (:prototype-flag t) nil [116555 116671])
+            ("reftex-goto-label" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [116673 116907])
+            ("reftex-select-label-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [117049 117489])
+            ("reftex-select-bib-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [117491 117948])
+            ("reftex-get-offset" function (:prototype-flag t) nil [117950 118059])
+            ("reftex-insert-docstruct" function (:prototype-flag t) nil [118061 118226])
+            ("reftex-find-start-point" function (:prototype-flag t) nil [118228 118321])
+            ("reftex-select-item" function (:prototype-flag t) nil [118323 118461])
+            ("reftex-toc" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [118603 118794])
+            ("reftex-toc-recenter" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [118796 118948])
+            ("reftex-toggle-auto-toc-recenter" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [118950 119161])
+            ("reftex" package nil nil [119219 119236]))          
+      :file "reftex.el.gz"
+      :pointmax 119262
+      :fsize 32052
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 2456 . 2457) (symbol 2342 . 2358) (open-paren 2341 . 2342) (close-paren 2161 . 2162) (symbol 2130 . 2147) (open-paren 2129 . 2130)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("paragraphs" customgroup (:user-visible-flag t) nil [1006 1085])
+            ("put" code nil nil [1087 1130])
+            ("define-minor-mode" code nil nil [1131 3125])
+            ("paragraph-start" variable (:default-value "\\|[ 	]*$") nil [3127 3927])
+            ("put" code nil nil [3928 3980])
+            ("paragraph-separate" variable (:default-value "[ 	]*$") nil [4315 4785])
+            ("put" code nil nil [4786 4841])
+            ("sentence-end-double-space" variable (:default-value t) nil [4843 5273])
+            ("put" code nil nil [5274 5337])
+            ("sentence-end-without-period" variable nil nil [5339 5757])
+            ("put" code nil nil [5758 5823])
+            ("sentence-end-without-space" variable (:default-value "。．？！") nil [5825 6183])
+            ("put" code nil nil [6184 6247])
+            ("sentence-end" variable nil nil [6249 6681])
+            ("put" code nil nil [6682 6740])
+            ("sentence-end-base" variable (:default-value "[.?!…‽][]\"'”’)}]*") nil [6742 6927])
+            ("put" code nil nil [6928 6982])
+            ("sentence-end" function nil nil [6984 8001])
+            ("page-delimiter" variable (:default-value "^") nil [8003 8133])
+            ("put" code nil nil [8134 8185])
+            ("paragraph-ignore-fill-prefix" variable nil nil [8187 8420])
+            ("put" code nil nil [8421 8487])
+            ("forward-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8489 13712])
+            ("backward-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [13714 14278])
+            ("mark-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg" "allow-extend"))
+                nil [14280 15307])
+            ("kill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [15309 15572])
+            ("backward-kill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [15574 15842])
+            ("transpose-paragraphs" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [15844 16315])
+            ("start-of-paragraph-text" function nil nil [16317 16839])
+            ("end-of-paragraph-text" function nil nil [16841 17100])
+            ("forward-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [17102 18518])
+            ("repunctuate-sentences" function (:user-visible-flag t) nil [18520 18769])
+            ("backward-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [18772 19000])
+            ("kill-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19002 19238])
+            ("backward-kill-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19240 19494])
+            ("mark-end-of-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19496 19873])
+            ("transpose-sentences" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19875 20338]))          
+      :file "paragraphs.el.gz"
+      :pointmax 20368
+      :fsize 6064
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [917 930])
+            ("declare-function" code nil nil [932 977])
+            ("reftex" include nil nil [979 996])
+            ("mark-active" variable nil nil [1033 1053])
+            ("transient-mark-mode" variable nil nil [1054 1082])
+            ("TeX-master" variable nil nil [1083 1102])
+            ("reftex-index-selection-or-word" function
+               (:user-visible-flag t
+                :arguments ("arg" "phrase"))
+                nil [1152 3527])
+            ("reftex-index" function
+               (:user-visible-flag t
+                :arguments ("char" "key" "tag" "sel" "no-insert"))
+                nil [3544 5841])
+            ("reftex-default-index" function nil nil [5843 6078])
+            ("reftex-update-default-index" function (:arguments ("tag" "tag-list")) nil [6080 6374])
+            ("reftex-index-complete-tag" function (:arguments ("itag" "opt-args")) nil [6391 7245])
+            ("reftex-index-select-tag" function nil nil [7262 10102])
+            ("reftex-index-complete-key" function (:arguments ("tag" "optional" "initial")) nil [10119 10705])
+            ("reftex-index-update-taglist" function (:arguments ("newtag")) nil [10707 10975])
+            ("define-obsolete-variable-alias" code nil nil [10977 11059])
+            ("reftex-index-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (if (featurep (quote xemacs)) [(button2)] [(mouse-2)]) (quote reftex-index-mouse-goto-line-and-hide)) (define-key map [follow-link] (quote mouse-face)) (substitute-key-definition (quote next-line) (quote reftex-index-next) map global-map) (substitute-key-definition (quote previous-line) (quote reftex-index-previous) map global-map) (loop for x in (quote (("n" . reftex-index-next) ("p" . reftex-index-previous) ("?" . reftex-index-show-help) (" " . reftex-index-view-entry) ("" . reftex-index-goto-entry-and-hide) ("	" . reftex-index-goto-entry) ("" . reftex-index-kill) ("r" . reftex-index-rescan) ("R" . reftex-index-Rescan) ("g" . revert-buffer) ("q" . reftex-index-quit) ("k" . reftex-index-quit-and-kill) ("f" . reftex-index-toggle-follow) ("s" . reftex-index-switch-index-tag) ("e" . reftex-index-edit) ("^" . reftex-index-level-up) ("_" . reftex-index-level-down) ("}" . reftex-index-restrict-to-section) ("{" . reftex-index-widen) (">" . reftex-index-restriction-forward) ("<" . reftex-index-restriction-backward) ("(" . reftex-index-toggle-range-beginning) (")" . reftex-index-toggle-range-end) ("|" . reftex-index-edit-attribute) ("@" . reftex-index-edit-visual) ("*" . reftex-index-edit-key) ("=" . reftex-index-goto-toc) ("c" . reftex-index-toggle-context))) do (define-key map (car x) (cdr x))) (loop for key across "0123456789" do (define-key map (vector (list key)) (quote digit-argument))) (define-key map "-" (quote negative-argument)) (loop for key across (concat "!" reftex-index-section-letters) do (define-key map (vector (list key)) (list (quote lambda) (quote nil) (quote (interactive)) (list (quote reftex-index-goto-letter) key)))) (easy-menu-define reftex-index-menu map "Menu for Index buffer" (quote ("Index" ["Goto section A-Z" (message "To go to a section, just press any of: !%s" reftex-index-section-letters) t] ["Show Entry" reftex-index-view-entry t] ["Go To Entry" reftex-index-goto-entry t] ["Exit & Go To Entry" reftex-index-goto-entry-and-hide t] ["Table of Contents" reftex-index-goto-toc t] ["Quit" reftex-index-quit t] "--" ("Update" ["Rebuilt *Index* Buffer" revert-buffer t] "--" ["Rescan One File" reftex-index-rescan reftex-enable-partial-scans] ["Rescan Entire Document" reftex-index-Rescan t]) ("Restrict" ["Restrict to section" reftex-index-restrict-to-section t] ["Widen" reftex-index-widen reftex-index-restriction-indicator] ["Next Section" reftex-index-restriction-forward reftex-index-restriction-indicator] ["Previous Section" reftex-index-restriction-backward reftex-index-restriction-indicator]) ("Edit" ["Edit Entry" reftex-index-edit t] ["Edit Key" reftex-index-edit-key t] ["Edit Attribute" reftex-index-edit-attribute t] ["Edit Visual" reftex-index-edit-visual t] "--" ["Add Parentkey" reftex-index-level-down t] ["Remove Parentkey " reftex-index-level-up t] "--" ["Make Start-of-Range" reftex-index-toggle-range-beginning t] ["Make End-of-Range" reftex-index-toggle-range-end t] "--" ["Kill Entry" reftex-index-kill nil] "--" ["Undo" reftex-index-undo nil]) ("Options" ["Context" reftex-index-toggle-context :style toggle :selected reftex-index-include-context] "--" ["Follow Mode" reftex-index-toggle-follow :style toggle :selected reftex-index-follow-mode]) "--" ["Help" reftex-index-show-help t]))) map)) nil [11060 15362])
+            ("reftex-index-menu" variable nil nil [15364 15390])
+            ("reftex-last-index-file" variable nil nil [15392 15498])
+            ("reftex-index-tag" variable nil nil [15499 15580])
+            ("reftex-index-return-marker" variable (:default-value (make-marker)) nil [15582 15704])
+            ("reftex-index-restriction-indicator" variable nil nil [15706 15753])
+            ("reftex-index-restriction-data" variable nil nil [15754 15796])
+            ("define-derived-mode" code nil nil [15798 16937])
+            ("reftex-index-help" variable
+               (:constant-flag t
+                :default-value "                      AVAILABLE KEYS IN INDEX BUFFER
+                      ==============================
+! A..Z     Goto the section of entries starting with this letter.
+n / p      next-entry / previous-entry
+SPC / TAB  Show/Goto the corresponding entry in the LaTeX document.
+RET        Goto the entry and hide the *Index* window (also on mouse-2).
+q / k      Hide/Kill *Index* buffer.
+C-c =      Switch to the TOC buffer.
+f / c      Toggle follow mode             / Toggle display of [c]ontext.
+g          Refresh *Index* buffer.
+r / C-u r  Reparse the LaTeX document     / Reparse entire LaTeX document.
+s          Switch to a different index (for documents with multiple indices).
+e / C-k    Edit/Kill the entry.
+* | @      Edit specific part of entry: [*]key [|]attribute [@]visual
+           With prefix: kill that part.
+( )        Toggle entry's beginning/end of page range property.
+_ ^        Add/Remove parent key (to make this item a subitem).
+} / {      Restrict Index to a single document section / Widen.
+< / >      When restricted, move restriction to previous/next section.")
+                nil [16939 18062])
+            ("reftex-index-show-entry" function (:arguments ("data" "no-revisit")) nil [18079 19223])
+            ("reftex-display-index" function
+               (:user-visible-flag t
+                :arguments ("tag" "overriding-restriction" "redo" "locations"))
+                nil [19240 23935])
+            ("reftex-insert-index" function (:arguments ("docstruct" "tag" "update-one" "remark")) nil [23937 27131])
+            ("reftex-index-insert-new-letter" function (:arguments ("letter" "font")) nil [27134 27483])
+            ("reftex-get-restriction" function (:arguments ("arg" "docstruct")) nil [27485 28590])
+            ("reftex-index-pre-command-hook" function nil nil [28592 28730])
+            ("reftex-index-post-command-hook" function nil nil [28732 29778])
+            ("reftex-index-show-help" function (:user-visible-flag t) nil [29780 30129])
+            ("reftex-index-next" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [30131 30513])
+            ("reftex-index-previous" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [30514 30883])
+            ("reftex-index-toggle-follow" function (:user-visible-flag t) nil [30884 31094])
+            ("reftex-index-toggle-context" function (:user-visible-flag t) nil [31095 31370])
+            ("reftex-index-view-entry" function (:user-visible-flag t) nil [31371 31497])
+            ("reftex-index-goto-entry-and-hide" function (:user-visible-flag t) nil [31498 31666])
+            ("reftex-index-goto-entry" function (:user-visible-flag t) nil [31667 31818])
+            ("reftex-index-mouse-goto-line-and-hide" function
+               (:user-visible-flag t
+                :arguments ("ev"))
+                nil [31819 32021])
+            ("reftex-index-quit" function (:user-visible-flag t) nil [32022 32291])
+            ("reftex-index-quit-and-kill" function (:user-visible-flag t) nil [32292 32581])
+            ("reftex-index-goto-toc" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [32582 32956])
+            ("reftex-index-rescan" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [32957 33711])
+            ("reftex-index-Rescan" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [33712 34119])
+            ("reftex-index-revert" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [34120 34681])
+            ("reftex-index-switch-index-tag" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [34682 34953])
+            ("reftex-index-restrict-to-section" function
+               (:user-visible-flag t
+                :arguments ("force"))
+                nil [34955 35709])
+            ("reftex-index-widen" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [35711 35957])
+            ("reftex-index-restriction-forward" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [35958 36687])
+            ("reftex-index-restriction-backward" function
+               (:user-visible-flag t
+                :arguments ("ignore"))
+                nil [36688 37378])
+            ("reftex-index-visit-location" function (:arguments ("final" "no-revisit")) nil [37380 38523])
+            ("reftex-index-analyze-entry" function (:arguments ("data")) nil [38525 39668])
+            ("reftex-index-edit" function (:user-visible-flag t) nil [39670 40008])
+            ("reftex-index-toggle-range-beginning" function (:user-visible-flag t) nil [40010 40673])
+            ("reftex-index-toggle-range-end" function (:user-visible-flag t) nil [40675 41326])
+            ("reftex-index-edit-key" function (:user-visible-flag t) nil [41328 41464])
+            ("reftex-index-edit-attribute" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [41466 41723])
+            ("reftex-index-edit-visual" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [41725 41951])
+            ("reftex-index-edit-part" function (:arguments ("arg" "n" "initial" "prompt" "dont-allow-empty")) nil [41953 43098])
+            ("reftex-index-level-down" function (:user-visible-flag t) nil [43100 44160])
+            ("reftex-index-level-up" function (:user-visible-flag t) nil [44162 45038])
+            ("reftex-index-kill" function (:user-visible-flag t) nil [45040 45170])
+            ("reftex-index-undo" function (:user-visible-flag t) nil [45172 45302])
+            ("reftex-index-change-entry" function (:arguments ("new" "message")) nil [45304 46572])
+            ("reftex-index-goto-letter" function (:arguments ("char")) nil [46574 47209])
+            ("reftex-index-phrases-comment-regexp" variable
+               (:constant-flag t
+                :default-value "^[ 	]*%.*")
+                nil [47344 47467])
+            ("reftex-index-phrases-macrodef-regexp" variable
+               (:constant-flag t
+                :default-value "^\\(>>>INDEX_MACRO_DEFINITION:\\)[ 	]+\\(\\S-\\)\\( *	[ 	]*\\)\\([^	]*[^ 	]\\)\\( *	[ 	]*\\)\\(\\S-+\\)")
+                nil [47468 47705])
+            ("reftex-index-phrases-phrase-regexp1" variable
+               (:constant-flag t
+                :default-value "^\\(\\S-?\\)\\(	\\)\\([^	
+]*\\S-\\)\\([ 	]*\\)$")
+                nil [48001 48177])
+            ("reftex-index-phrases-phrase-regexp2" variable
+               (:constant-flag t
+                :default-value "^\\(\\S-?\\)\\(	\\)\\([^	]*\\S-\\)\\(	[ 	]*\\)\\([^
+	]*\\S-\\)[ 	]*$")
+                nil [48178 48377])
+            ("reftex-index-phrases-phrase-regexp12" variable
+               (:constant-flag t
+                :default-value "^\\(\\S-?\\)\\(	\\)\\([^
+	]*\\S-\\)\\(\\(	[ 	]*\\)\\([^
+	]*\\S-\\)\\)?[ 	]*$")
+                nil [48378 48573])
+            ("reftex-index-phrases-macro-data" variable nil nil [48574 48740])
+            ("reftex-index-phrases-files" variable nil nil [48741 48838])
+            ("reftex-index-phrases-font-lock-keywords" variable nil nil [48840 48946])
+            ("reftex-index-phrases-font-lock-defaults" variable nil nil [48947 49053])
+            ("define-obsolete-variable-alias" code nil nil [49054 49152])
+            ("reftex-index-phrases-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (loop for x in (quote (("" . reftex-index-phrases-save-and-return) ("" . reftex-index-this-phrase) ("" . reftex-index-next-phrase) ("" . reftex-index-region-phrases) ("" . reftex-index-all-phrases) ("" . reftex-index-remaining-phrases) ("" . reftex-index-sort-phrases) ("" . reftex-index-new-phrase) ("" . reftex-index-phrases-set-macro-key) ("	" . reftex-index-phrases-info) ("" . reftex-index-find-next-conflict-phrase) ("	" . self-insert-command))) do (define-key map (car x) (cdr x))) (easy-menu-define reftex-index-phrases-menu map "Menu for Phrases buffer" (quote ("Phrases" ["New Phrase" reftex-index-new-phrase t] ["Set Phrase Macro" reftex-index-phrases-set-macro-key t] ["Recreate File Header" reftex-index-initialize-phrases-buffer t] "--" ("Sort Phrases" ["Sort" reftex-index-sort-phrases t] "--" "Sort Options" ["by Search Phrase" (setq reftex-index-phrases-sort-prefers-entry nil) :style radio :selected (not reftex-index-phrases-sort-prefers-entry)] ["by Index Entry" (setq reftex-index-phrases-sort-prefers-entry t) :style radio :selected reftex-index-phrases-sort-prefers-entry] ["in Blocks" (setq reftex-index-phrases-sort-in-blocks (not reftex-index-phrases-sort-in-blocks)) :style toggle :selected reftex-index-phrases-sort-in-blocks]) ["Describe Phrase" reftex-index-phrases-info t] ["Next Phrase Conflict" reftex-index-find-next-conflict-phrase t] "--" ("Find and Index in Document" ["Current Phrase" reftex-index-this-phrase t] ["Next Phrase" reftex-index-next-phrase t] ["Current and Following" reftex-index-remaining-phrases t] ["Region Phrases" reftex-index-region-phrases t] ["All Phrases" reftex-index-all-phrases t] "--" "Options" ["Match Whole Words" (setq reftex-index-phrases-search-whole-words (not reftex-index-phrases-search-whole-words)) :style toggle :selected reftex-index-phrases-search-whole-words] ["Case Sensitive Search" (setq reftex-index-phrases-case-fold-search (not reftex-index-phrases-case-fold-search)) :style toggle :selected (not reftex-index-phrases-case-fold-search)] ["Wrap Long Lines" (setq reftex-index-phrases-wrap-long-lines (not reftex-index-phrases-wrap-long-lines)) :style toggle :selected reftex-index-phrases-wrap-long-lines] ["Skip Indexed Matches" (setq reftex-index-phrases-skip-indexed-matches (not reftex-index-phrases-skip-indexed-matches)) :style toggle :selected reftex-index-phrases-skip-indexed-matches]) "--" ["Save and Return" reftex-index-phrases-save-and-return t]))) map)) nil [49153 52541])
+            ("reftex-index-phrases-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 34 "." table) table)) nil [52542 52720])
+            ("reftex-index-phrase-selection-or-word" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [52737 53349])
+            ("reftex-index-visit-phrases-buffer" function (:user-visible-flag t) nil [53366 53917])
+            ("reftex-index-initialize-phrases-buffer" function
+               (:user-visible-flag t
+                :arguments ("master"))
+                nil [53919 56209])
+            ("TeX-master" variable nil nil [56211 56230])
+            ("reftex-index-phrase-tex-master" function (:arguments ("dir")) nil [56231 56676])
+            ("reftex-index-phrases-save-and-return" function (:user-visible-flag t) nil [56678 56969])
+            ("reftex-index-phrases-menu" variable nil nil [56972 57006])
+            ("reftex-index-phrases-marker" variable nil nil [57007 57043])
+            ("reftex-index-phrases-restrict-file" variable nil nil [57044 57091])
+            ("define-derived-mode" code nil nil [57156 58402])
+            ("let" code nil nil [58491 59702])
+            ("reftex-index-next-phrase" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [59704 60142])
+            ("reftex-index-this-phrase" function
+               (:user-visible-flag t
+                :arguments ("slave"))
+                nil [60144 62845])
+            ("reftex-index-all-phrases" function (:user-visible-flag t) nil [62847 63060])
+            ("reftex-index-remaining-phrases" function (:user-visible-flag t) nil [63062 63318])
+            ("reftex-index-region-phrases" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [63320 63693])
+            ("reftex-index-phrases-parse-header" function (:arguments ("get-files")) nil [63695 65237])
+            ("reftex-index-phrases-apply-to-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [65239 66179])
+            ("reftex-index-new-phrase" function
+               (:user-visible-flag t
+                :arguments ("text"))
+                nil [66181 67032])
+            ("reftex-index-find-next-conflict-phrase" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [67034 68281])
+            ("reftex-index-phrases-info" function (:user-visible-flag t) nil [68283 72145])
+            ("reftex-index-phrases-set-macro-key" function (:user-visible-flag t) nil [72147 73708])
+            ("reftex-index-sort-phrases" function
+               (:user-visible-flag t
+                :arguments ("chars-first"))
+                nil [73710 75211])
+            ("chars-first" variable nil nil [75213 75233])
+            ("reftex-compare-phrase-lines" function (:arguments ("a" "b")) nil [75234 76773])
+            ("reftex-index-phrases-menu" variable nil nil [76775 76809])
+            ("reftex-index-make-phrase-regexp" function (:arguments ("phrase" "as-words" "allow-newline")) nil [76810 77838])
+            ("reftex-index-simplify-phrase" function (:arguments ("phrase")) nil [77840 77982])
+            ("reftex-index-phrases-find-dup-re" function (:arguments ("phrase" "sub")) nil [77984 78454])
+            ("reftex-index-make-replace-string" function (:arguments ("macro-fmt" "match" "index-key" "repeat" "mathp")) nil [78456 79074])
+            ("reftex-query-index-phrase-globally" function (:arguments ("files" "args")) nil [79076 79950])
+            ("reftex-index-phrases-help" variable
+               (:constant-flag t
+                :default-value "     Keys for query-index search
+     ===========================
+y       Replace this match
+n       Skip this match
+!       Replace this and all further matches in this file
+q / Q   Skip match, start next file / start next phrase
+o       Use a different indexing macro for this match
+1 - 9   Select one of the multiple phrases
+e       Edit the replacement text
+C-r     Recursive edit.
+s / S   Save this buffer  /  Save all document buffers
+C-g     Abort")
+                nil [79952 80489])
+            ("replace-count" variable nil nil [80491 80513])
+            ("reftex-query-index-phrase" function (:arguments ("phrase" "macro-fmt" "index-key" "repeat" "as-words")) nil [80514 86709])
+            ("reftex-index-phrase-match-is-indexed" function (:arguments ("beg" "end")) nil [86711 87757])
+            ("reftex-index-phrases-fixup-line" function (:arguments ("beg" "end")) nil [87759 89637])
+            ("reftex-index-phrases-replace-space" function (:arguments ("pos")) nil [89639 89877])
+            ("reftex-index-select-phrases-macro" function (:arguments ("delay")) nil [89879 90602])
+            ("reftex-index" package nil nil [90604 90627]))          
+      :file "reftex-index.el.gz"
+      :pointmax 90728
+      :fsize 21177
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 930 . 931) (symbol 899 . 916) (open-paren 898 . 899)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [932 945])
+            ("reftex-toc" package nil nil [947 968])
+            ("reftex" include nil nil [969 986])
+            ("define-obsolete-variable-alias" code nil nil [992 1068])
+            ("reftex-toc-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (if (featurep (quote xemacs)) [(button2)] [(mouse-2)]) (quote reftex-toc-mouse-goto-line-and-hide)) (define-key map [follow-link] (quote mouse-face)) (substitute-key-definition (quote next-line) (quote reftex-toc-next) map global-map) (substitute-key-definition (quote previous-line) (quote reftex-toc-previous) map global-map) (loop for x in (quote (("n" . reftex-toc-next) ("p" . reftex-toc-previous) ("?" . reftex-toc-show-help) (" " . reftex-toc-view-line) ("" . reftex-toc-goto-line-and-hide) ("	" . reftex-toc-goto-line) (">" . reftex-toc-display-index) ("r" . reftex-toc-rescan) ("R" . reftex-toc-Rescan) ("g" . revert-buffer) ("q" . reftex-toc-quit) ("k" . reftex-toc-quit-and-kill) ("f" . reftex-toc-toggle-follow) ("a" . reftex-toggle-auto-toc-recenter) ("d" . reftex-toc-toggle-dedicated-frame) ("F" . reftex-toc-toggle-file-boundary) ("i" . reftex-toc-toggle-index) ("l" . reftex-toc-toggle-labels) ("t" . reftex-toc-max-level) ("c" . reftex-toc-toggle-context) ("\245" . reftex-toc-rename-label) ("x" . reftex-toc-external) ("z" . reftex-toc-jump) ("." . reftex-toc-show-calling-point) ("" . reftex-toc-next-heading) ("" . reftex-toc-previous-heading) (">" . reftex-toc-demote) ("<" . reftex-toc-promote))) do (define-key map (car x) (cdr x))) (loop for key across "0123456789" do (define-key map (vector (list key)) (quote digit-argument))) (define-key map "-" (quote negative-argument)) (easy-menu-define reftex-toc-menu map "Menu for Table of Contents buffer" (quote ("TOC" ["Show Location" reftex-toc-view-line t] ["Go To Location" reftex-toc-goto-line t] ["Exit & Go To Location" reftex-toc-goto-line-and-hide t] ["Show Calling Point" reftex-toc-show-calling-point t] ["Quit" reftex-toc-quit t] "--" ("Edit" ["Promote" reftex-toc-promote t] ["Demote" reftex-toc-demote t] ["Rename Label" reftex-toc-rename-label t]) "--" ["Index" reftex-toc-display-index t] ["External Document TOC  " reftex-toc-external t] "--" ("Update" ["Rebuilt *toc* Buffer" revert-buffer t] ["Rescan One File" reftex-toc-rescan reftex-enable-partial-scans] ["Rescan Entire Document" reftex-toc-Rescan t]) ("Options" "TOC Items" ["File Boundaries" reftex-toc-toggle-file-boundary :style toggle :selected reftex-toc-include-file-boundaries] ["Labels" reftex-toc-toggle-labels :style toggle :selected reftex-toc-include-labels] ["Index Entries" reftex-toc-toggle-index :style toggle :selected reftex-toc-include-index-entries] ["Context" reftex-toc-toggle-context :style toggle :selected reftex-toc-include-context] "--" ["Follow Mode" reftex-toc-toggle-follow :style toggle :selected reftex-toc-follow-mode] ["Auto Recenter" reftex-toggle-auto-toc-recenter :style toggle :selected reftex-toc-auto-recenter-timer] ["Dedicated Frame" reftex-toc-toggle-dedicated-frame t]) "--" ["Help" reftex-toc-show-help t]))) map)) nil [1069 4913])
+            ("reftex-toc-menu" variable nil nil [4915 4939])
+            ("reftex-last-window-height" variable nil nil [4940 4978])
+            ("reftex-last-window-width" variable nil nil [4979 5016])
+            ("reftex-toc-include-labels-indicator" variable nil nil [5017 5065])
+            ("reftex-toc-include-index-indicator" variable nil nil [5066 5113])
+            ("reftex-toc-max-level-indicator" variable nil nil [5114 5157])
+            ("define-derived-mode" code nil nil [5159 6626])
+            ("reftex-last-toc-file" variable nil nil [6628 6741])
+            ("reftex-toc-return-marker" variable (:default-value (make-marker)) nil [6744 6862])
+            ("reftex-toc-help" variable
+               (:constant-flag t
+                :default-value "                      AVAILABLE KEYS IN TOC BUFFER
+                      ============================
+n / p      next-line / previous-line
+SPC        Show the corresponding location of the LaTeX document.
+TAB        Goto the location and keep the TOC window.
+RET        Goto the location and hide the TOC window (also on mouse-2).
+< / >      Promote / Demote section, or all sections in region.
+C-c >      Display Index. With prefix arg, restrict index to current section.
+q / k      Hide/Kill *toc* buffer, return to position of reftex-toc command.
+l i c F    Toggle display of  [l]abels,  [i]ndex,  [c]ontext,  [F]ile borders.
+t          Change maximum toc depth (e.g. `3 t' hides levels greater than 3).
+f / g      Toggle follow mode / Refresh *toc* buffer.
+a / d      Toggle auto recenter / Toggle dedicated frame
+r / C-u r  Reparse the LaTeX document     / Reparse entire LaTeX document.
+.          In other window, show position from where `reftex-toc' was called.
+M-%        Global search and replace to rename label at point.
+x          Switch to TOC of external document (with LaTeX package `xr').
+z          Jump to a specific section (e.g. '3 z' goes to section 3).")
+                nil [6864 8069])
+            ("reftex--rebuilding-toc" variable nil nil [8071 8106])
+            ("reftex-toc" function
+               (:user-visible-flag t
+                :arguments ("_rebuild" "reuse"))
+                nil [8123 13703])
+            ("reftex-toc-recenter" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [13720 14696])
+            ("reftex-toc-pre-command-hook" function nil nil [14698 14810])
+            ("reftex-toc-post-command-hook" function nil nil [14812 15954])
+            ("reftex-re-enlarge" function nil nil [15956 16341])
+            ("reftex-toc-dframe-p" function (:arguments ("frame" "error")) nil [16343 16855])
+            ("reftex-toc-show-help" function (:user-visible-flag t) nil [16857 17233])
+            ("reftex-toc-next" function
+               (:user-visible-flag t
+                :arguments ("_arg"))
+                nil [17235 17531])
+            ("reftex-toc-previous" function
+               (:user-visible-flag t
+                :arguments ("_arg"))
+                nil [17532 17811])
+            ("reftex-toc-next-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [17812 18051])
+            ("reftex-toc-previous-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [18052 18262])
+            ("reftex-toc-toggle-follow" function (:user-visible-flag t) nil [18263 18467])
+            ("reftex-toc-toggle-file-boundary" function (:user-visible-flag t) nil [18468 18698])
+            ("reftex-toc-toggle-labels" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [18699 19035])
+            ("reftex-toc-toggle-index" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19036 19386])
+            ("reftex-toc-toggle-context" function (:user-visible-flag t) nil [19387 19652])
+            ("reftex-toc-max-level" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19653 20182])
+            ("reftex-toc-view-line" function (:user-visible-flag t) nil [20183 20339])
+            ("reftex-toc-goto-line-and-hide" function (:user-visible-flag t) nil [20340 20534])
+            ("reftex-toc-goto-line" function (:user-visible-flag t) nil [20535 20713])
+            ("reftex-toc-mouse-goto-line-and-hide" function
+               (:user-visible-flag t
+                :arguments ("ev"))
+                nil [20714 20943])
+            ("reftex-toc-show-calling-point" function (:user-visible-flag t) nil [20944 21384])
+            ("reftex-toc-quit" function (:user-visible-flag t) nil [21385 21884])
+            ("reftex-toc-quit-and-kill" function (:user-visible-flag t) nil [21885 22166])
+            ("reftex-toc-display-index" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [22167 22854])
+            ("reftex-toc-rescan" function
+               (:user-visible-flag t
+                :arguments ("_"))
+                nil [22914 23914])
+            ("reftex-toc-Rescan" function
+               (:user-visible-flag t
+                :arguments ("_"))
+                nil [23916 24322])
+            ("reftex-toc-revert" function
+               (:user-visible-flag t
+                :arguments ("_"))
+                nil [24324 24921])
+            ("reftex-toc-external" function
+               (:user-visible-flag t
+                :arguments ("_"))
+                nil [24923 25572])
+            ("reftex-toc-jump" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [25574 25855])
+            ("reftex--pro-or-de" variable nil nil [25886 25912])
+            ("reftex--start-line" variable nil nil [25913 25940])
+            ("reftex--mark-line" variable nil nil [25941 25967])
+            ("reftex-toc-demote" function
+               (:user-visible-flag t
+                :arguments ("_arg"))
+                nil [25969 26130])
+            ("reftex-toc-promote" function
+               (:user-visible-flag t
+                :arguments ("_arg"))
+                nil [26131 26295])
+            ("reftex-toc-do-promote" function (:arguments ("delta")) nil [26296 29901])
+            ("reftex-toc-restore-region" function (:arguments ("point-line" "mark-line")) nil [29904 30362])
+            ("reftex-toc-promote-prepare" function (:arguments ("x" "delta")) nil [30364 32955])
+            ("reftex-toc-promote-action" function (:arguments ("x")) nil [32957 33521])
+            ("reftex-toc-extract-section-number" function (:arguments ("entry")) nil [33523 33744])
+            ("reftex-toc-newhead-from-alist" function (:arguments ("nlevel" "head" "alist")) nil [33746 34554])
+            ("reftex-toc-check-docstruct" function nil nil [34556 35239])
+            ("reftex-toc-load-all-files-for-promotion" function nil nil [35241 35868])
+            ("reftex-toc-rename-label" function (:user-visible-flag t) nil [35870 36979])
+            ("reftex-toc-visit-location" function (:arguments ("final" "no-revisit")) nil [36982 39676])
+            ("reftex-toc-find-section" function (:arguments ("toc" "no-revisit")) nil [39678 41679])
+            ("reftex-make-desperate-section-regexp" function (:arguments ("old")) nil [41681 42368])
+            ("reftex-recenter-toc-when-idle" function nil nil [42405 42740])
+            ("reftex-toggle-auto-toc-recenter" function (:user-visible-flag t) nil [42757 43701])
+            ("reftex-toc-toggle-dedicated-frame" function (:user-visible-flag t) nil [43703 44473])
+            ("reftex-make-separate-toc-frame" function nil nil [44475 45817])
+            ("reftex-toc-delete-frame-hook" function (:arguments ("frame")) nil [45819 46000]))          
+      :file "reftex-toc.el.gz"
+      :pointmax 46099
+      :fsize 11767
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 945 . 946) (symbol 914 . 931) (open-paren 913 . 914)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("refill-ignorable-overlay" variable nil nil [3281 3425])
+            ("make-variable-buffer-local" code nil nil [3426 3480])
+            ("refill-adjust-ignorable-overlay" function (:arguments ("overlay" "afterp" "beg" "end" "len")) nil [3482 3949])
+            ("refill-fill-paragraph-at" function (:arguments ("pos" "arg")) nil [3951 5607])
+            ("refill-fill-paragraph" function (:arguments ("arg")) nil [5609 5757])
+            ("refill-doit" variable nil nil [5759 6218])
+            ("make-variable-buffer-local" code nil nil [6219 6260])
+            ("refill-after-change-function" function (:arguments ("beg" "end" "len")) nil [6262 6440])
+            ("refill-post-command-function" function nil nil [6442 7900])
+            ("refill-pre-command-function" function nil nil [7902 8324])
+            ("refill-saved-state" variable nil nil [8326 8357])
+            ("define-minor-mode" code nil nil [8374 10573])
+            ("refill" package nil nil [10575 10592]))          
+      :file "refill.el.gz"
+      :pointmax 10618
+      :fsize 3873
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [940 953])
+            ("declare-function" code nil nil [956 1012])
+            ("reftex" include nil nil [1014 1031])
+            ("reftex-view-crossref" function
+               (:user-visible-flag t
+                :arguments ("arg" "auto-how" "fail-quietly"))
+                nil [1048 3995])
+            ("reftex-view-cr-cite" function (:arguments ("arg" "key" "how")) nil [3997 6471])
+            ("reftex-view-cr-ref" function (:arguments ("arg" "label" "how")) nil [6473 8776])
+            ("reftex-mouse-view-crossref" function
+               (:user-visible-flag t
+                :arguments ("ev"))
+                nil [8793 9322])
+            ("reftex-view-crossref-when-idle" function nil nil [9324 10501])
+            ("reftex-restore-window-conf" function nil nil [10503 10739])
+            ("reftex-echo-ref" function (:arguments ("label" "entry" "docstruct")) nil [10741 11267])
+            ("reftex-echo-cite" function (:arguments ("key" "files" "item")) nil [11269 12688])
+            ("reftex-use-itimer-in-xemacs" variable nil nil [12690 12874])
+            ("reftex-toggle-auto-view-crossref" function (:user-visible-flag t) nil [12891 14237])
+            ("reftex-start-itimer-once" function nil nil [14239 14584])
+            ("reftex-view-crossref-from-bibtex" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [14601 16170])
+            ("reftex-view-regexp-match" function (:arguments ("re" "highlight-group" "new" "ref-buffer")) nil [16172 18075])
+            ("reftex-global-search-marker" variable (:default-value (make-marker)) nil [18077 18127])
+            ("reftex-global-search" function (:arguments ("regexp" "file-list")) nil [18128 18410])
+            ("reftex-global-search-continue" function nil nil [18412 19825])
+            ("reftex-dcr" package nil nil [19827 19848]))          
+      :file "reftex-dcr.el.gz"
+      :pointmax 19947
+      :fsize 5617
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 953 . 954) (symbol 922 . 939) (open-paren 921 . 922)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [938 951])
+            ("reftex" include nil nil [954 971])
+            ("reftex-parse" include nil nil [972 995])
+            ("reftex-label-location" function (:arguments ("bound")) nil [1012 2288])
+            ("reftex-label-info-update" function (:arguments ("cell")) nil [2305 3452])
+            ("reftex-label-info" function (:arguments ("label" "file" "bound" "derive" "env-or-mac")) nil [3469 4660])
+            ("reftex-label" function
+               (:user-visible-flag t
+                :arguments ("environment" "no-insert"))
+                nil [4756 11003])
+            ("reftex-string-to-label" function (:arguments ("string")) nil [11005 11544])
+            ("reftex-latin1-to-ascii" function (:arguments ("string")) nil [11546 12263])
+            ("reftex-replace-prefix-escapes" function (:arguments ("prefix")) nil [12265 14517])
+            ("reftex-uniquify-label" function (:arguments ("label" "force" "separator")) nil [14519 15634])
+            ("reftex-select-label-prompt" variable
+               (:constant-flag t
+                :default-value "Select: [n]ext [p]revious [r]escan [ ]context e[x]tern [q]uit RET [?]HELP+more")
+                nil [15759 15879])
+            ("reftex-select-label-help" variable
+               (:constant-flag t
+                :default-value " n / p      Go to next/previous label (Cursor motion works as well)
+ C-c C-n/p  Go to next/previous section heading.
+ b / l      Jump back to previous selection / Reuse last referenced label.
+ z          Jump to a specific section, e.g. '3 z' jumps to section 3.
+ g / s      Update menu      / Switch label type.
+ r / C-u r  Reparse document / Reparse entire document.
+ x          Switch to label menu of external document (with LaTeX package `xr').
+ F t c      Toggle:  [F]ile borders, [t]able of contents,  [c]ontext
+ # %        Toggle:  [#] label counters,   [%] labels in comments
+ SPC / f    Show full context in other window / Toggle follow mode.
+ .          Show insertion point in other window.
+ v   / V    Toggle \\ref <-> \\vref / Rotate \\ref <=> \\fref <=> \\Fref
+ TAB        Enter a label with completion.
+ m , - +    Mark entry. `,-+' also assign a separator.
+ a / A      Put all marked entries into one/many \\ref commands.
+ q / RET    Quit without referencing / Accept current label (also on mouse-2).")
+                nil [15881 16938])
+            ("reftex-reference" function
+               (:user-visible-flag t
+                :arguments ("type" "no-insert" "cut"))
+                nil [16955 21147])
+            ("reftex-guess-label-type" function nil nil [21149 21655])
+            ("reftex-select-label-map" variable nil nil [21657 21689])
+            ("reftex-offer-label-menu" function (:arguments ("typekey")) nil [21690 29047])
+            ("reftex-reparse-document" function (:arguments ("buffer" "data" "key")) nil [29049 29455])
+            ("reftex-query-label-type" function nil nil [29472 29784])
+            ("reftex-show-label-location" function (:arguments ("data" "forward" "no-revisit" "stay" "error")) nil [29801 32148])
+            ("font-lock-mode" variable nil nil [32150 32173])
+            ("reftex-show-entry" function (:arguments ("beg-hlt" "end-hlt")) nil [32174 33895])
+            ("dolist" code nil nil [34060 34535])
+            ("reftex-format-special" function (:arguments ("label" "fmt" "refstyle")) nil [34537 35046])
+            ("reftex-goto-label" function
+               (:user-visible-flag t
+                :arguments ("other-window"))
+                nil [35063 36237])
+            ("reftex-ref" package nil nil [36239 36260]))          
+      :file "reftex-ref.el.gz"
+      :pointmax 36359
+      :fsize 10192
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 951 . 952) (symbol 920 . 937) (open-paren 919 . 920)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [918 931])
+            ("reftex" include nil nil [934 951])
+            ("declare-function" code nil nil [953 1050])
+            ("declare-function" code nil nil [1051 1136])
+            ("declare-function" code nil nil [1137 1200])
+            ("declare-function" code nil nil [1201 1271])
+            ("declare-function" code nil nil [1272 1324])
+            ("declare-function" code nil nil [1325 1381])
+            ("declare-function" code nil nil [1382 1432])
+            ("declare-function" code nil nil [1433 1580])
+            ("reftex-plug-flag" function (:arguments ("which")) nil [1582 1805])
+            ("reftex-arg-label" function (:arguments ("optional" "prompt" "definition")) nil [1822 2738])
+            ("reftex-arg-cite" function (:arguments ("optional" "prompt" "definition")) nil [2755 3417])
+            ("reftex-arg-index-tag" function (:arguments ("optional" "prompt" "args")) nil [3435 4192])
+            ("reftex-arg-index" function (:arguments ("optional" "prompt" "args")) nil [4209 4928])
+            ("reftex-what-index-tag" function nil nil [4930 5512])
+            ("LaTeX-label-function" variable nil nil [5514 5543])
+            ("reftex-plug-into-AUCTeX" function nil nil [5559 6325])
+            ("reftex-toggle-plug-into-AUCTeX" function (:user-visible-flag t) nil [6342 6808])
+            ("reftex-add-label-environments" function (:arguments ("entry-list")) nil [6825 7949])
+            ("defalias" code nil nil [7965 8033])
+            ("reftex-add-section-levels" function (:arguments ("entry-list")) nil [8050 8862])
+            ("reftex-notice-new-section" function nil nil [8879 8946])
+            ("reftex-auc" package nil nil [8948 8969]))          
+      :file "reftex-auc.el.gz"
+      :pointmax 9068
+      :fsize 2865
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 931 . 932) (symbol 900 . 917) (open-paren 899 . 900)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [920 933])
+            ("reftex" include nil nil [936 953])
+            ("reftex-select-shared-map" variable (:default-value (let ((map (make-sparse-keymap))) (substitute-key-definition (quote next-line) (quote reftex-select-next) map global-map) (substitute-key-definition (quote previous-line) (quote reftex-select-previous) map global-map) (substitute-key-definition (quote keyboard-quit) (quote reftex-select-keyboard-quit) map global-map) (substitute-key-definition (quote newline) (quote reftex-select-accept) map global-map) (loop for x in (quote ((" " . reftex-select-callback) ("n" . reftex-select-next) ([(down)] . reftex-select-next) ("p" . reftex-select-previous) ([(up)] . reftex-select-previous) ("f" . reftex-select-toggle-follow) ("" . reftex-select-accept) ([(return)] . reftex-select-accept) ("q" . reftex-select-quit) ("." . reftex-select-show-insertion-point) ("?" . reftex-select-help))) do (define-key map (car x) (cdr x))) (if (featurep (quote xemacs)) (define-key map [(button2)] (quote reftex-select-mouse-accept)) (define-key map [(mouse-2)] (quote reftex-select-mouse-accept)) (define-key map [follow-link] (quote mouse-face))) (loop for key across "0123456789" do (define-key map (vector (list key)) (quote digit-argument))) (define-key map "-" (quote negative-argument)) map)) nil [1041 2557])
+            ("define-obsolete-variable-alias" code nil nil [2559 2655])
+            ("reftex-select-label-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map reftex-select-shared-map) (loop for key across "aAcgFlrRstx#%" do (define-key map (vector (list key)) (list (quote lambda) (quote nil) "Press `?' during selection to find out about this key." (quote (interactive)) (list (quote throw) (quote (quote myexit)) key)))) (loop for x in (quote (("b" . reftex-select-jump-to-previous) ("z" . reftex-select-jump) ("v" . reftex-select-cycle-ref-style-forward) ("V" . reftex-select-cycle-ref-style-backward) ("m" . reftex-select-mark) ("u" . reftex-select-unmark) ("," . reftex-select-mark-comma) ("-" . reftex-select-mark-to) ("+" . reftex-select-mark-and) ([(tab)] . reftex-select-read-label) ("	" . reftex-select-read-label) ("" . reftex-select-next-heading) ("" . reftex-select-previous-heading))) do (define-key map (car x) (cdr x))) map)) nil [2656 4021])
+            ("define-derived-mode" code nil nil [4038 4865])
+            ("define-obsolete-variable-alias" code nil nil [4867 4959])
+            ("reftex-select-bib-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map reftex-select-shared-map) (loop for key across "grRaAeE" do (define-key map (vector (list key)) (list (quote lambda) (quote nil) "Press `?' during selection to find out about this key." (quote (interactive)) (list (quote throw) (quote (quote myexit)) key)))) (loop for x in (quote (("	" . reftex-select-read-cite) ([(tab)] . reftex-select-read-cite) ("m" . reftex-select-mark) ("u" . reftex-select-unmark))) do (define-key map (car x) (cdr x))) map)) nil [4960 5802])
+            ("define-derived-mode" code nil nil [5819 6562])
+            ("reftex-get-offset" function (:arguments ("buf" "here-am-I" "typekey" "toc" "index" "file")) nil [7588 8662])
+            ("reftex-insert-docstruct" function (:arguments ("buf" "toc" "labels" "index-entries" "files" "context" "counter" "show-commented" "here-I-am" "xr-prefix" "toc-buffer")) nil [8679 16216])
+            ("reftex-find-start-point" function (:arguments ("fallback" "locations")) nil [16233 17083])
+            ("reftex-last-data" variable nil nil [17085 17114])
+            ("reftex-last-line" variable nil nil [17115 17144])
+            ("reftex-select-marked" variable nil nil [17145 17178])
+            ("reftex-select-item" function (:arguments ("reftex-select-prompt" "help-string" "keymap" "offset" "call-back" "cb-flag")) nil [17195 19770])
+            ("found-list" variable nil nil [19910 19929])
+            ("cb-flag" variable nil nil [19930 19946])
+            ("reftex-select-data" variable nil nil [19947 19974])
+            ("reftex-select-prompt" variable nil nil [19975 20004])
+            ("last-data" variable nil nil [20005 20023])
+            ("call-back" variable nil nil [20024 20042])
+            ("help-string" variable nil nil [20043 20063])
+            ("reftex-refstyle" variable nil nil [20064 20088])
+            ("reftex-select-pre-command-hook" function nil nil [20117 20208])
+            ("reftex-select-post-command-hook" function nil nil [20210 21233])
+            ("reftex-select-next" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [21235 21464])
+            ("reftex-select-previous" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [21465 21650])
+            ("reftex-select-jump" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [21651 21936])
+            ("reftex-select-next-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [21937 22123])
+            ("reftex-select-previous-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [22124 22281])
+            ("reftex-select-quit" function (:user-visible-flag t) nil [22282 22378])
+            ("reftex-select-keyboard-quit" function (:user-visible-flag t) nil [22379 22480])
+            ("reftex-select-jump-to-previous" function (:user-visible-flag t) nil [22481 23064])
+            ("reftex-select-toggle-follow" function (:user-visible-flag t) nil [23065 23252])
+            ("reftex-select-cycle-ref-style-internal" function (:arguments ("reverse")) nil [23254 23756])
+            ("reftex-select-cycle-ref-style-forward" function (:user-visible-flag t) nil [23758 23920])
+            ("reftex-select-cycle-ref-style-backward" function (:user-visible-flag t) nil [23922 24088])
+            ("reftex-select-show-insertion-point" function (:user-visible-flag t) nil [24090 24526])
+            ("reftex-select-callback" function (:user-visible-flag t) nil [24527 24713])
+            ("reftex-select-accept" function (:user-visible-flag t) nil [24714 24827])
+            ("reftex-select-mouse-accept" function
+               (:user-visible-flag t
+                :arguments ("ev"))
+                nil [24828 25091])
+            ("reftex-select-read-label" function (:user-visible-flag t) nil [25092 25439])
+            ("reftex-select-read-cite" function (:user-visible-flag t) nil [25440 25853])
+            ("reftex-select-mark" function
+               (:user-visible-flag t
+                :arguments ("separator"))
+                nil [25855 26844])
+            ("reftex-select-mark-comma" function (:user-visible-flag t) nil [26846 26975])
+            ("reftex-select-mark-to" function (:user-visible-flag t) nil [26976 27099])
+            ("reftex-select-mark-and" function (:user-visible-flag t) nil [27100 27224])
+            ("reftex-select-unmark" function (:user-visible-flag t) nil [27226 28029])
+            ("reftex-select-help" function (:user-visible-flag t) nil [28031 28242])
+            ("reftex-sel" package nil nil [28244 28265]))          
+      :file "reftex-sel.el.gz"
+      :pointmax 28364
+      :fsize 7110
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax '((close-paren 933 . 934) (symbol 902 . 919) (open-paren 901 . 902))))
+  :file "!usr!share!emacs!25.3!lisp!textmodes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

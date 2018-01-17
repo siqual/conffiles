@@ -1,10 +1,10 @@
 ;;; zygospore-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads (zygospore-toggle-delete-other-windows) "zygospore"
-;;;;;;  "zygospore.el" (22089 44893 377859 180000))
+;;;### (autoloads nil "zygospore" "zygospore.el" (23133 49393 115119
+;;;;;;  649000))
 ;;; Generated autoloads from zygospore.el
 
 (autoload 'zygospore-toggle-delete-other-windows "zygospore" "\
@@ -19,16 +19,9 @@ it will restore the window configuration to prior to full-framing.
 
 ;;;***
 
-;;;### (autoloads nil nil ("zygospore-pkg.el") (22089 44893 502173
-;;;;;;  435000))
-
-;;;***
-
-(provide 'zygospore-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; zygospore-autoloads.el ends here

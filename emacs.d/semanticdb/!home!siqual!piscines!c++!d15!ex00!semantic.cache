@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("unnamed" type
+               (:members 
+                  ( ("swap" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [283 288])
+                            ("b" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [289 294]))                          
+                        :typemodifiers ("static")
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [237 417])
+                    ("min" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [476 487])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [488 499]))                          
+                        :constant-flag t
+                        :typemodifiers ("static")
+                        :methodconst-flag t)
+                        (reparse-symbol namespacesubparts) [427 557]))                  
+                :type "namespace")
+                nil [217 559]))          
+      :file "ex00.hpp"
+      :pointmax 560
+      :fsize 614
+      :lastmodtime '(23135 2485 860759 79000)
+      :unmatched-syntax '((symbol 207 . 215)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [207 226])
+            ("string" include (:system-flag t) nil [227 244])
+            ("ex00.hpp" include nil nil [245 264])
+            ("main" function (:type "int") nil [266 967]))          
+      :file "main.cpp"
+      :pointmax 968
+      :fsize 967
+      :lastmodtime '(23135 2339 436157 55000)
+      :unmatched-syntax nil))
+  :file "!home!siqual!piscines!c++!d15!ex00!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

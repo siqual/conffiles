@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("term/xterm" include nil nil [883 904])
+            ("rxvt-function-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map xterm-rxvt-function-map) (define-key map "[7~" [home]) (define-key map "[8~" [end]) (define-key map "[23~" [S-f1]) (define-key map "[24~" [S-f2]) (define-key map "[11^" [C-f1]) (define-key map "[12^" [C-f2]) (define-key map "[13^" [C-f3]) (define-key map "[14^" [C-f4]) (define-key map "[15^" [C-f5]) (define-key map "[17^" [C-f6]) (define-key map "[18^" [C-f7]) (define-key map "[19^" [C-f8]) (define-key map "[20^" [C-f9]) (define-key map "[21^" [C-f10]) (define-key map "[25~" [S-f3]) (define-key map "[26~" [S-f4]) (define-key map "[28~" [S-f5]) (define-key map "[29~" [S-f6]) (define-key map "[31~" [S-f7]) (define-key map "[32~" [S-f8]) (define-key map "[33~" [S-f9]) (define-key map "[34~" [S-f10]) (define-key map "[23^" [C-S-f1]) (define-key map "[24^" [C-S-f2]) (define-key map "[25^" [C-S-f3]) (define-key map "[26^" [C-S-f4]) (define-key map "[28^" [C-S-f5]) (define-key map "[29^" [C-S-f6]) (define-key map "[31^" [C-S-f7]) (define-key map "[32^" [C-S-f8]) (define-key map "[33^" [C-S-f9]) (define-key map "[34^" [C-S-f10]) (define-key map "[2^" [C-insert]) (define-key map "[3^" [C-delete]) (define-key map "[5^" [C-prior]) (define-key map "[6^" [C-next]) (define-key map "[7^" [C-home]) (define-key map "[8^" [C-end]) (define-key map "Od" [C-left]) (define-key map "Oc" [C-right]) (define-key map "Oa" [C-up]) (define-key map "Ob" [C-down]) (define-key map "[3$" [S-delete]) (define-key map "[5$" [S-prior]) (define-key map "[6$" [S-next]) (define-key map "[7$" [S-home]) (define-key map "[8$" [S-end]) (define-key map "[d" [S-left]) (define-key map "[c" [S-right]) (define-key map "[a" [S-up]) (define-key map "[b" [S-down]) map)) nil [906 3309])
+            ("rxvt-alternatives-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [f11] [S-f1]) (define-key map [f12] [S-f2]) (define-key map [f13] [S-f3]) (define-key map [f14] [S-f4]) (define-key map [f15] [S-f5]) (define-key map [f16] [S-f6]) (define-key map [f17] [S-f7]) (define-key map [f18] [S-f8]) (define-key map [f19] [S-f9]) (define-key map [f20] [S-f10]) (define-key map [f23] [C-f1]) (define-key map [f24] [C-f2]) (define-key map [f25] [C-f3]) (define-key map [f26] [C-f4]) (define-key map [f27] [C-f5]) (define-key map [f28] [C-f6]) (define-key map [f29] [C-f7]) (define-key map [f30] [C-f8]) (define-key map [f31] [C-f9]) (define-key map [f32] [C-f10]) (define-key map [f33] [C-S-f1]) (define-key map [f34] [C-S-f2]) (define-key map [f35] [C-S-f3]) (define-key map [f36] [C-S-f4]) (define-key map [f37] [C-S-f5]) (define-key map [f38] [C-S-f6]) (define-key map [f39] [C-S-f7]) (define-key map [f40] [C-S-f8]) (define-key map [f41] [C-S-f9]) (define-key map [f42] [C-S-f10]) map)) nil [3311 4987])
+            ("rxvt-standard-colors" variable (:default-value (quote (("black" 0 (0 0 0)) ("red" 1 (205 0 0)) ("green" 2 (0 205 0)) ("yellow" 3 (205 205 0)) ("blue" 4 (0 0 205)) ("magenta" 5 (205 0 205)) ("cyan" 6 (0 205 205)) ("white" 7 (229 229 229)) ("brightblack" 8 (77 77 77)) ("brightred" 9 (255 0 0)) ("brightgreen" 10 (0 255 0)) ("brightyellow" 11 (255 255 0)) ("brightblue" 12 (0 0 255)) ("brightmagenta" 13 (255 0 255)) ("brightcyan" 14 (0 255 255)) ("brightwhite" 15 (255 255 255))))) nil [5051 6034])
+            ("terminal-init-rxvt" function nil nil [6036 6476])
+            ("rxvt-set-background-mode" function nil nil [6664 7546]))          
+      :file "rxvt.el.gz"
+      :pointmax 7570
+      :fsize 2482
+      :lastmodtime '(22768 58519 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!25.3!lisp!term!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
